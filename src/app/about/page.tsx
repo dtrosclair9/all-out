@@ -15,7 +15,7 @@ const values = [
   },
   {
     title: "Military Precision",
-    desc: "Dax's time in the US Navy instilled a standard for quality and attention to detail that carries into every install. No shortcuts. No excuses.",
+    desc: "Serving as a Navy Corpsman with the Marines instilled a standard for quality and attention to detail that carries into every install. No shortcuts. No excuses.",
   },
   {
     title: "Family First",
@@ -53,8 +53,8 @@ export default function AboutPage() {
           <div className="relative">
             <div className="relative h-[550px]">
               <Image
-                src="/images/shop-reception.jpg"
-                alt="All Out Window Tint shop"
+                src="/images/dax-military.jpg"
+                alt="Dax Normand — Navy Corpsman"
                 fill
                 className="object-cover"
               />
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div className="absolute bottom-0 left-0 right-0 p-8">
               <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
               <p className="font-body text-[#a60303] text-sm tracking-wider uppercase">
-                Founder & Owner · US Navy Veteran
+                Founder & Owner · Navy Corpsman
               </p>
             </div>
           </div>
@@ -79,9 +79,10 @@ export default function AboutPage() {
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
                 Dax Normand grew up with a passion for vehicles and a drive to
-                be the best at whatever he put his hand to. After serving his
-                country in the US Navy, he brought that same discipline home to
-                Gonzales, Louisiana.
+                be the best at whatever he put his hand to. He served as a Navy
+                Corpsman embedded with the Marines, a role that demands
+                precision, composure, and the kind of discipline you don't
+                forget. He brought all of that home to Gonzales, Louisiana.
               </p>
               <p>
                 In 2020, Dax launched All-Out Window Tint, and the name says

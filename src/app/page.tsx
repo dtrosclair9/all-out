@@ -241,7 +241,7 @@ export default function Home() {
               INTO EVERY JOB
             </h2>
             <p className="font-body text-[#888888] text-base leading-relaxed mb-8">
-              Founded by Navy veteran Dax Normand, All-Out Window Tint was
+              Founded by Navy Corpsman Dax Normand, All-Out Window Tint was
               built on the principle that every job deserves your full effort.
               We're a family-owned operation in Gonzales, LA, and we treat
               every customer like one.
