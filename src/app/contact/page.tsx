@@ -54,6 +54,7 @@ type FormState = "idle" | "submitting" | "success" | "error";
 export default function ContactPage() {
   const [formState, setFormState] = useState<FormState>("idle");
   const [form, setForm] = useState({
+    location: "",
     name: "",
     phone: "",
     email: "",
@@ -84,7 +85,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setFormState("success");
-        setForm({ name: "", phone: "", email: "", service: "", vehicle: "", referral: "", message: "" });
+        setForm({ location: "", name: "", phone: "", email: "", service: "", vehicle: "", referral: "", message: "" });
       } else {
         setFormState("error");
       }
@@ -209,6 +210,28 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
+                    Preferred Location <span className="text-[#a60303]">*</span>
+                  </label>
+                  <div className="grid grid-cols-2 gap-3">
+                    {["Gonzales", "Baton Rouge"].map((loc) => (
+                      <button
+                        key={loc}
+                        type="button"
+                        onClick={() => setForm((prev) => ({ ...prev, location: loc }))}
+                        className={`font-display tracking-widest uppercase text-sm px-4 py-3 border transition-colors duration-200 ${
+                          form.location === loc
+                            ? "bg-[#a60303] border-[#a60303] text-white"
+                            : "bg-[#141414] border-[#2a2a2a] text-[#888888] hover:border-[#a60303] hover:text-white"
+                        }`}
+                      >
+                        {loc}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">

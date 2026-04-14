@@ -17,11 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "All-Out Window Tint | Gonzales, LA",
+  title: "All-Out Window Tint | Gonzales & Baton Rouge, LA",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps for automotive, residential, commercial, and marine in Gonzales, LA. Lifetime warranty. Family owned.",
+    "Professional window tinting, paint protection film, and vehicle wraps in Gonzales and Baton Rouge, LA. Two locations. Lifetime warranty. Family owned.",
   keywords:
-    "window tinting, PPF, paint protection film, vehicle wraps, Gonzales LA, residential tinting, commercial tinting, marine tinting",
+    "window tinting, PPF, paint protection film, vehicle wraps, Gonzales LA, Baton Rouge LA, residential tinting, commercial tinting, marine tinting",
 };
 
 export default function RootLayout({

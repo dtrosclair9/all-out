@@ -101,7 +101,7 @@ export default function Home() {
           </h1>
           <p className="font-body text-white/70 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
             Professional automotive window tinting, paint protection film, and
-            vehicle wraps in Gonzales, LA. Done right, every time.
+            vehicle wraps. Two locations serving Gonzales and Baton Rouge, LA.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Link
@@ -118,7 +118,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="font-display text-white/40 tracking-[0.3em] uppercase text-xs">
-            Gonzales, Louisiana
+            Gonzales & Baton Rouge, Louisiana
           </p>
         </div>
 
@@ -243,8 +243,8 @@ export default function Home() {
             <p className="font-body text-[#888888] text-base leading-relaxed mb-8">
               Founded by Navy Corpsman Dax Normand, All-Out Window Tint was
               built on the principle that every job deserves your full effort.
-              We're a family-owned operation in Gonzales, LA, and we treat
-              every customer like one.
+              We're a family-owned operation with locations in Gonzales and
+              Baton Rouge, LA, and we treat every customer like one.
             </p>
 
             <div className="space-y-5">
@@ -258,8 +258,8 @@ export default function Home() {
                   desc: "Trained and skilled in the latest techniques for every vehicle, home, and business.",
                 },
                 {
-                  title: "Family & Locally Owned",
-                  desc: "Proudly serving Gonzales and the surrounding Baton Rouge area since 2020.",
+                  title: "Two Locations",
+                  desc: "Gonzales and Baton Rouge. Same team, same standards, whichever shop is closer to you.",
                 },
                 {
                   title: "Free Estimates",
