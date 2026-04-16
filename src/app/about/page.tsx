@@ -8,6 +8,16 @@ export const metadata: Metadata = {
     "Meet the team behind All-Out Window Tint. Family owned and operated with two locations in Gonzales and Baton Rouge, LA since 2020.",
 };
 
+// Update names/roles here when ready
+const team = [
+  { img: "/images/team-member-5.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-6.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-1.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-2.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-3.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-4.jpg", name: "Team Member", role: "Installer" },
+];
+
 const values = [
   {
     title: "All-Out Effort",
@@ -183,6 +193,76 @@ export default function AboutPage() {
                 Co-Owner · Certified Installer
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="py-20 px-6 bg-[#141414]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+              The People Behind the Work
+            </p>
+            <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
+              MEET THE TEAM
+            </h2>
+          </div>
+
+          {/* Group photo */}
+          <div className="relative w-full h-72 md:h-96 overflow-hidden mb-10">
+            <Image
+              src="/images/team-group-2.jpg"
+              alt="All-Out Window Tint Team"
+              fill
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          </div>
+
+          {/* Individual grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {team.map((member, i) => (
+              <div key={i} className="relative overflow-hidden group">
+                <div className="relative aspect-[4/5]">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <p className="font-display text-white text-base font-bold leading-tight">{member.name}</p>
+                  <p className="font-body text-[#a60303] text-xs tracking-wider uppercase mt-0.5">{member.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Watch Us Work */}
+      <section className="bg-[#0a0a0a] py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+              The Process
+            </p>
+            <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
+              WATCH US WORK
+            </h2>
+          </div>
+          <div className="relative w-full overflow-hidden border border-[#1e1e1e]">
+            <video
+              src="/service-clip.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto max-h-[600px] object-cover"
+            />
           </div>
         </div>
       </section>
