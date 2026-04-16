@@ -4,16 +4,22 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps in Baton Rouge, LA. Visit All-Out Window Tint at 7987 Pecue Lane, Suite 7G. Lifetime warranty. Call (225) 381-1000.",
+    "Professional window tinting, paint protection film, and vehicle wraps in Baton Rouge, LA. Visit All-Out Window Tint at 7987 Pecue Lane, Suite 7G. Call (225) 381-1000.",
 };
 
 const services = [
-  "Automotive Window Tinting",
-  "Residential Window Tinting",
-  "Commercial Window Tinting",
-  "Marine Tinting & Wraps",
-  "Paint Protection Film (PPF)",
-  "Vehicle Wraps & Vinyl",
+  { label: "Ceramic Coating", href: "/services/ceramic-coating" },
+  { label: "Paint Protection Film (PPF)", href: "/services/paint-protection-film/baton-rouge" },
+  { label: "Vehicle Wraps & Vinyl", href: "/services/vehicle-wraps/baton-rouge" },
+  { label: "Commercial Window Tinting", href: "/services/commercial-tinting/baton-rouge" },
+  { label: "Automotive Window Tinting", href: "/services/automotive-tinting/baton-rouge" },
+  { label: "Marine Tinting & Wraps", href: "/services/marine-tinting/baton-rouge" },
+  { label: "Residential Window Tinting", href: "/services/residential-tinting/baton-rouge" },
+];
+
+const areasServed = [
+  "Baton Rouge", "Central", "Zachary", "Baker",
+  "Denham Springs", "Walker", "Port Allen", "East Baton Rouge Parish",
 ];
 
 const schema = {
@@ -30,6 +36,11 @@ const schema = {
     postalCode: "70809",
     addressCountry: "US",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 30.3629,
+    longitude: -91.0637,
+  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -40,6 +51,7 @@ const schema = {
   ],
   url: "https://alloutwindowtint.com/locations/baton-rouge",
   priceRange: "$$",
+  areaServed: areasServed.map((a) => ({ "@type": "City", name: a })),
 };
 
 export default function BatonRougePage() {
@@ -62,8 +74,10 @@ export default function BatonRougePage() {
             BATON ROUGE, LA
           </h1>
           <p className="font-body text-[#888888] text-base max-w-xl leading-relaxed">
-            Our Baton Rouge location on Pecue Lane. Serving Baton Rouge, Central,
-            Prairieville, and the surrounding East Baton Rouge Parish area.
+            Our Baton Rouge location on Pecue Lane. Serving Baton Rouge,
+            Central, Denham Springs, Walker, and the greater East Baton Rouge
+            Parish area. Same quality, same standard — now closer to the
+            capital.
           </p>
         </div>
       </section>
@@ -80,9 +94,14 @@ export default function BatonRougePage() {
                 </svg>
                 <div>
                   <p className="font-display text-[#888888] tracking-widest uppercase text-xs mb-1">Address</p>
-                  <p className="font-body text-white text-sm leading-relaxed">
+                  <a
+                    href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-white text-sm leading-relaxed hover:text-[#a60303] transition-colors"
+                  >
                     7987 Pecue Lane, Suite 7G<br />Baton Rouge, LA 70809
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -115,12 +134,30 @@ export default function BatonRougePage() {
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {services.map((s) => (
-                  <li key={s} className="flex items-center gap-2">
-                    <div className="w-1 h-1 bg-[#a60303] rounded-full shrink-0" />
-                    <span className="font-body text-[#888888] text-sm">{s}</span>
+                  <li key={s.label}>
+                    <Link href={s.href} className="flex items-center gap-2 group">
+                      <div className="w-1 h-1 bg-[#a60303] rounded-full shrink-0" />
+                      <span className="font-body text-[#888888] text-sm group-hover:text-[#a60303] transition-colors duration-200">
+                        {s.label}
+                      </span>
+                    </Link>
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Areas served */}
+            <div className="border-t border-[#1e1e1e] pt-8 mb-10">
+              <p className="font-display text-white tracking-widest uppercase text-xs mb-4">
+                Areas Served
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {areasServed.map((area) => (
+                  <span key={area} className="font-body text-[#888888] text-xs border border-[#242424] px-3 py-1">
+                    {area}
+                  </span>
+                ))}
+              </div>
             </div>
 
             {/* CTAs */}
@@ -158,12 +195,60 @@ export default function BatonRougePage() {
         </div>
       </section>
 
+      {/* About this location */}
+      <section className="bg-[#141414] py-16 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
+          <div>
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+              Baton Rouge
+            </p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
+              BRINGING THE SAME
+              <br />
+              STANDARD TO THE CAPITAL
+            </h2>
+            <div className="space-y-4 font-body text-[#888888] text-sm leading-relaxed">
+              <p>
+                After five years of building our reputation in Ascension Parish,
+                All-Out Window Tint expanded to Baton Rouge to serve a bigger
+                market — without compromising the quality that earned us that
+                reputation in the first place.
+              </p>
+              <p>
+                Located on Pecue Lane in south Baton Rouge, we&apos;re easily
+                accessible from Airline Highway, Perkins Road, and I-10. We
+                serve customers throughout East Baton Rouge Parish — including
+                Central, Zachary, Denham Springs, Walker, Baker, and Port Allen.
+              </p>
+              <p>
+                Every job at our Baton Rouge location is handled by the same
+                trained team that built All-Out from the ground up — the same
+                people, the same process, the same standard.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3 content-start">
+            {[
+              { value: "Now", label: "Open" },
+              { value: "All 7", label: "Services" },
+              { value: "2", label: "Locations" },
+              { value: "5★", label: "Rated" },
+            ].map((stat) => (
+              <div key={stat.label} className="bg-[#0a0a0a] p-6 text-center">
+                <p className="font-display text-white text-3xl font-bold mb-1">{stat.value}</p>
+                <p className="font-body text-[#888888] text-xs uppercase tracking-wider">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Other location */}
-      <section className="bg-[#141414] py-14 px-6">
+      <section className="bg-[#0a0a0a] py-14 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-1">Also Serving</p>
-            <p className="font-display text-white text-xl font-bold">Gonzales Location</p>
+            <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-1">Original Location</p>
+            <p className="font-display text-white text-xl font-bold">Gonzales — Est. 2020</p>
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link

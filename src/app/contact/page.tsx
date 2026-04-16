@@ -1,33 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-const contactInfo = [
-  {
-    label: "Phone",
-    value: "(225) 381-1000",
-    href: "tel:2253811000",
-    icon: (
-      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
-    ),
-  },
-  {
-    label: "Address",
-    value: "43469 Cannon Road\nGonzales, LA 70737",
-    href: "https://maps.google.com/?q=43469+Cannon+Road+Gonzales+LA+70737",
-    icon: (
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
-    ),
-  },
-  {
-    label: "Hours",
-    value: "Mon – Fri: 9AM – 5PM\nSat – Sun: By Appointment",
-    href: null,
-    icon: (
-      <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
-    ),
-  },
-];
+import Link from "next/link";
 
 const referralOptions = [
   "Google Search",
@@ -40,12 +14,13 @@ const referralOptions = [
 ];
 
 const serviceOptions = [
-  "Automotive Tinting",
-  "Residential Tinting",
-  "Commercial Tinting",
-  "Marine Tinting & Wraps",
+  "Ceramic Coating",
   "Paint Protection Film",
   "Vehicle Wraps & Vinyl",
+  "Commercial Tinting",
+  "Automotive Tinting",
+  "Marine Tinting & Wraps",
+  "Residential Tinting",
   "Other / Not Sure",
 ];
 
@@ -65,9 +40,7 @@ export default function ContactPage() {
   });
 
   function handleChange(
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -77,9 +50,9 @@ export default function ContactPage() {
     setFormState("submitting");
 
     try {
-      const res = await fetch("https://formspree.io/f/placeholder", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
@@ -108,63 +81,102 @@ export default function ContactPage() {
           <p className="font-body text-[#888888] text-base max-w-xl leading-relaxed">
             Fill out the form below and we&apos;ll get back to you fast — usually
             same day. Or give us a call if you prefer to talk directly.
+            Serving Gonzales and Baton Rouge, LA.
           </p>
         </div>
       </section>
 
-      {/* ── CONTACT INFO CARDS ── */}
-      <section className="bg-[#0a0a0a] py-14 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e1e1e]">
-          {contactInfo.map((item) => {
-            const inner = (
-              <div className="bg-[#0a0a0a] p-8 flex flex-col gap-4 group h-full">
-                <div className="w-10 h-10 text-[#a60303]">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    {item.icon}
-                  </svg>
-                </div>
+      {/* ── LOCATION CARDS ── */}
+      <section className="bg-[#0a0a0a] py-10 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1e1e1e]">
+          {/* Gonzales */}
+          <div className="bg-[#0a0a0a] p-8">
+            <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-3 inline-block">
+              Original Location
+            </span>
+            <h2 className="font-display text-white text-xl font-bold mb-4">Gonzales</h2>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <svg className="w-4 h-4 text-[#a60303] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+                </svg>
                 <div>
-                  <p className="font-display text-[#888888] tracking-widest uppercase text-xs mb-2">
-                    {item.label}
-                  </p>
-                  <p className="font-body text-white text-base leading-relaxed whitespace-pre-line">
-                    {item.value}
-                  </p>
+                  <a
+                    href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-white text-sm hover:text-[#a60303] transition-colors leading-relaxed"
+                  >
+                    43469 Cannon Road<br />Gonzales, LA 70737
+                  </a>
                 </div>
               </div>
-            );
+              <div className="flex items-center gap-3">
+                <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
+                </svg>
+                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                  (225) 381-1000
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
+                </svg>
+                <span className="font-body text-white text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</span>
+              </div>
+            </div>
+            <Link
+              href="/locations/gonzales"
+              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#a60303] px-5 py-2.5 text-xs transition-colors duration-200"
+            >
+              Location Details
+            </Link>
+          </div>
 
-            return item.href ? (
-              <a
-                key={item.label}
-                href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="block hover:bg-[#111] transition-colors duration-200"
-              >
-                {inner}
-              </a>
-            ) : (
-              <div key={item.label}>{inner}</div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* ── MAP ── */}
-      <section className="bg-[#0a0a0a] px-6 pb-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="w-full h-64 md:h-80 overflow-hidden border border-[#1e1e1e] grayscale">
-            <iframe
-              src="https://maps.google.com/maps?q=43469+Cannon+Rd,+Gonzales,+LA+70737&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="All-Out Window Tint location"
-            />
+          {/* Baton Rouge */}
+          <div className="bg-[#0a0a0a] p-8">
+            <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-3 inline-block">
+              Now Open
+            </span>
+            <h2 className="font-display text-white text-xl font-bold mb-4">Baton Rouge</h2>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <svg className="w-4 h-4 text-[#a60303] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+                </svg>
+                <div>
+                  <a
+                    href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-white text-sm hover:text-[#a60303] transition-colors leading-relaxed"
+                  >
+                    7987 Pecue Lane, Suite 7G<br />Baton Rouge, LA 70809
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
+                </svg>
+                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                  (225) 381-1000
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
+                </svg>
+                <span className="font-body text-white text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</span>
+              </div>
+            </div>
+            <Link
+              href="/locations/baton-rouge"
+              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#a60303] px-5 py-2.5 text-xs transition-colors duration-200"
+            >
+              Location Details
+            </Link>
           </div>
         </div>
       </section>
@@ -177,18 +189,8 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             {formState === "success" ? (
               <div className="border border-[#a60303] p-10 text-center">
-                <svg
-                  className="w-12 h-12 text-[#a60303] mx-auto mb-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
+                <svg className="w-12 h-12 text-[#a60303] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <h2 className="font-display text-white text-2xl font-bold mb-2">
                   WE&apos;VE GOT YOUR REQUEST
@@ -198,8 +200,7 @@ export default function ContactPage() {
                   give us a call at{" "}
                   <a href="tel:2253811000" className="text-[#a60303] hover:underline">
                     (225) 381-1000
-                  </a>
-                  .
+                  </a>.
                 </p>
                 <button
                   onClick={() => setFormState("idle")}
@@ -288,23 +289,17 @@ export default function ContactPage() {
                     required
                     className="w-full bg-[#141414] border border-[#2a2a2a] focus:border-[#a60303] text-white font-body text-sm px-4 py-3 outline-none transition-colors duration-200 appearance-none cursor-pointer"
                   >
-                    <option value="" className="text-[#444]">
-                      Select a service…
-                    </option>
+                    <option value="">Select a service…</option>
                     {serviceOptions.map((s) => (
-                      <option key={s} value={s}>
-                        {s}
-                      </option>
+                      <option key={s} value={s}>{s}</option>
                     ))}
                   </select>
                 </div>
 
                 <div>
                   <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                    Year, Make & Model{" "}
-                    <span className="text-[#555] normal-case font-body tracking-normal">
-                      (if applicable)
-                    </span>
+                    Year, Make &amp; Model{" "}
+                    <span className="text-[#555] normal-case font-body tracking-normal">(if applicable)</span>
                   </label>
                   <input
                     type="text"
@@ -319,9 +314,7 @@ export default function ContactPage() {
                 <div>
                   <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
                     How Did You Find Us?{" "}
-                    <span className="text-[#555] normal-case font-body tracking-normal">
-                      (optional)
-                    </span>
+                    <span className="text-[#555] normal-case font-body tracking-normal">(optional)</span>
                   </label>
                   <select
                     name="referral"
@@ -331,9 +324,7 @@ export default function ContactPage() {
                   >
                     <option value="">Select an option…</option>
                     {referralOptions.map((r) => (
-                      <option key={r} value={r}>
-                        {r}
-                      </option>
+                      <option key={r} value={r}>{r}</option>
                     ))}
                   </select>
                 </div>
@@ -371,7 +362,6 @@ export default function ContactPage() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-8">
-            {/* Quick call box */}
             <div className="border border-[#1e1e1e] p-6">
               <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-3">
                 Prefer to Call?
@@ -388,7 +378,6 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/* What to expect */}
             <div className="border border-[#1e1e1e] p-6">
               <p className="font-display text-white tracking-widest uppercase text-xs mb-5">
                 What to Expect
@@ -401,18 +390,13 @@ export default function ContactPage() {
                   { step: "04", text: "Pick up your vehicle looking sharp." },
                 ].map((item) => (
                   <li key={item.step} className="flex gap-4">
-                    <span className="font-display text-[#a60303] text-sm shrink-0 pt-0.5">
-                      {item.step}
-                    </span>
-                    <p className="font-body text-[#888888] text-sm leading-relaxed">
-                      {item.text}
-                    </p>
+                    <span className="font-display text-[#a60303] text-sm shrink-0 pt-0.5">{item.step}</span>
+                    <p className="font-body text-[#888888] text-sm leading-relaxed">{item.text}</p>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Social */}
             <div className="border border-[#1e1e1e] p-6">
               <p className="font-display text-white tracking-widest uppercase text-xs mb-4">
                 Follow Our Work

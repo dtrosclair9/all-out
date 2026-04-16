@@ -3,36 +3,13 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Automotive Tinting",
-    desc: "Cars, trucks, SUVs — every make and model. Superior heat rejection and UV protection with a flawless, factory-quality finish.",
+    title: "Ceramic Coating",
+    desc: "System X ceramic coating for cars, boats, and aircraft. A permanent bond that repels water, blocks UV, and keeps your finish looking new.",
     icon: (
-      <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-8l-2.08-5.99zM6.5 16a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM5 11l1.5-4.5h11L19 11H5z" />
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
     ),
-    image: "/images/auto-silverado-2500hd-black.jpg",
-  },
-  {
-    title: "Residential Tinting",
-    desc: "Keep your home cooler, protect your furniture, and add privacy without sacrificing your view. Transformative results inside and out.",
-    icon: (
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-    ),
-    image: "/images/residential-pool-home.jpg",
-  },
-  {
-    title: "Commercial Tinting",
-    desc: "Storefronts, offices, and fleet vehicles. Reduce glare, lower energy costs, and give your business a sharp, professional look.",
-    icon: (
-      <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
-    ),
-    image: "/images/commercial-duplessis-builders.jpg",
-  },
-  {
-    title: "Marine Tinting & Wraps",
-    desc: "Boats, center consoles, and yacht enclosures. Custom interior wraps and tinting built to handle sun, salt, and open water.",
-    icon: (
-      <path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 11V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v5l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v4.43l-6-1.93-6 1.93V6z" />
-    ),
-    image: "/images/marine-boat-interior-cabin.jpg",
+    image: "/images/auto-corvette-z06-dramatic.jpg",
+    href: "/services/ceramic-coating",
   },
   {
     title: "Paint Protection Film",
@@ -41,6 +18,7 @@ const services = [
       <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93C9.33 17.79 7 14.5 7 11V7.18L12 5z" />
     ),
     image: "/images/process-ppf-hood.jpg",
+    href: "/services/paint-protection-film",
   },
   {
     title: "Vehicle Wraps & Vinyl",
@@ -49,13 +27,50 @@ const services = [
       <path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z" />
     ),
     image: "/images/utv-polaris-ranger-camo.jpg",
+    href: "/services/vehicle-wraps",
+  },
+  {
+    title: "Commercial Tinting",
+    desc: "Storefronts, offices, and fleet vehicles. Reduce glare, lower energy costs, and give your business a sharp, professional look.",
+    icon: (
+      <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
+    ),
+    image: "/images/commercial-duplessis-builders.jpg",
+    href: "/services/commercial-tinting",
+  },
+  {
+    title: "Automotive Tinting",
+    desc: "Cars, trucks, SUVs — every make and model. Superior heat rejection and UV protection with a flawless, factory-quality finish.",
+    icon: (
+      <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-8l-2.08-5.99zM6.5 16a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM5 11l1.5-4.5h11L19 11H5z" />
+    ),
+    image: "/images/auto-silverado-2500hd-black.jpg",
+    href: "/services/automotive-tinting",
+  },
+  {
+    title: "Marine Tinting & Wraps",
+    desc: "Boats, center consoles, and yacht enclosures. Custom interior wraps and tinting built to handle sun, salt, and open water.",
+    icon: (
+      <path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 11V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v5l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v4.43l-6-1.93-6 1.93V6z" />
+    ),
+    image: "/images/marine-boat-interior-cabin.jpg",
+    href: "/services/marine-tinting",
+  },
+  {
+    title: "Residential Tinting",
+    desc: "Keep your home cooler, protect your furniture, and add privacy without sacrificing your view. Transformative results inside and out.",
+    icon: (
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    ),
+    image: "/images/residential-pool-home.jpg",
+    href: "/services/residential-tinting",
   },
 ];
 
 const stats = [
   { value: "5+", label: "Years in Business" },
   { value: "1000+", label: "Vehicles Tinted" },
-  { value: "Lifetime", label: "Warranty" },
+  { value: "2", label: "Locations" },
   { value: "5★", label: "Rated Service" },
 ];
 
@@ -73,7 +88,6 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-[#0a0a0a]">
-        {/* Video */}
         <video
           autoPlay
           muted
@@ -83,13 +97,9 @@ export default function Home() {
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-
-        {/* Gradient overlay — top darkens for nav, bottom fades to page bg */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/25 to-[#0a0a0a]" />
-        {/* Side vignette */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
 
-        {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-start text-center px-6 pt-[28vh]">
           <h1 className="font-display text-white text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 max-w-2xl">
             GO
@@ -100,8 +110,8 @@ export default function Home() {
             >ALL OUT.</span>
           </h1>
           <p className="font-body text-white/70 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-            Professional automotive window tinting, paint protection film, and
-            vehicle wraps. Two locations serving Gonzales and Baton Rouge, LA.
+            Professional window tinting, paint protection film, and vehicle
+            wraps. Two locations serving Gonzales and Baton Rouge, LA.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Link
@@ -122,7 +132,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
           <svg className="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -140,15 +149,19 @@ export default function Home() {
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
               OUR SERVICES
             </h2>
+            <p className="font-body text-[#888888] text-base mt-4 max-w-xl mx-auto">
+              Available at both our Gonzales and Baton Rouge locations. Every
+              job done right.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#242424]">
             {services.map((service) => (
-              <div
+              <Link
                 key={service.title}
-                className="relative bg-[#0a0a0a] group overflow-hidden"
+                href={service.href}
+                className="relative bg-[#0a0a0a] group overflow-hidden block"
               >
-                {/* Background image */}
                 <div className="relative h-52 overflow-hidden">
                   <Image
                     src={service.image}
@@ -159,7 +172,6 @@ export default function Home() {
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-8 h-8 text-[#a60303] shrink-0">
@@ -171,14 +183,16 @@ export default function Home() {
                       {service.title}
                     </h3>
                   </div>
-                  <p className="font-body text-[#888888] text-sm leading-relaxed">
+                  <p className="font-body text-[#888888] text-sm leading-relaxed mb-4">
                     {service.desc}
                   </p>
+                  <span className="font-display text-[#a60303] text-xs tracking-widest uppercase group-hover:text-white transition-colors duration-200">
+                    Learn More →
+                  </span>
                 </div>
 
-                {/* Red bottom accent */}
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#a60303] group-hover:w-full transition-all duration-500" />
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -212,7 +226,6 @@ export default function Home() {
       {/* ── WHY CHOOSE US ── */}
       <section className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image stack */}
           <div className="relative">
             <div className="relative h-[500px]">
               <Image
@@ -223,14 +236,12 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />
             </div>
-            {/* Badge overlay */}
             <div className="absolute -bottom-6 -right-6 bg-[#a60303] p-6 text-center hidden md:block">
               <p className="font-display text-white text-3xl font-bold leading-none">EST.</p>
               <p className="font-display text-white text-4xl font-bold">2020</p>
             </div>
           </div>
 
-          {/* Content */}
           <div>
             <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
               Why All-Out
@@ -241,20 +252,20 @@ export default function Home() {
               INTO EVERY JOB
             </h2>
             <p className="font-body text-[#888888] text-base leading-relaxed mb-8">
-              Founded by Navy Corpsman Dax Normand, All-Out Window Tint was
-              built on the principle that every job deserves your full effort.
-              We're a family-owned operation with locations in Gonzales and
-              Baton Rouge, LA, and we treat every customer like one.
+              All-Out Window Tint is a family-owned operation built on a simple
+              principle: every job deserves your full effort. With locations in
+              Gonzales and Baton Rouge, we bring the same hands-on standard to
+              every vehicle, home, and business we work on.
             </p>
 
             <div className="space-y-5">
               {[
                 {
-                  title: "Lifetime Warranty",
-                  desc: "Every tinting job is backed by a lifetime warranty. We stand behind our work.",
+                  title: "We Stand Behind Our Work",
+                  desc: "If something isn't right, we make it right. That's not a policy — it's just how we operate.",
                 },
                 {
-                  title: "8+ Years of Experience",
+                  title: "5+ Years of Experience",
                   desc: "Trained and skilled in the latest techniques for every vehicle, home, and business.",
                 },
                 {
@@ -290,8 +301,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── TWO LOCATIONS CALLOUT ── */}
+      <section className="bg-[#141414] py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+              Find Us
+            </p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">
+              TWO LOCATIONS. ONE STANDARD.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#242424]">
+            {[
+              {
+                city: "Gonzales",
+                tag: "Original Location",
+                address: "43469 Cannon Road",
+                cityState: "Gonzales, LA 70737",
+                areas: "Serving Prairieville, Sorrento, Geismar & Ascension Parish",
+                href: "/locations/gonzales",
+              },
+              {
+                city: "Baton Rouge",
+                tag: "Now Open",
+                address: "7987 Pecue Lane, Suite 7G",
+                cityState: "Baton Rouge, LA 70809",
+                areas: "Serving Central, Denham Springs, Walker & East Baton Rouge Parish",
+                href: "/locations/baton-rouge",
+              },
+            ].map((loc) => (
+              <div key={loc.city} className="bg-[#141414] p-10">
+                <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-4 inline-block">
+                  {loc.tag}
+                </span>
+                <h3 className="font-display text-white text-3xl font-bold mb-4">{loc.city}</h3>
+                <p className="font-body text-white text-sm mb-1">{loc.address}</p>
+                <p className="font-body text-white text-sm mb-4">{loc.cityState}</p>
+                <p className="font-body text-[#888888] text-xs mb-6">{loc.areas}</p>
+                <Link
+                  href={loc.href}
+                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
+                >
+                  Location Details
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── GALLERY PREVIEW ── */}
-      <section className="bg-[#141414] py-24 px-6">
+      <section className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
@@ -348,7 +409,8 @@ export default function Home() {
             GET YOUR FREE ESTIMATE TODAY
           </h2>
           <p className="font-body text-white/70 text-lg mb-10 max-w-lg mx-auto">
-            Call us or fill out our online form. We'll get back to you fast.
+            Gonzales or Baton Rouge — call us or fill out our online form.
+            We&apos;ll get back to you fast.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -46,7 +46,7 @@ export default function LocationsPage() {
           </h1>
           <p className="font-body text-[#888888] text-base max-w-xl leading-relaxed">
             Two locations serving the greater Baton Rouge area. Same team, same
-            lifetime warranty, same commitment to quality at every shop.
+            installers, same commitment to quality at every shop.
           </p>
         </div>
       </section>

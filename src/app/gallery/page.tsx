@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | All-Out Window Tint — Gonzales, LA",
+  title: "Gallery | All-Out Window Tint — Gonzales & Baton Rouge, LA",
   description:
-    "Browse our portfolio of window tinting, PPF, and vehicle wrap work on cars, trucks, boats, homes, and more.",
+    "Browse our portfolio of window tinting, PPF, and vehicle wrap work. Automotive, residential, commercial, and marine projects from our Gonzales and Baton Rouge, LA shops.",
 };
 
 const categories = [
@@ -98,7 +98,7 @@ export default function GalleryPage() {
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
             Browse our portfolio of window tinting, PPF, and vehicle wrap work.
             Automotive, residential, commercial, marine, and specialty vehicles
-            serviced in and around Gonzales, LA.
+            serviced at our Gonzales and Baton Rouge, LA locations.
           </p>
         </div>
       </section>
