@@ -223,7 +223,7 @@ export default function AboutPage() {
           {/* Individual grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {team.map((member, i) => (
-              <div key={i} className="relative overflow-hidden group">
+              <div key={i} className="overflow-hidden group">
                 <Image
                   src={member.img}
                   alt={member.name}
@@ -231,11 +231,6 @@ export default function AboutPage() {
                   height={816}
                   className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-display text-white text-base font-bold leading-tight">{member.name}</p>
-                  <p className="font-body text-[#a60303] text-xs tracking-wider uppercase mt-0.5">{member.role}</p>
-                </div>
               </div>
             ))}
           </div>
@@ -253,14 +248,14 @@ export default function AboutPage() {
               WATCH US WORK
             </h2>
           </div>
-          <div className="w-full border border-[#1e1e1e]">
+          <div className="w-full h-[480px] md:h-[600px] overflow-hidden border border-[#1e1e1e] relative">
             <video
               src="/service-clip.mp4"
               autoPlay
               muted
               loop
               playsInline
-              className="w-full h-auto block"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
         </div>
