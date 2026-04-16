@@ -210,29 +210,28 @@ export default function AboutPage() {
           </div>
 
           {/* Group photo */}
-          <div className="relative w-full h-72 md:h-96 overflow-hidden mb-10">
+          <div className="relative w-full overflow-hidden mb-10">
             <Image
               src="/images/team-group-2.jpg"
               alt="All-Out Window Tint Team"
-              fill
-              className="object-cover object-center"
+              width={1456}
+              height={816}
+              className="w-full h-auto"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           </div>
 
           {/* Individual grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {team.map((member, i) => (
               <div key={i} className="relative overflow-hidden group">
-                <div className="relative aspect-[4/5]">
-                  <Image
-                    src={member.img}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-                </div>
+                <Image
+                  src={member.img}
+                  alt={member.name}
+                  width={1456}
+                  height={816}
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="font-display text-white text-base font-bold leading-tight">{member.name}</p>
                   <p className="font-body text-[#a60303] text-xs tracking-wider uppercase mt-0.5">{member.role}</p>
@@ -254,14 +253,14 @@ export default function AboutPage() {
               WATCH US WORK
             </h2>
           </div>
-          <div className="relative w-full overflow-hidden border border-[#1e1e1e]">
+          <div className="w-full border border-[#1e1e1e]">
             <video
               src="/service-clip.mp4"
               autoPlay
               muted
               loop
               playsInline
-              className="w-full h-auto max-h-[600px] object-cover"
+              className="w-full h-auto block"
             />
           </div>
         </div>
