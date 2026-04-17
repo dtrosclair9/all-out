@@ -248,14 +248,14 @@ export default function AboutPage() {
               WATCH US WORK
             </h2>
           </div>
-          <div className="w-full h-[380px] md:h-[460px] overflow-hidden border border-[#1e1e1e] relative">
+          <div className="w-full border border-[#1e1e1e] bg-black">
             <video
               src="/service-clip.mp4"
               autoPlay
               muted
               loop
               playsInline
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="w-full max-h-[500px] object-contain block mx-auto"
             />
           </div>
         </div>
