@@ -248,7 +248,7 @@ export default function AboutPage() {
               WATCH US WORK
             </h2>
           </div>
-          <div className="w-full h-[500px] md:h-[580px] overflow-hidden border border-[#1e1e1e] relative">
+          <div className="w-full h-[380px] md:h-[460px] overflow-hidden border border-[#1e1e1e] relative">
             <video
               src="/service-clip.mp4"
               autoPlay
