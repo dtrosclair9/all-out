@@ -28,19 +28,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {[
-                "Automotive Tinting",
-                "Residential Tinting",
-                "Commercial Tinting",
-                "Marine Tinting",
-                "Paint Protection Film",
-                "Vehicle Wraps",
+                { label: "Ceramic Coating", href: "/services/ceramic-coating" },
+                { label: "Paint Protection Film", href: "/services/paint-protection-film" },
+                { label: "Vehicle Wraps & Vinyl", href: "/services/vehicle-wraps" },
+                { label: "Commercial Tinting", href: "/services/commercial-tinting" },
+                { label: "Automotive Tinting", href: "/services/automotive-tinting" },
+                { label: "Marine Tinting & Wraps", href: "/services/marine-tinting" },
+                { label: "Residential Tinting", href: "/services/residential-tinting" },
               ].map((s) => (
-                <li key={s}>
+                <li key={s.label}>
                   <Link
-                    href="/services"
+                    href={s.href}
                     className="text-[#888888] hover:text-[#a60303] text-sm transition-colors font-body"
                   >
-                    {s}
+                    {s.label}
                   </Link>
                 </li>
               ))}
