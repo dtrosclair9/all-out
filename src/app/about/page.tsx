@@ -250,13 +250,15 @@ export default function AboutPage() {
           </div>
           <div className="w-full border border-[#1e1e1e] bg-black">
             <video
-              src="/service-clip.mp4"
               autoPlay
               muted
               loop
               playsInline
+              preload="auto"
               className="w-full max-h-[500px] object-contain block mx-auto"
-            />
+            >
+              <source src="/service-clip.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
