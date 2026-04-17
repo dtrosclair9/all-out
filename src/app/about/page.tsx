@@ -82,9 +82,9 @@ export default function AboutPage() {
           {/* Content */}
           <div>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              A TRADE TURNED
+              BUILT BY SOMEONE
               <br />
-              <span className="text-[#a60303]">INTO A CALLING.</span>
+              <span className="text-[#a60303]">WHO GOES ALL OUT.</span>
             </h2>
 
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
@@ -148,9 +148,9 @@ export default function AboutPage() {
           {/* Content — left on this block for visual balance */}
           <div className="order-2 lg:order-1">
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              BUILT BY SOMEONE
+              DISCIPLINE, DRIVE,
               <br />
-              <span className="text-[#a60303]">WHO GOES ALL OUT.</span>
+              <span className="text-[#a60303]">AND A STANDARD TO MATCH.</span>
             </h2>
 
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
