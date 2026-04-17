@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AutoplayVideo from "@/components/AutoplayVideo";
 
 const services = [
   {
@@ -88,15 +89,10 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-[#0a0a0a]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <AutoplayVideo
+          src="/hero.mp4"
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/25 to-[#0a0a0a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
 

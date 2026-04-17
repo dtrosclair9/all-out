@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import AutoplayVideo from "@/components/AutoplayVideo";
 
 export const metadata: Metadata = {
   title: "About | All-Out Window Tint — Gonzales & Baton Rouge, LA",
@@ -249,16 +250,10 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="w-full border border-[#1e1e1e] bg-black">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
+            <AutoplayVideo
+              src="/service-clip.mp4"
               className="w-full max-h-[500px] object-contain block mx-auto"
-            >
-              <source src="/service-clip.mp4" type="video/mp4" />
-            </video>
+            />
           </div>
         </div>
       </section>
