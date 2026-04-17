@@ -57,87 +57,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Dax's story */}
+      {/* Reed's story */}
       <section className="py-20 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="relative">
             <div className="relative h-[550px]">
               <Image
-                src="/images/dax-military.jpg"
-                alt="Dax Normand — Founder"
+                src="/images/reed-babin.jpg"
+                alt="Reed Babin — Founder"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-8">
-              <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
+              <p className="font-display text-white text-2xl font-bold">Reed Babin</p>
               <p className="font-body text-[#a60303] text-sm tracking-wider uppercase">
-                Co-Owner · Navy Corpsman
+                Founder · Certified Installer
               </p>
             </div>
           </div>
 
           {/* Content */}
           <div>
-            <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              BUILT BY SOMEONE
-              <br />
-              <span className="text-[#a60303]">WHO GOES ALL OUT.</span>
-            </h2>
-
-            <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
-              <p>
-                Dax Normand grew up with a passion for vehicles and a drive to
-                be the best at whatever he put his hand to. He served as a Navy
-                Corpsman embedded with the Marines — a role that demands
-                precision, composure, and the kind of discipline you don&apos;t
-                forget. He brought all of that home to Gonzales, Louisiana.
-              </p>
-              <p>
-                In May 2020, Dax launched All-Out Window Tint, and the name
-                says it all. As a serial entrepreneur and family man, he puts
-                everything into every venture. But this one is personal. It&apos;s
-                built in the community he loves, for the neighbors, families,
-                and businesses that make this area home.
-              </p>
-              <p>
-                What started as a focused window tinting operation has grown
-                into a full-service auto spa offering tinting, paint protection
-                film, vehicle wraps, marine services, and more — all backed by
-                the same standard Dax brought home from the Navy.
-              </p>
-            </div>
-
-            <div className="flex gap-8 mt-10 pt-8 border-t border-[#242424]">
-              <div>
-                <p className="font-display text-white text-3xl font-bold">2020</p>
-                <p className="font-body text-[#888888] text-sm">Founded</p>
-              </div>
-              <div>
-                <p className="font-display text-white text-3xl font-bold">1000+</p>
-                <p className="font-body text-[#888888] text-sm">Jobs Completed</p>
-              </div>
-              <div>
-                <p className="font-display text-white text-3xl font-bold">2</p>
-                <p className="font-body text-[#888888] text-sm">Locations</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="bg-[#0a0a0a] px-6">
-        <div className="max-w-7xl mx-auto border-t border-[#242424]" />
-      </div>
-
-      {/* Reed's story */}
-      <section className="py-20 px-6 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Content — left on this block for visual balance */}
-          <div className="order-2 lg:order-1">
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               A TRADE TURNED
               <br />
@@ -175,23 +118,81 @@ export default function AboutPage() {
                 that got them here.
               </p>
             </div>
+
+            <div className="flex gap-8 mt-10 pt-8 border-t border-[#242424]">
+              <div>
+                <p className="font-display text-white text-3xl font-bold">2020</p>
+                <p className="font-body text-[#888888] text-sm">Founded</p>
+              </div>
+              <div>
+                <p className="font-display text-white text-3xl font-bold">10,000+</p>
+                <p className="font-body text-[#888888] text-sm">Vehicles Tinted</p>
+              </div>
+              <div>
+                <p className="font-display text-white text-3xl font-bold">2</p>
+                <p className="font-body text-[#888888] text-sm">Locations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="bg-[#0a0a0a] px-6">
+        <div className="max-w-7xl mx-auto border-t border-[#242424]" />
+      </div>
+
+      {/* Dax's story */}
+      <section className="py-20 px-6 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Content — left on this block for visual balance */}
+          <div className="order-2 lg:order-1">
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
+              BUILT BY SOMEONE
+              <br />
+              <span className="text-[#a60303]">WHO GOES ALL OUT.</span>
+            </h2>
+
+            <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
+              <p>
+                Dax Normand grew up with a passion for vehicles and a drive to
+                be the best at whatever he put his hand to. He served as a Navy
+                Corpsman embedded with the Marines — a role that demands
+                precision, composure, and the kind of discipline you don&apos;t
+                forget. He brought all of that home to Gonzales, Louisiana.
+              </p>
+              <p>
+                In May 2020, Dax joined All-Out Window Tint as co-owner, bringing
+                his military discipline and entrepreneurial drive to the business.
+                As a serial entrepreneur and family man, he puts everything into
+                every venture. But this one is personal. It&apos;s built in the
+                community he loves, for the neighbors, families, and businesses
+                that make this area home.
+              </p>
+              <p>
+                What started as a focused window tinting operation has grown
+                into a full-service auto spa offering tinting, paint protection
+                film, vehicle wraps, marine services, and more — all backed by
+                the same standard Dax brought home from the Navy.
+              </p>
+            </div>
           </div>
 
           {/* Image */}
           <div className="relative order-1 lg:order-2">
             <div className="relative h-[550px]">
               <Image
-                src="/images/reed-babin.jpg"
-                alt="Reed Babin — Co-Owner"
+                src="/images/dax-military.jpg"
+                alt="Dax Normand — Co-Owner"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-8">
-              <p className="font-display text-white text-2xl font-bold">Reed Babin</p>
+              <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
               <p className="font-body text-[#a60303] text-sm tracking-wider uppercase">
-                Co-Owner · Certified Installer
+                Co-Owner · Navy Corpsman
               </p>
             </div>
           </div>
@@ -303,12 +304,12 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
             {[
-              "/images/auto-silverado-2500hd-black.jpg",
-              "/images/auto-corvette-red-exterior.jpg",
-              "/images/auto-gmc-yukon-black-side.jpg",
-              "/images/auto-genesis-g80-shop.jpg",
-              "/images/auto-ford-f150-white-shop.jpg",
-              "/images/auto-gmc-sierra-black-shop.jpg",
+              "/images/auto-corvette-duo.jpg",
+              "/images/auto-corvette-orange-doors.jpg",
+              "/images/auto-ford-lifted-led.jpg",
+              "/images/auto-corvette-white-shop.jpg",
+              "/images/auto-gmc-yukon-white-shop.jpg",
+              "/images/auto-jeep-grand-cherokee-shop.jpg",
             ].map((src, i) => (
               <div key={i} className="relative aspect-square overflow-hidden">
                 <Image

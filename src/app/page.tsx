@@ -70,18 +70,18 @@ const services = [
 
 const stats = [
   { value: "5+", label: "Years in Business" },
-  { value: "1000+", label: "Vehicles Tinted" },
+  { value: "10,000+", label: "Vehicles Tinted" },
   { value: "2", label: "Locations" },
   { value: "5★", label: "Rated Service" },
 ];
 
 const galleryPreview = [
-  { src: "/images/auto-corvette-red-exterior.jpg", alt: "Red Corvette tinted" },
-  { src: "/images/auto-gmc-yukon-black-side.jpg", alt: "Black GMC Yukon" },
-  { src: "/images/auto-porsche-911-turbo-red.jpg", alt: "Porsche 911 Turbo" },
-  { src: "/images/residential-acadian-white.jpg", alt: "Residential tinting" },
-  { src: "/images/marine-boat-interior-cabin.jpg", alt: "Boat interior wrap" },
-  { src: "/images/process-techs-installing.jpg", alt: "Installation in progress" },
+  { src: "/images/auto-corvette-duo.jpg", alt: "Red and white Corvettes in shop" },
+  { src: "/images/auto-corvette-orange-doors.jpg", alt: "Orange C8 Corvette scissor doors" },
+  { src: "/images/auto-ford-lifted-led.jpg", alt: "Lifted Ford Super Duty with LED underglow" },
+  { src: "/images/auto-gmc-yukon-white-shop.jpg", alt: "White GMC Yukon in shop" },
+  { src: "/images/wraps-vinyl-install.jpg", alt: "Technician applying vinyl wrap" },
+  { src: "/images/wraps-parish-fence-truck.jpg", alt: "Parish Fence & Gates fleet wrap" },
 ];
 
 export default function Home() {

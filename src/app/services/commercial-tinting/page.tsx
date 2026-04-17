@@ -88,10 +88,10 @@ export default function CommercialTintingPage() {
       <section className="bg-[#0a0a0a] pb-4 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
-            { src: "/images/commercial-duplessis-builders.jpg", alt: "Commercial storefront tinting" },
-            { src: "/images/commercial-storefront-brick.jpg", alt: "Brick storefront window film" },
+            { src: "/images/commercial-allout-van.jpg", alt: "All-Out Window Tint van at commercial job" },
+            { src: "/images/commercial-racetrac.jpg", alt: "RaceTrac commercial window tinting" },
             { src: "/images/commercial-state-police.jpg", alt: "Law enforcement fleet tinting" },
-            { src: "/images/commercial-fleet-truck.jpg", alt: "Commercial fleet vehicle tinting" },
+            { src: "/images/wraps-parish-fence-truck.jpg", alt: "Parish Fence & Gates fleet wrap" },
           ].map((img) => (
             <div key={img.src} className="relative aspect-[4/3] overflow-hidden">
               <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />

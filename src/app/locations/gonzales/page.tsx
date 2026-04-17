@@ -230,7 +230,7 @@ export default function GonzalesPage() {
           <div className="grid grid-cols-2 gap-3 content-start">
             {[
               { value: "2020", label: "Founded" },
-              { value: "1000+", label: "Jobs Done" },
+              { value: "10,000+", label: "Jobs Done" },
               { value: "Lifetime", label: "Warranty" },
               { value: "5★", label: "Rated" },
             ].map((stat) => (

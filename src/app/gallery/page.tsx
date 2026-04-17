@@ -12,10 +12,10 @@ const categories = [
   {
     label: "Automotive",
     photos: [
-      { src: "/images/auto-silverado-2500hd-black.jpg", caption: "Chevy Silverado 2500HD" },
-      { src: "/images/auto-corvette-red-exterior.jpg", caption: "C8 Corvette" },
-      { src: "/images/auto-gmc-yukon-black-side.jpg", caption: "GMC Yukon" },
-      { src: "/images/auto-porsche-911-turbo-red.jpg", caption: "Porsche 911 Turbo S" },
+      { src: "/images/auto-corvette-duo.jpg", caption: "C8 Corvettes — Red & White" },
+      { src: "/images/auto-corvette-orange-doors.jpg", caption: "C8 Corvette — Orange" },
+      { src: "/images/auto-ford-lifted-led.jpg", caption: "Lifted Ford Super Duty" },
+      { src: "/images/auto-gmc-yukon-white-shop.jpg", caption: "GMC Yukon" },
       { src: "/images/auto-lincoln-nautilus-black-shop.jpg", caption: "Lincoln Nautilus" },
       { src: "/images/auto-corvette-z06-gray-shop.jpg", caption: "C8 Corvette Z06" },
       { src: "/images/auto-tesla-cybertruck.jpg", caption: "Tesla Cybertruck" },
@@ -62,8 +62,8 @@ const categories = [
   {
     label: "Specialty",
     photos: [
-      { src: "/images/utv-polaris-ranger-camo.jpg", caption: "Polaris Ranger — Camo Wrap" },
-      { src: "/images/utv-canam-defender-outside.jpg", caption: "Can-Am Defender MAX" },
+      { src: "/images/wraps-generator-install.jpg", caption: "Generator Wrap" },
+      { src: "/images/wraps-vinyl-install.jpg", caption: "Vinyl Wrap Installation" },
       { src: "/images/specialty-motorhome-front.jpg", caption: "Entegra Motorhome" },
       { src: "/images/specialty-kubota-tractor.jpg", caption: "Kubota Tractor" },
       { src: "/images/specialty-fifth-wheel.jpg", caption: "Fifth Wheel Trailer" },

@@ -96,9 +96,9 @@ export default function VehicleWrapsPage() {
       <section className="bg-[#0a0a0a] pb-4 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-1">
           {[
-            { src: "/images/utv-polaris-ranger-camo.jpg", alt: "Polaris Ranger camo wrap" },
-            { src: "/images/utv-canam-defender-outside.jpg", alt: "Can-Am Defender wrap" },
-            { src: "/images/process-techs-installing.jpg", alt: "Vehicle wrap installation" },
+            { src: "/images/wraps-parish-fence-truck.jpg", alt: "Parish Fence & Gates fleet wrap" },
+            { src: "/images/wraps-generator-install.jpg", alt: "Generator wrap installation" },
+            { src: "/images/wraps-vinyl-install.jpg", alt: "Technician applying vinyl wrap" },
           ].map((img) => (
             <div key={img.src} className="relative aspect-[4/3] overflow-hidden">
               <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
