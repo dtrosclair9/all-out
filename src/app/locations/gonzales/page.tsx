@@ -231,7 +231,7 @@ export default function GonzalesPage() {
             {[
               { value: "2020", label: "Founded" },
               { value: "10,000+", label: "Jobs Done" },
-              { value: "Lifetime", label: "Warranty" },
+              { value: "5★", label: "Google Rated" },
               { value: "5★", label: "Rated" },
             ].map((stat) => (
               <div key={stat.label} className="bg-[#0a0a0a] p-6 text-center">

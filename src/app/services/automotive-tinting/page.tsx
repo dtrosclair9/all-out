@@ -80,8 +80,7 @@ export default function AutomotiveTintingPage() {
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
             Every make, every model. Professional-grade film installed to a
-            flawless finish — no bubbles, no lifting, backed by a lifetime
-            warranty at both locations.
+            flawless finish — no bubbles, no lifting, expertly installed at both locations.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link
