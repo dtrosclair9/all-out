@@ -11,7 +11,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Baton Rouge",
-  description: "Marine window tinting and custom interior wraps in Baton Rouge, LA.",
+  description: "Marine window tinting and custom wraps in Baton Rouge, LA.",
   telephone: "+12253811000",
   address: {
     "@type": "PostalAddress",
@@ -44,7 +44,7 @@ export default function MarineTintingBatonRougePage() {
             <br />IN BATON ROUGE, LA
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
-            Marine-grade window tinting and custom interior wraps for Baton
+            Marine-grade window tinting and custom wraps for Baton
             Rouge boaters. Pontoons, center consoles, fishing boats, and yachts
             — UV protection and custom styling built for Louisiana waterways.
           </p>
@@ -79,7 +79,7 @@ export default function MarineTintingBatonRougePage() {
                 and reduces glare at the helm.
               </p>
               <p>
-                Ask about our custom interior wraps — vinyl applications for
+                Ask about our custom wraps — vinyl applications for
                 consoles, dashboards, and cabin walls that transform the look
                 of your boat without a full renovation.
               </p>
@@ -96,7 +96,7 @@ export default function MarineTintingBatonRougePage() {
               </div>
             </div>
             <ul className="space-y-3">
-              {["Pontoon & center console tinting", "Bay & offshore fishing boats", "Yacht windows & enclosures", "Custom interior vinyl wraps", "Console & dashboard wraps", "Marine-grade film technology", "UV protection for upholstery & electronics"].map((f) => (
+              {["Pontoon & center console tinting", "Bay & offshore fishing boats", "Yacht windows & enclosures", "Custom vinyl wraps", "Console & dashboard wraps", "Marine-grade film technology", "UV protection for upholstery & electronics"].map((f) => (
                 <li key={f} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#a60303] rounded-full shrink-0 mt-1.5" />
                   <span className="font-body text-[#888888] text-sm">{f}</span>

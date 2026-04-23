@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Marine Tinting & Boat Wraps | All-Out Window Tint",
+  title: "Marine Tinting, Detailing & PPF | All-Out Window Tint",
   description:
-    "Marine window tinting and custom boat wraps in Gonzales and Baton Rouge, LA. Pontoons, center consoles, fishing boats, yachts. Marine-grade film. Call (225) 381-1000.",
+    "Marine tinting, detailing, paint protection film, and custom wraps in Gonzales and Baton Rouge, LA. Full protection for boats and watercraft. Call (225) 381-1000.",
 };
 
 const faqSchema = {
@@ -14,18 +14,34 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What types of boats do you tint?",
+      name: "What types of boats do you service?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We tint pontoons, center consoles, offshore fishing boats, bay boats, ski boats, cruisers, and yacht enclosures. If it has glass, we can tint it.",
+        text: "We service pontoons, center consoles, offshore fishing boats, bay boats, ski boats, cruisers, and yachts. If it floats, we can tint, detail, wrap, or protect it.",
       },
     },
     {
       "@type": "Question",
-      name: "What is a marine interior wrap?",
+      name: "Do you do marine detailing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A marine interior wrap applies vinyl film to interior surfaces like dashboards, consoles, and cabin walls — giving your boat a completely custom look without a paint job. We use marine-grade materials designed to handle moisture, UV exposure, and the rigors of open water.",
+        text: "Yes. We offer full marine detailing services including hull cleaning, polishing, and protection to keep your boat looking its best on and off the water.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you install PPF on boats?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Paint protection film can be applied to boat hulls and exterior surfaces to guard against scratches, scuffs, and UV damage — the same technology used on high-end vehicles, built for the water.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is a marine wrap?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A marine wrap applies vinyl film to interior surfaces like dashboards, consoles, and cabin walls — giving your boat a completely custom look without a paint job. We use marine-grade materials designed to handle moisture, UV exposure, and the rigors of open water.",
       },
     },
     {
@@ -33,7 +49,7 @@ const faqSchema = {
       name: "Is marine window film different from automotive film?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Marine environments involve greater UV exposure, moisture, and salt air. We use marine-grade films designed specifically to handle these conditions and maintain performance and adhesion over the long term.",
+        text: "Yes. Marine environments involve greater UV exposure, moisture, and salt air. We use marine-grade films designed specifically to handle these conditions and maintain adhesion over the long term.",
       },
     },
   ],
@@ -53,19 +69,19 @@ export default function MarineTintingPage() {
           <nav className="flex items-center gap-2 font-body text-xs text-[#555] mb-6">
             <Link href="/services" className="hover:text-[#a60303] transition-colors">Services</Link>
             <span>/</span>
-            <span className="text-white">Marine Tinting & Wraps</span>
+            <span className="text-white">Marine Services</span>
           </nav>
           <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
-            Marine Tinting & Wraps
+            Marine Services
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            MARINE TINTING & WRAPS IN
-            <br />GONZALES & BATON ROUGE, LA
+            MARINE TINTING, DETAILING
+            <br />&amp; PPF IN GONZALES &amp; BATON ROUGE
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
-            Built for the water. Marine-grade window tinting and custom interior
-            wraps for pontoons, center consoles, fishing boats, and yachts.
-            Protection that handles sun, salt, and open water.
+            Full-service marine protection. Window tinting, detailing, paint
+            protection film, and custom wraps for boats and watercraft
+            of every kind — built to handle sun, salt, and open water.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link
@@ -89,7 +105,7 @@ export default function MarineTintingPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
             { src: "/images/marine-fountain-boat-red.jpg", alt: "Fountain performance boat — red and black" },
-            { src: "/images/marine-boat-interior-cabin.jpg", alt: "Boat interior wrap" },
+            { src: "/images/marine-boat-interior-cabin.jpg", alt: "Boat wrap" },
             { src: "/images/marine-chaparral-boat.jpg", alt: "Chaparral boat tinting" },
             { src: "/images/marine-center-console-helm.jpg", alt: "Center console helm wrap" },
           ].map((img) => (
@@ -112,22 +128,24 @@ export default function MarineTintingPage() {
               <p>
                 Boats face some of the most demanding conditions of any vehicle —
                 direct sun all day, UV exposure with no shade, salt air, and
-                constant heat building inside an enclosed space. Standard film
-                isn&apos;t designed to handle that. Marine-grade film is.
+                constant heat building inside an enclosed space. We offer
+                everything your boat needs to stay protected and looking sharp.
               </p>
               <p>
-                Our marine tinting keeps the interior of your cabin, enclosure,
-                and helm area significantly cooler, protects upholstery and
-                electronics from UV damage, and reduces glare on the water. For
-                windshields and side glass, we use films built to maintain
-                adhesion in wet, high-UV marine environments.
+                Our marine detailing service restores and protects the hull,
+                gel coat, and exterior surfaces. We clean, polish, and treat
+                every surface the right way — no shortcuts. For paint protection
+                film, we apply the same technology used on exotic cars directly
+                to boat hulls and exterior surfaces, guarding against scratches,
+                scuffs, and UV degradation.
               </p>
               <p>
-                We also specialize in custom interior wraps — applying premium
-                vinyl to consoles, dashboards, walls, and cabin surfaces to
-                give your boat a completely custom look without a full
-                renovation. Marble, carbon fiber, solid color, custom patterns
-                — if you can imagine it, we can install it.
+                We also do marine window tinting using marine-grade film built
+                for moisture, UV, and salt air — keeping interiors cooler and
+                protecting upholstery and electronics. And for custom interior
+                wraps, we apply premium vinyl to consoles, dashboards, cabin
+                walls, and surfaces. Marble, carbon fiber, solid color, custom
+                patterns — if you can imagine it, we can install it.
               </p>
             </div>
           </div>
@@ -135,16 +153,16 @@ export default function MarineTintingPage() {
             <h3 className="font-display text-white text-xl font-bold mb-6 tracking-wide">MARINE SERVICES</h3>
             <ul className="space-y-3">
               {[
-                "Pontoon & center console tinting",
+                "Marine detailing — hull cleaning, polishing & protection",
+                "Paint protection film (PPF) for hulls & exterior surfaces",
+                "Marine window tinting — pontoons, center consoles, yachts",
                 "Offshore & bay fishing boats",
                 "Ski boats & cruisers",
                 "Yacht window & enclosure film",
-                "Custom interior vinyl wraps",
+                "Custom vinyl wraps",
                 "Console & dashboard wraps",
                 "Cabin wall & surface wraps",
-                "Marine-grade film technology",
                 "UV protection for upholstery & electronics",
-                "Anti-glare film for helm areas",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#a60303] rounded-full shrink-0 mt-1.5" />
@@ -161,7 +179,7 @@ export default function MarineTintingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">Two Locations</p>
-            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">MARINE TINTING NEAR YOU</h2>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">MARINE SERVICES NEAR YOU</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#242424]">
             {[
@@ -186,7 +204,7 @@ export default function MarineTintingPage() {
                   href={loc.href}
                   className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
                 >
-                  Marine Tinting in {loc.city} →
+                  Marine Services in {loc.city} →
                 </Link>
               </div>
             ))}
@@ -204,16 +222,24 @@ export default function MarineTintingPage() {
           <div className="space-y-0 divide-y divide-[#242424]">
             {[
               {
-                q: "What types of boats do you tint?",
-                a: "We tint pontoons, center consoles, offshore fishing boats, bay boats, ski boats, cruisers, and yacht enclosures. If it has glass, we can tint it.",
+                q: "What types of boats do you service?",
+                a: "We service pontoons, center consoles, offshore fishing boats, bay boats, ski boats, cruisers, and yachts. If it floats, we can tint, detail, wrap, or protect it.",
               },
               {
-                q: "What is a marine interior wrap?",
-                a: "A marine interior wrap applies vinyl film to interior surfaces — dashboards, consoles, cabin walls — giving your boat a completely custom look without a paint job. We use marine-grade materials built for moisture, UV, and open water.",
+                q: "Do you do marine detailing?",
+                a: "Yes. We offer full marine detailing including hull cleaning, polishing, and protection to keep your boat looking its best on and off the water.",
+              },
+              {
+                q: "Do you install PPF on boats?",
+                a: "Yes. Paint protection film can be applied to boat hulls and exterior surfaces to guard against scratches, scuffs, and UV damage — the same technology used on exotic cars, built for the water.",
+              },
+              {
+                q: "What is a marine wrap?",
+                a: "A marine wrap applies vinyl film to interior surfaces — dashboards, consoles, cabin walls — giving your boat a completely custom look without a paint job. We use marine-grade materials built for moisture, UV, and open water.",
               },
               {
                 q: "Is marine window film different from automotive film?",
-                a: "Yes. Marine environments involve greater UV exposure, moisture, and sometimes salt air. We use marine-grade films designed specifically to handle these conditions and maintain adhesion long-term.",
+                a: "Yes. Marine environments involve greater UV exposure, moisture, and salt air. We use marine-grade films designed specifically to handle these conditions and maintain adhesion long-term.",
               },
             ].map((item) => (
               <div key={item.q} className="py-6">
@@ -228,10 +254,10 @@ export default function MarineTintingPage() {
       {/* CTA */}
       <section className="bg-[#a60303] py-16 px-6 text-center">
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">
-          READY TO UPGRADE YOUR BOAT?
+          READY TO PROTECT YOUR BOAT?
         </h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">
-          Marine tinting and custom wraps at both locations. Get a free estimate today.
+          Marine tinting, detailing, PPF, and wraps at both locations. Get a free estimate today.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">

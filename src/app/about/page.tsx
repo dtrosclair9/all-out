@@ -9,14 +9,13 @@ export const metadata: Metadata = {
     "Meet the team behind All-Out Window Tint. Family owned and operated with two locations in Gonzales and Baton Rouge, LA since 2020.",
 };
 
-// Update names/roles here when ready
 const team = [
-  { img: "/images/team-member-5.jpg", name: "Team Member", role: "Installer" },
-  { img: "/images/team-member-6.jpg", name: "Team Member", role: "Installer" },
-  { img: "/images/team-member-1.jpg", name: "Team Member", role: "Installer" },
-  { img: "/images/team-member-2.jpg", name: "Team Member", role: "Installer" },
-  { img: "/images/team-member-3.jpg", name: "Team Member", role: "Installer" },
-  { img: "/images/team-member-4.jpg", name: "Team Member", role: "Installer" },
+  { img: "/images/team-member-6.jpg", name: "Dax", role: "Owner" },
+  { img: "/images/team-member-5.jpg", name: "Bradley", role: "Managing Partner" },
+  { img: "/images/team-member-1.jpg", name: "Mike", role: "General Manager" },
+  { img: "/images/team-member-2.jpg", name: "Carina", role: "Asst. Manager" },
+  { img: "/images/team-member-4.jpg", name: "John", role: "Creative Director & Brand Ambassador" },
+  { img: "/images/team-member-3.jpg", name: "Jesus", role: "Detailer / PPF & Vinyl Apprentice" },
 ];
 
 const values = [
@@ -225,14 +224,20 @@ export default function AboutPage() {
           {/* Individual grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {team.map((member, i) => (
-              <div key={i} className="overflow-hidden group">
-                <Image
-                  src={member.img}
-                  alt={member.name}
-                  width={1456}
-                  height={816}
-                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-                />
+              <div key={i} className="group">
+                <div className="overflow-hidden">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    width={1456}
+                    height={816}
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="pt-3 pb-1">
+                  <p className="font-display text-white text-sm font-bold">{member.name}</p>
+                  <p className="font-body text-[#a60303] text-xs tracking-wide uppercase">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>

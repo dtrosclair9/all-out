@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Marine Window Tinting & Wraps in Gonzales, LA | All-Out Window Tint",
   description:
-    "Marine window tinting and custom boat interior wraps in Gonzales, LA. Pontoons, center consoles, fishing boats. Marine-grade film. Call (225) 381-1000.",
+    "Marine window tinting and custom boat wraps in Gonzales, LA. Pontoons, center consoles, fishing boats. Marine-grade film. Call (225) 381-1000.",
 };
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Gonzales",
-  description: "Marine window tinting and custom interior wraps in Gonzales, LA.",
+  description: "Marine window tinting and custom wraps in Gonzales, LA.",
   telephone: "+12253811000",
   address: {
     "@type": "PostalAddress",
@@ -45,7 +45,7 @@ export default function MarineTintingGonzalesPage() {
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
             Protect your boat from the Louisiana sun. Marine-grade window
-            tinting and custom interior wraps for pontoons, center consoles,
+            tinting and custom wraps for pontoons, center consoles,
             fishing boats, and yachts — from our Gonzales shop.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
@@ -78,7 +78,7 @@ export default function MarineTintingGonzalesPage() {
                 cruisers, and yacht enclosures.
               </p>
               <p>
-                We also do custom vinyl interior wraps for consoles, dashboards,
+                We also do custom vinyl wraps for consoles, dashboards,
                 cabin walls, and helm stations — transforming the interior of
                 your boat without a full renovation.
               </p>
@@ -95,7 +95,7 @@ export default function MarineTintingGonzalesPage() {
               </div>
             </div>
             <ul className="space-y-3">
-              {["Pontoon & center console tinting", "Offshore & bay fishing boats", "Yacht windows & enclosures", "Custom interior vinyl wraps", "Console & dashboard wraps", "Marine-grade film technology", "UV protection for upholstery"].map((f) => (
+              {["Pontoon & center console tinting", "Offshore & bay fishing boats", "Yacht windows & enclosures", "Custom vinyl wraps", "Console & dashboard wraps", "Marine-grade film technology", "UV protection for upholstery"].map((f) => (
                 <li key={f} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#a60303] rounded-full shrink-0 mt-1.5" />
                   <span className="font-body text-[#888888] text-sm">{f}</span>
@@ -119,7 +119,7 @@ export default function MarineTintingGonzalesPage() {
 
       <section className="bg-[#a60303] py-16 px-6 text-center">
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">PROTECT YOUR BOAT IN GONZALES</h2>
-        <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Marine tinting and custom interior wraps. Free estimates — come see us on Cannon Road.</p>
+        <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Marine tinting and custom wraps. Free estimates — come see us on Cannon Road.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
           <Link href="/contact" className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200">Free Estimate</Link>

@@ -121,18 +121,18 @@ We work with all types of film — from standard dyed to the highest-grade ceram
   },
   {
     id: "marine",
-    title: "Marine Tinting & Wraps",
+    title: "Marine Services",
     headline: "Built for the Water.",
-    desc: `Boats face some of the harshest conditions out there — direct sun, salt air, constant UV exposure. Our marine-grade films are designed to handle it all, protecting your investment and keeping the interior cool.
-
-We also do custom interior wraps, giving the inside of your cabin or hardtop a completely custom look.`,
+    desc: `Boats face some of the harshest conditions out there — direct sun, salt air, constant UV exposure. We offer a full range of marine services: tinting, detailing, paint protection film, and custom wraps — everything your boat needs to look sharp and stay protected.`,
     features: [
-      "Pontoon & center console boats",
-      "Offshore fishing boats",
+      "Marine window tinting",
+      "Marine detailing & hull care",
+      "Paint protection film (PPF) for boats",
+      "Custom interior vinyl wraps",
+      "Console & dashboard wraps",
       "Yacht windows & enclosures",
-      "Custom interior wraps",
       "Marine-grade film technology",
-      "UV protection for upholstery",
+      "UV protection for upholstery & electronics",
     ],
     images: [
       "/images/marine-boat-interior-cabin.jpg",
