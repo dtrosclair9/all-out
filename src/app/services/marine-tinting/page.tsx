@@ -86,8 +86,9 @@ export default function MarineTintingPage() {
 
       {/* Images */}
       <section className="bg-[#0a0a0a] pb-4 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-1">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
+            { src: "/images/marine-fountain-boat-red.jpg", alt: "Fountain performance boat — red and black" },
             { src: "/images/marine-boat-interior-cabin.jpg", alt: "Boat interior wrap" },
             { src: "/images/marine-chaparral-boat.jpg", alt: "Chaparral boat tinting" },
             { src: "/images/marine-center-console-helm.jpg", alt: "Center console helm wrap" },

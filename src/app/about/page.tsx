@@ -304,12 +304,12 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
             {[
-              "/images/auto-corvette-duo.jpg",
+              "/images/auto-jeep-cherokee-hex-shop.jpg",
+              "/images/auto-sports-car-baton-rouge-shop.jpg",
               "/images/auto-corvette-orange-doors.jpg",
               "/images/auto-ford-lifted-led.jpg",
-              "/images/auto-corvette-white-shop.jpg",
+              "/images/marine-fountain-boat-red.jpg",
               "/images/auto-gmc-yukon-white-shop.jpg",
-              "/images/auto-jeep-grand-cherokee-shop.jpg",
             ].map((src, i) => (
               <div key={i} className="relative aspect-square overflow-hidden">
                 <Image

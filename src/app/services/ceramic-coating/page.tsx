@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ceramic Coating in Gonzales & Baton Rouge, LA | All-Out Window Tint",
   description:
-    "System X ceramic coating in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation. Permanent UV and hydrophobic protection. Free quotes at both locations. Call (225) 381-1000.",
+    "Authorized System X ceramic coating installer in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation protection. Lifetime warranty available. Free quotes at both locations. Call (225) 381-1000.",
 };
 
 const faqSchema = {
@@ -71,7 +72,7 @@ export default function CeramicCoatingPage() {
             <span className="text-white">Ceramic Coating</span>
           </nav>
           <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
-            System X Ceramic Coating
+            Authorized System X Installer
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
             CERAMIC COATING IN
@@ -99,6 +100,34 @@ export default function CeramicCoatingPage() {
         </div>
       </section>
 
+      {/* System X hero graphic */}
+      <section className="bg-[#0a0a0a] pb-0">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="relative w-full overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+              {/* Left: Lamborghini graphic */}
+              <div className="relative aspect-square overflow-hidden">
+                <Image
+                  src="/images/system-x-logo.jpg"
+                  alt="System X Ceramic Protection — red Lamborghini"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+              {/* Right: text only */}
+              <div className="relative bg-[#1a1a1a] flex items-center justify-center p-8 md:p-12">
+                <div>
+                  <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-xs mb-4">Authorized Installer</p>
+                  <p className="font-display text-white text-xl md:text-2xl font-bold leading-tight">
+                    WE USE SYSTEM X.<br />BECAUSE THE BEST PRODUCTS<br />GET THE BEST RESULTS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Intro */}
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -116,11 +145,12 @@ export default function CeramicCoatingPage() {
                 doesn&apos;t wear off in a few weeks — it lasts for years.
               </p>
               <p>
-                We use System X — a professional-grade product line trusted by
-                detailers, dealers, and fleet operators across the country. There
-                are three lines: automotive, marine, and aviation, each engineered
-                specifically for its environment. We&apos;re applying the right
-                product to the right surface, not a one-size-fits-all coat.
+                We chose System X because it&apos;s one of the most trusted
+                professional-grade ceramic coating brands in the industry.
+                System X engineers a dedicated product for automotive, marine,
+                and aviation surfaces — each formulated for the specific demands
+                of that environment. We&apos;re applying the right product to the
+                right surface every time.
               </p>
               <p>
                 Prep work is everything. Before we apply a single drop of
@@ -158,8 +188,18 @@ export default function CeramicCoatingPage() {
       {/* System X product lines */}
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-7xl mx-auto">
+          {/* System X logo banner */}
+          <div className="flex justify-center mb-12">
+            <Image
+              src="/images/system-x-banner.jpg"
+              alt="System X Ceramic Protection"
+              width={1200}
+              height={630}
+              className="w-full max-w-2xl h-auto"
+            />
+          </div>
+
           <div className="text-center mb-14">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">System X Ceramic Protection</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">THREE LINES. ONE STANDARD.</h2>
             <p className="font-body text-[#888888] text-base mt-4 max-w-xl mx-auto">
               System X engineers a dedicated product for each environment — automotive, marine, and aviation. We carry and apply all three.
@@ -171,7 +211,7 @@ export default function CeramicCoatingPage() {
                 line: "Automotive",
                 product: "System X Automotive Protection",
                 warranty: "Lifetime Warranty",
-                desc: "The flagship coating for cars, trucks, SUVs, and exotics. Bonds to painted surfaces, glass, trim, and wheels. A permanent shield against the elements, Louisiana heat, and road contamination.",
+                desc: "The flagship coating for cars, trucks, SUVs, and exotics. Bonds to painted surfaces, glass, trim, and wheels. A permanent shield against Louisiana heat, road contamination, and UV exposure.",
                 features: [
                   "Paint, glass, trim & wheels",
                   "Hydrophobic self-cleaning effect",
@@ -230,6 +270,34 @@ export default function CeramicCoatingPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Authorized installer callout */}
+      <section className="bg-[#0a0a0a] py-16 px-6 border-y border-[#1e1e1e]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <div className="shrink-0">
+            <Image
+              src="/images/system-x-banner.jpg"
+              alt="System X Ceramic Protection"
+              width={400}
+              height={210}
+              className="w-64 h-auto"
+            />
+          </div>
+          <div>
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-xs mb-3">Why It Matters</p>
+            <h2 className="font-display text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
+              AUTHORIZED SYSTEM X INSTALLER
+            </h2>
+            <p className="font-body text-[#888888] text-sm leading-relaxed max-w-2xl">
+              System X is a professional-only product — it&apos;s not available off the shelf.
+              As an authorized installer, All-Out Window Tint applies System X using the
+              manufacturer&apos;s protocols and prep standards so the coating performs exactly
+              as designed. That means you get the full warranty backing and the results
+              System X is known for — not a DIY knockoff at a premium price.
+            </p>
           </div>
         </div>
       </section>
@@ -338,7 +406,7 @@ export default function CeramicCoatingPage() {
               },
               {
                 q: "What is System X?",
-                a: "System X is a professional-grade ceramic coating brand widely trusted by detailers, dealers, and fleet operators nationwide. We use System X's automotive, marine, and aviation product lines — each formulated specifically for the demands of those surfaces and environments.",
+                a: "System X is a professional-grade ceramic coating brand widely trusted by detailers, dealers, and fleet operators nationwide. As an authorized installer, we use System X's automotive, marine, and aviation product lines — each formulated specifically for the demands of those surfaces and environments.",
               },
               {
                 q: "How long does ceramic coating last?",

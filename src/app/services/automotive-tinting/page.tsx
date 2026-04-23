@@ -103,10 +103,10 @@ export default function AutomotiveTintingPage() {
       <section className="bg-[#0a0a0a] pb-4 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1">
           {[
+            { src: "/images/auto-jeep-cherokee-hex-shop.jpg", alt: "Jeep Grand Cherokee in shop with hexagon lighting" },
             { src: "/images/auto-corvette-orange-doors.jpg", alt: "Orange C8 Corvette" },
             { src: "/images/auto-corvette-duo.jpg", alt: "Red and white Corvettes in shop" },
             { src: "/images/auto-ford-lifted-led.jpg", alt: "Lifted Ford Super Duty" },
-            { src: "/images/auto-gmc-yukon-white-shop.jpg", alt: "White GMC Yukon" },
           ].map((img) => (
             <div key={img.src} className="relative aspect-[4/3] overflow-hidden">
               <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />

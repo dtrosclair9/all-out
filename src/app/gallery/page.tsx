@@ -12,15 +12,23 @@ const categories = [
   {
     label: "Automotive",
     photos: [
+      { src: "/images/auto-escalade-black-shop.jpg", caption: "Cadillac Escalade" },
+      { src: "/images/auto-corvette-suicide-doors.jpg", caption: "Corvette ZR1 — Suicide Doors" },
+      { src: "/images/auto-jeep-cherokee-hex-shop.jpg", caption: "Jeep Grand Cherokee — Gonzales Shop" },
+      { src: "/images/auto-sports-car-baton-rouge-shop.jpg", caption: "Tesla — Baton Rouge Shop" },
+      { src: "/images/auto-yukon-denali-white-ladder.jpg", caption: "GMC Yukon Denali" },
+      { src: "/images/auto-ford-expedition-white-shop.jpg", caption: "Ford Expedition" },
+      { src: "/images/auto-ford-f250-white-shop.jpg", caption: "Ford F-250 Super Duty" },
       { src: "/images/auto-corvette-duo.jpg", caption: "C8 Corvettes — Red & White" },
       { src: "/images/auto-corvette-orange-doors.jpg", caption: "C8 Corvette — Orange" },
       { src: "/images/auto-ford-lifted-led.jpg", caption: "Lifted Ford Super Duty" },
       { src: "/images/auto-gmc-yukon-white-shop.jpg", caption: "GMC Yukon" },
+      { src: "/images/auto-suv-baton-rouge-shop.jpg", caption: "Infiniti — Baton Rouge Shop" },
+      { src: "/images/auto-yukon-denali-tint-rear.jpg", caption: "Yukon Denali — Tint Detail" },
       { src: "/images/auto-lincoln-nautilus-black-shop.jpg", caption: "Lincoln Nautilus" },
       { src: "/images/auto-corvette-z06-gray-shop.jpg", caption: "C8 Corvette Z06" },
       { src: "/images/auto-tesla-cybertruck.jpg", caption: "Tesla Cybertruck" },
       { src: "/images/auto-jeep-wrangler-rubicon.jpg", caption: "Jeep Wrangler Rubicon 392" },
-      { src: "/images/auto-cadillac-escalade-detail.jpg", caption: "Cadillac Escalade" },
       { src: "/images/auto-mercedes-g63-black.jpg", caption: "Mercedes G63 AMG" },
       { src: "/images/auto-ford-f150-king-ranch.jpg", caption: "Ford F-150 King Ranch" },
       { src: "/images/auto-genesis-g80-shop.jpg", caption: "Genesis G80" },
@@ -51,6 +59,7 @@ const categories = [
   {
     label: "Marine",
     photos: [
+      { src: "/images/marine-fountain-boat-red.jpg", caption: "Fountain Performance Boat" },
       { src: "/images/marine-boat-interior-cabin.jpg", caption: "Boat Interior Marble Wrap" },
       { src: "/images/marine-boat-interior-helm.jpg", caption: "Helm Wrap Detail" },
       { src: "/images/marine-chaparral-boat.jpg", caption: "Chaparral — Marine Tint" },

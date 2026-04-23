@@ -27,7 +27,7 @@ const services = [
     icon: (
       <path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z" />
     ),
-    image: "/images/utv-polaris-ranger-camo.jpg",
+    image: "/images/wraps-nissan-titan-shop.jpg",
     href: "/services/vehicle-wraps",
   },
   {
@@ -45,7 +45,8 @@ const services = [
     icon: (
       <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-8l-2.08-5.99zM6.5 16a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM5 11l1.5-4.5h11L19 11H5z" />
     ),
-    image: "/images/auto-silverado-2500hd-black.jpg",
+    image: "/images/auto-escalade-black-shop.jpg",
+    imagePosition: "center 70%",
     href: "/services/automotive-tinting",
   },
   {
@@ -54,7 +55,7 @@ const services = [
     icon: (
       <path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 11V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v5l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v4.43l-6-1.93-6 1.93V6z" />
     ),
-    image: "/images/marine-boat-interior-cabin.jpg",
+    image: "/images/marine-fountain-boat-red.jpg",
     href: "/services/marine-tinting",
   },
   {
@@ -76,12 +77,12 @@ const stats = [
 ];
 
 const galleryPreview = [
-  { src: "/images/auto-corvette-duo.jpg", alt: "Red and white Corvettes in shop" },
+  { src: "/images/auto-jeep-cherokee-hex-shop.jpg", alt: "Jeep Grand Cherokee in shop with hexagon lighting" },
+  { src: "/images/auto-sports-car-baton-rouge-shop.jpg", alt: "Tesla in Baton Rouge shop" },
   { src: "/images/auto-corvette-orange-doors.jpg", alt: "Orange C8 Corvette scissor doors" },
   { src: "/images/auto-ford-lifted-led.jpg", alt: "Lifted Ford Super Duty with LED underglow" },
-  { src: "/images/auto-gmc-yukon-white-shop.jpg", alt: "White GMC Yukon in shop" },
   { src: "/images/wraps-vinyl-install.jpg", alt: "Technician applying vinyl wrap" },
-  { src: "/images/wraps-parish-fence-truck.jpg", alt: "Parish Fence & Gates fleet wrap" },
+  { src: "/images/marine-fountain-boat-red.jpg", alt: "Fountain performance boat — red and black" },
 ];
 
 export default function Home() {
@@ -164,6 +165,7 @@ export default function Home() {
                     alt={service.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    style={{ objectPosition: service.imagePosition || "center center" }}
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                 </div>
