@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automotive Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Best automotive window tinting in Baton Rouge, LA. Ceramic, carbon & dyed film. Serving Central, Denham Springs & East Baton Rouge Parish. Call (225) 381-1000.",
+    "Best automotive window tinting in Baton Rouge, LA. Ceramic, carbon & dyed film. Serving Central, Denham Springs & East Baton Rouge Parish. Call (225) 251-9184.",
 };
 
 const schema = {
@@ -13,7 +13,7 @@ const schema = {
   name: "All-Out Window Tint — Baton Rouge",
   description: "Professional automotive window tinting in Baton Rouge, LA.",
   image: "https://alloutwindowtint.com/images/logo-primary.png",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "7987 Pecue Lane, Suite 7G",
@@ -62,7 +62,7 @@ export default function AutomotiveTintingBatonRougePage() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/contact" className="font-display tracking-widest uppercase bg-[#a60303] hover:bg-[#cc0404] text-white px-8 py-4 text-sm transition-colors duration-200">Get a Free Quote</Link>
-            <a href="tel:2253811000" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+            <a href="tel:2252519184" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           </div>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function AutomotiveTintingBatonRougePage() {
                   <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                   </svg>
-                  <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors">(225) 381-1000</a>
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors">(225) 251-9184</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -160,7 +160,7 @@ export default function AutomotiveTintingBatonRougePage() {
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">TINT YOUR CAR IN BATON ROUGE</h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Free estimates. Same-day quotes. Come see us on Pecue Lane.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+          <a href="tel:2252519184" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           <Link href="/contact" className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200">Free Estimate</Link>
         </div>
       </section>

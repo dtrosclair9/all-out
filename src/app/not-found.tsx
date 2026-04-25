@@ -21,10 +21,10 @@ export default function NotFound() {
           Back to Home
         </Link>
         <a
-          href="tel:2253811000"
+          href="tel:2252519184"
           className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200"
         >
-          (225) 381-1000
+          (225) 251-9184
         </a>
       </div>
       <div className="mt-16 w-px h-24 bg-gradient-to-b from-[#a60303] to-transparent" />

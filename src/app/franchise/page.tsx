@@ -102,10 +102,10 @@ export default function FranchisePage() {
                 ))}
               </div>
               <a
-                href="tel:2253811000"
+                href="tel:2252519184"
                 className="font-display tracking-widest uppercase border border-white/20 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200 inline-block"
               >
-                Call Us Directly — (225) 381-1000
+                Call Us Directly — (225) 251-9184
               </a>
             </div>
 
@@ -124,7 +124,7 @@ export default function FranchisePage() {
                   <p className="font-display text-white text-lg font-bold mb-2">INQUIRY RECEIVED</p>
                   <p className="font-body text-[#888888] text-sm leading-relaxed">
                     Dax or Reed will be in touch shortly. If you&apos;d prefer to talk now, call{" "}
-                    <a href="tel:2253811000" className="text-[#a60303]">(225) 381-1000</a>.
+                    <a href="tel:2252519184" className="text-[#a60303]">(225) 251-9184</a>.
                   </p>
                 </div>
               ) : (
@@ -453,10 +453,10 @@ export default function FranchisePage() {
               Submit an Inquiry
             </a>
             <a
-              href="tel:2253811000"
+              href="tel:2252519184"
               className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200"
             >
-              (225) 381-1000
+              (225) 251-9184
             </a>
           </div>
         </div>
@@ -516,10 +516,10 @@ export default function FranchisePage() {
             Submit Inquiry
           </a>
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200"
           >
-            (225) 381-1000
+            (225) 251-9184
           </a>
           <Link
             href="/about"

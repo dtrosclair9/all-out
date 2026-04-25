@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Paint Protection Film (PPF) in Gonzales, LA | All-Out Window Tint",
   description:
-    "PPF installation in Gonzales, LA. Self-healing paint protection film guards your finish against rock chips and road debris. Serving Ascension Parish. Call (225) 381-1000.",
+    "PPF installation in Gonzales, LA. Self-healing paint protection film guards your finish against rock chips and road debris. Serving Ascension Parish. Call (225) 251-9184.",
 };
 
 const schema = {
@@ -12,7 +12,7 @@ const schema = {
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Gonzales",
   description: "Paint protection film (PPF) installation in Gonzales, LA.",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "43469 Cannon Road",
@@ -50,7 +50,7 @@ export default function PPFGonzalesPage() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/contact" className="font-display tracking-widest uppercase bg-[#a60303] hover:bg-[#cc0404] text-white px-8 py-4 text-sm transition-colors duration-200">Get a Free Quote</Link>
-            <a href="tel:2253811000" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+            <a href="tel:2252519184" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function PPFGonzalesPage() {
               <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-4">Gonzales Location</p>
               <div className="space-y-3">
                 <a href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">43469 Cannon Road, Gonzales, LA 70737</a>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 381-1000</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 251-9184</a>
                 <p className="font-body text-[#888888] text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function PPFGonzalesPage() {
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">PROTECT YOUR PAINT IN GONZALES</h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Free PPF estimates. Cannon Road, Gonzales. Same-day quotes.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+          <a href="tel:2252519184" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           <Link href="/contact" className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200">Free Estimate</Link>
         </div>
       </section>

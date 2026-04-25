@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Residential Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Residential window tinting in Gonzales, LA. Keep your home cooler and cut energy costs. Serving Prairieville, Sorrento & Ascension Parish. Call (225) 381-1000.",
+    "Residential window tinting in Gonzales, LA. Keep your home cooler and cut energy costs. Serving Prairieville, Sorrento & Ascension Parish. Call (225) 251-9184.",
 };
 
 const schema = {
@@ -12,7 +12,7 @@ const schema = {
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Gonzales",
   description: "Professional residential window tinting in Gonzales, LA. Serving Ascension Parish.",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "43469 Cannon Road",
@@ -51,7 +51,7 @@ export default function ResidentialTintingGonzalesPage() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/contact" className="font-display tracking-widest uppercase bg-[#a60303] hover:bg-[#cc0404] text-white px-8 py-4 text-sm transition-colors duration-200">Get a Free Quote</Link>
-            <a href="tel:2253811000" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+            <a href="tel:2252519184" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function ResidentialTintingGonzalesPage() {
               <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-4">Gonzales Location</p>
               <div className="space-y-3">
                 <a href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">43469 Cannon Road, Gonzales, LA 70737</a>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 381-1000</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 251-9184</a>
                 <p className="font-body text-[#888888] text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function ResidentialTintingGonzalesPage() {
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">COOL YOUR GONZALES HOME</h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Free estimates. We schedule around you and complete most homes in one visit.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+          <a href="tel:2252519184" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           <Link href="/contact" className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200">Free Estimate</Link>
         </div>
       </section>

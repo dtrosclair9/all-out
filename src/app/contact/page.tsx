@@ -115,8 +115,8 @@ export default function ContactPage() {
                 <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                 </svg>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
-                  (225) 381-1000
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                  (225) 251-9184
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -160,8 +160,8 @@ export default function ContactPage() {
                 <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                 </svg>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
-                  (225) 381-1000
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                  (225) 251-9184
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -198,8 +198,8 @@ export default function ContactPage() {
                 <p className="font-body text-[#888888] text-sm leading-relaxed">
                   We&apos;ll reach out shortly — usually the same day. If it&apos;s urgent,
                   give us a call at{" "}
-                  <a href="tel:2253811000" className="text-[#a60303] hover:underline">
-                    (225) 381-1000
+                  <a href="tel:2252519184" className="text-[#a60303] hover:underline">
+                    (225) 251-9184
                   </a>.
                 </p>
                 <button
@@ -367,10 +367,10 @@ export default function ContactPage() {
                 Prefer to Call?
               </p>
               <a
-                href="tel:2253811000"
+                href="tel:2252519184"
                 className="font-display text-white text-2xl font-bold hover:text-[#a60303] transition-colors duration-200 block mb-2"
               >
-                (225) 381-1000
+                (225) 251-9184
               </a>
               <p className="font-body text-[#888888] text-sm leading-relaxed">
                 Mon – Fri, 9AM – 5PM. We&apos;re happy to walk you through options

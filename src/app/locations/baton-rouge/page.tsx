@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps in Baton Rouge, LA. Visit All-Out Window Tint at 7987 Pecue Lane, Suite 7G. Call (225) 381-1000.",
+    "Professional window tinting, paint protection film, and vehicle wraps in Baton Rouge, LA. Visit All-Out Window Tint at 7987 Pecue Lane, Suite 7G. Call (225) 251-9184.",
 };
 
 const services = [
@@ -27,7 +27,7 @@ const schema = {
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Baton Rouge",
   image: "https://alloutwindowtint.com/images/logo-primary.png",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "7987 Pecue Lane, Suite 7G",
@@ -110,8 +110,8 @@ export default function BatonRougePage() {
                 </svg>
                 <div>
                   <p className="font-display text-[#888888] tracking-widest uppercase text-xs mb-1">Phone</p>
-                  <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
-                    (225) 381-1000
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                    (225) 251-9184
                   </a>
                 </div>
               </div>

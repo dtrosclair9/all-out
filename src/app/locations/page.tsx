@@ -13,7 +13,7 @@ const locations = [
     state: "LA",
     address: "43469 Cannon Road",
     cityStateZip: "Gonzales, LA 70737",
-    phone: "(225) 381-1000",
+    phone: "(225) 251-9184",
     hours: "Mon – Fri: 9AM – 5PM",
     href: "/locations/gonzales",
     mapQuery: "43469+Cannon+Road,+Gonzales,+LA+70737",
@@ -24,7 +24,7 @@ const locations = [
     state: "LA",
     address: "7987 Pecue Lane, Suite 7G",
     cityStateZip: "Baton Rouge, LA 70809",
-    phone: "(225) 381-1000",
+    phone: "(225) 251-9184",
     hours: "Mon – Fri: 9AM – 5PM",
     href: "/locations/baton-rouge",
     mapQuery: "7987+Pecue+Lane,+Baton+Rouge,+LA+70809",
@@ -82,7 +82,7 @@ export default function LocationsPage() {
                   <svg className="w-4 h-4 text-[#a60303] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                   </svg>
-                  <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
                     {loc.phone}
                   </a>
                 </div>
@@ -141,10 +141,10 @@ export default function LocationsPage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200"
           >
-            (225) 381-1000
+            (225) 251-9184
           </a>
           <Link
             href="/contact"

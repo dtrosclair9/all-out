@@ -177,22 +177,33 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative order-1 lg:order-2">
-            <div className="relative h-[550px]">
+          {/* Images */}
+          <div className="order-1 lg:order-2 flex flex-col gap-4">
+            <div className="relative h-[420px]">
               <Image
                 src="/images/dax-military.jpg"
-                alt="Dax Normand — Co-Owner"
+                alt="Dax Normand in uniform — Navy Corpsman"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="font-body text-[#a60303] text-xs tracking-wider uppercase">Navy Corpsman</p>
+              </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 p-8">
-              <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
-              <p className="font-body text-[#a60303] text-sm tracking-wider uppercase">
-                Co-Owner · Navy Corpsman
-              </p>
+            <div className="relative h-[500px]">
+              <Image
+                src="/images/dax-headshot.jpg"
+                alt="Dax Normand — Co-Owner, All-Out Window Tint"
+                fill
+                className="object-cover"
+                style={{ objectPosition: "center 25%" }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="font-display text-white text-xl font-bold">Dax Normand</p>
+                <p className="font-body text-[#a60303] text-xs tracking-wider uppercase">Co-Owner</p>
+              </div>
             </div>
           </div>
         </div>
@@ -340,10 +351,10 @@ export default function AboutPage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200"
           >
-            (225) 381-1000
+            (225) 251-9184
           </a>
           <Link
             href="/contact"

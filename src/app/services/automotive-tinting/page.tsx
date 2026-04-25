@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automotive Window Tinting | All-Out Window Tint",
   description:
-    "Professional automotive window tinting in Gonzales and Baton Rouge, LA. Cars, trucks, SUVs, and exotics. Precision installation at both locations. Call (225) 381-1000.",
+    "Professional automotive window tinting in Gonzales and Baton Rouge, LA. Cars, trucks, SUVs, and exotics. Precision installation at both locations. Call (225) 251-9184.",
 };
 
 const faqSchema = {
@@ -90,10 +90,10 @@ export default function AutomotiveTintingPage() {
               Get a Free Quote
             </Link>
             <a
-              href="tel:2253811000"
+              href="tel:2252519184"
               className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200 inline-flex items-center gap-2"
             >
-              (225) 381-1000
+              (225) 251-9184
             </a>
           </div>
         </div>
@@ -271,10 +271,10 @@ export default function AutomotiveTintingPage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200"
           >
-            (225) 381-1000
+            (225) 251-9184
           </a>
           <Link
             href="/contact"

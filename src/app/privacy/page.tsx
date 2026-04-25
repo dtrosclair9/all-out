@@ -166,8 +166,8 @@ export default function PrivacyPage() {
               <p>All-Out Window Tint</p>
               <p>43469 Cannon Road, Gonzales, LA 70737</p>
               <p>
-                <a href="tel:2253811000" className="text-[#a60303] hover:underline">
-                  (225) 381-1000
+                <a href="tel:2252519184" className="text-[#a60303] hover:underline">
+                  (225) 251-9184
                 </a>
               </p>
             </div>

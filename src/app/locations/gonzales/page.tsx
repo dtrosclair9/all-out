@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps in Gonzales, LA. Serving Ascension Parish since 2020. Visit All-Out Window Tint at 43469 Cannon Road. Call (225) 381-1000.",
+    "Professional window tinting, paint protection film, and vehicle wraps in Gonzales, LA. Serving Ascension Parish since 2020. Visit All-Out Window Tint at 43469 Cannon Road. Call (225) 251-9184.",
 };
 
 const services = [
@@ -27,7 +27,7 @@ const schema = {
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Gonzales",
   image: "https://alloutwindowtint.com/images/logo-primary.png",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "43469 Cannon Road",
@@ -109,8 +109,8 @@ export default function GonzalesPage() {
                 </svg>
                 <div>
                   <p className="font-display text-[#888888] tracking-widest uppercase text-xs mb-1">Phone</p>
-                  <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
-                    (225) 381-1000
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors duration-200">
+                    (225) 251-9184
                   </a>
                 </div>
               </div>

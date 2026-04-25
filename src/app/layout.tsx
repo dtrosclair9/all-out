@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alloutwindowtint.com"),
   title: "All-Out Window Tint | Gonzales & Baton Rouge, LA",
   description:
-    "Professional window tinting, paint protection film, ceramic coating, and vehicle wraps in Gonzales and Baton Rouge, LA. Two locations. Family owned. Call (225) 381-1000.",
+    "Professional window tinting, paint protection film, ceramic coating, and vehicle wraps in Gonzales and Baton Rouge, LA. Two locations. Family owned. Call (225) 251-9184.",
   keywords:
     "window tinting, PPF, paint protection film, vehicle wraps, ceramic coating, Gonzales LA, Baton Rouge LA, residential tinting, commercial tinting, marine tinting",
   openGraph: {

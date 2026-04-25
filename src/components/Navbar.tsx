@@ -131,13 +131,13 @@ export default function Navbar() {
           </ul>
 
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="inline-flex items-center gap-2 bg-[#a60303] hover:bg-[#cc0404] text-white font-display text-sm tracking-wider uppercase px-5 py-2.5 transition-colors duration-200"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
             </svg>
-            (225) 381-1000
+            (225) 251-9184
           </a>
         </div>
 
@@ -230,10 +230,10 @@ export default function Navbar() {
 
           <li>
             <a
-              href="tel:2253811000"
+              href="tel:2252519184"
               className="inline-flex items-center gap-2 bg-[#a60303] text-white font-display text-sm tracking-wider uppercase px-5 py-2.5 mt-2"
             >
-              (225) 381-1000
+              (225) 251-9184
             </a>
           </li>
         </ul>

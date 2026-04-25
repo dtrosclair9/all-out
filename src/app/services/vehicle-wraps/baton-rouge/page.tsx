@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Vehicle Wraps in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Custom vehicle wraps in Baton Rouge, LA. Full wraps, color changes, fleet graphics, UTVs, and boats. Serving East Baton Rouge Parish. Premium vinyl. Call (225) 381-1000.",
+    "Custom vehicle wraps in Baton Rouge, LA. Full wraps, color changes, fleet graphics, UTVs, and boats. Serving East Baton Rouge Parish. Premium vinyl. Call (225) 251-9184.",
 };
 
 const schema = {
@@ -12,7 +12,7 @@ const schema = {
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Baton Rouge",
   description: "Custom vehicle wraps and vinyl in Baton Rouge, LA.",
-  telephone: "+12253811000",
+  telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
     streetAddress: "7987 Pecue Lane, Suite 7G",
@@ -50,7 +50,7 @@ export default function VehicleWrapsBatonRougePage() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/contact" className="font-display tracking-widest uppercase bg-[#a60303] hover:bg-[#cc0404] text-white px-8 py-4 text-sm transition-colors duration-200">Get a Free Quote</Link>
-            <a href="tel:2253811000" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+            <a href="tel:2252519184" className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function VehicleWrapsBatonRougePage() {
               <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-4">Baton Rouge Location</p>
               <div className="space-y-3">
                 <a href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">7987 Pecue Lane, Suite 7G, Baton Rouge, LA 70809</a>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 381-1000</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 251-9184</a>
                 <p className="font-body text-[#888888] text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function VehicleWrapsBatonRougePage() {
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">LET&apos;S WRAP YOUR RIDE IN BATON ROUGE</h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">Free wrap quotes at our Pecue Lane location. Premium vinyl. Let&apos;s build something.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:2253811000" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 381-1000</a>
+          <a href="tel:2252519184" className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200">(225) 251-9184</a>
           <Link href="/contact" className="font-display tracking-widest uppercase border border-white text-white hover:bg-white hover:text-[#a60303] px-8 py-4 text-sm transition-colors duration-200">Free Estimate</Link>
         </div>
       </section>

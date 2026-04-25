@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ceramic Coating in Gonzales & Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Authorized System X ceramic coating installer in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation protection. Lifetime warranty available. Free quotes at both locations. Call (225) 381-1000.",
+    "Authorized System X ceramic coating installer in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation protection. Lifetime warranty available. Free quotes at both locations. Call (225) 251-9184.",
 };
 
 const faqSchema = {
@@ -91,10 +91,10 @@ export default function CeramicCoatingPage() {
               Get a Free Quote
             </Link>
             <a
-              href="tel:2253811000"
+              href="tel:2252519184"
               className="font-display tracking-widest uppercase border border-white/30 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200"
             >
-              (225) 381-1000
+              (225) 251-9184
             </a>
           </div>
         </div>
@@ -362,14 +362,14 @@ export default function CeramicCoatingPage() {
                 city: "Gonzales",
                 tag: "Original Location",
                 address: "43469 Cannon Road, Gonzales, LA 70737",
-                phone: "(225) 381-1000",
+                phone: "(225) 251-9184",
                 areas: "Serving Prairieville, Sorrento, Geismar & Ascension Parish",
               },
               {
                 city: "Baton Rouge",
                 tag: "Now Open",
                 address: "7987 Pecue Lane, Suite 7G, Baton Rouge, LA 70809",
-                phone: "(225) 381-1000",
+                phone: "(225) 251-9184",
                 areas: "Serving Central, Denham Springs, Walker & East Baton Rouge Parish",
               },
             ].map((loc) => (
@@ -377,7 +377,7 @@ export default function CeramicCoatingPage() {
                 <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-4 inline-block">{loc.tag}</span>
                 <h3 className="font-display text-white text-3xl font-bold mb-3">{loc.city}</h3>
                 <p className="font-body text-white text-sm mb-1">{loc.address}</p>
-                <a href="tel:2253811000" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block mb-2">{loc.phone}</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block mb-2">{loc.phone}</a>
                 <p className="font-body text-[#888888] text-xs mb-6">{loc.areas}</p>
                 <Link
                   href="/contact"
@@ -441,10 +441,10 @@ export default function CeramicCoatingPage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:2253811000"
+            href="tel:2252519184"
             className="font-display tracking-widest uppercase bg-white text-[#a60303] hover:bg-[#f0f0f0] px-8 py-4 text-sm transition-colors duration-200"
           >
-            (225) 381-1000
+            (225) 251-9184
           </a>
           <Link
             href="/contact"
