@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BR_ENDPOINT = "https://formspree.io/f/mwvyerwq";
+const FRANCHISE_ENDPOINT = "https://formspree.io/f/xgodevkj";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { name, email, phone, location, occupation, capital, ownsBusinesss, autExperience, message } = body;
+  const { name, email, phone, location, occupation, capital, ownsBusiness, autoExperience, message } = body;
 
   if (!name || !email || !phone) {
     return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   const [firstName, ...rest] = (name as string).trim().split(" ");
   const lastName = rest.join(" ");
 
-  const res = await fetch(BR_ENDPOINT, {
+  const res = await fetch(FRANCHISE_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
     body: JSON.stringify({
@@ -24,8 +24,8 @@ export async function POST(req: NextRequest) {
       location,
       occupation,
       capital,
-      ownsBusinesss,
-      autExperience,
+      ownsBusiness,
+      autoExperience,
       message,
       service: "Franchise Inquiry",
     }),

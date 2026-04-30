@@ -30,8 +30,8 @@ export default function FranchisePage() {
     location: "",
     occupation: "",
     capital: "",
-    ownsBusinesss: "",
-    autExperience: "",
+    ownsBusiness: "",
+    autoExperience: "",
     message: "",
   });
 
@@ -41,7 +41,7 @@ export default function FranchisePage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function setToggle(field: "ownsBusinesss" | "autExperience", value: string) {
+  function setToggle(field: "ownsBusiness" | "autoExperience", value: string) {
     setForm((prev) => ({ ...prev, [field]: value }));
   }
 
@@ -56,7 +56,7 @@ export default function FranchisePage() {
       });
       if (res.ok) {
         setFormState("success");
-        setForm({ name: "", email: "", phone: "", location: "", occupation: "", capital: "", ownsBusinesss: "", autExperience: "", message: "" });
+        setForm({ name: "", email: "", phone: "", location: "", occupation: "", capital: "", ownsBusiness: "", autoExperience: "", message: "" });
       } else {
         setFormState("error");
       }
@@ -210,9 +210,9 @@ export default function FranchisePage() {
                         {["yes", "no"].map((v) => (
                           <button
                             key={v} type="button"
-                            onClick={() => setToggle("ownsBusinesss", v)}
+                            onClick={() => setToggle("ownsBusiness", v)}
                             className={`flex-1 font-display tracking-widest uppercase text-xs py-3 border transition-colors duration-200 ${
-                              form.ownsBusinesss === v
+                              form.ownsBusiness === v
                                 ? "bg-[#a60303] border-[#a60303] text-white"
                                 : "bg-[#0a0a0a] border-[#2a2a2a] text-[#888888] hover:border-[#a60303]"
                             }`}
@@ -230,9 +230,9 @@ export default function FranchisePage() {
                         {["yes", "no"].map((v) => (
                           <button
                             key={v} type="button"
-                            onClick={() => setToggle("autExperience", v)}
+                            onClick={() => setToggle("autoExperience", v)}
                             className={`flex-1 font-display tracking-widest uppercase text-xs py-3 border transition-colors duration-200 ${
-                              form.autExperience === v
+                              form.autoExperience === v
                                 ? "bg-[#a60303] border-[#a60303] text-white"
                                 : "bg-[#0a0a0a] border-[#2a2a2a] text-[#888888] hover:border-[#a60303]"
                             }`}
