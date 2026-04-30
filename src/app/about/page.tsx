@@ -158,10 +158,10 @@ export default function AboutPage() {
                 be the best at whatever he put his hand to. He served as a Navy
                 Corpsman embedded with the Marines — a role that demands
                 precision, composure, and the kind of discipline you don&apos;t
-                forget. He brought all of that home to Gonzales, Louisiana.
+                forget. He brought all of that home to Baton Rouge, Louisiana.
               </p>
               <p>
-                In May 2020, Dax joined All-Out Window Tint as co-owner, bringing
+                In 2026, Dax joined All-Out Window Tint as co-owner, bringing
                 his military discipline and entrepreneurial drive to the business.
                 As a serial entrepreneur and family man, he puts everything into
                 every venture. But this one is personal. It&apos;s built in the
