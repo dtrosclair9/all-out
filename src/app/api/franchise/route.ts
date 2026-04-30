@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BR_WEBHOOK = "https://services.leadconnectorhq.com/hooks/R5NAXh96Dwhe5fpNW8OO/webhook-trigger/14e2bf88-7443-4317-a8b2-dae154e47f9f";
+const BR_ENDPOINT = "https://formspree.io/f/mwvyerwq";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -13,9 +13,9 @@ export async function POST(req: NextRequest) {
   const [firstName, ...rest] = (name as string).trim().split(" ");
   const lastName = rest.join(" ");
 
-  const res = await fetch(BR_WEBHOOK, {
+  const res = await fetch(BR_ENDPOINT, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
     body: JSON.stringify({
       firstName,
       lastName,

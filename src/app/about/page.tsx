@@ -179,19 +179,8 @@ export default function AboutPage() {
 
           {/* Images */}
           <div className="order-1 lg:order-2 flex flex-col gap-4">
-            <div className="relative h-[420px]">
-              <Image
-                src="/images/dax-military.jpg"
-                alt="Dax Normand in uniform — Navy Corpsman"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="font-body text-[#a60303] text-xs tracking-wider uppercase">Navy Corpsman</p>
-              </div>
-            </div>
-            <div className="relative h-[500px]">
+            {/* Hero — headshot */}
+            <div className="relative h-[560px]">
               <Image
                 src="/images/dax-headshot.jpg"
                 alt="Dax Normand — Co-Owner, All-Out Window Tint"
@@ -199,12 +188,29 @@ export default function AboutPage() {
                 className="object-cover"
                 style={{ objectPosition: "center 25%" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="font-display text-white text-xl font-bold">Dax Normand</p>
+                <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
                 <p className="font-body text-[#a60303] text-xs tracking-wider uppercase">Co-Owner</p>
               </div>
             </div>
+
+            {/* Service photos grid */}
+            <div className="grid grid-cols-4 gap-1">
+              {[
+                { src: "/images/dax-military.jpg", alt: "Dax Normand — Navy Corpsman" },
+                { src: "/images/dax-military-range.jpg", alt: "Dax Normand at the rifle range" },
+                { src: "/images/dax-military-patrol.jpg", alt: "Dax Normand on patrol" },
+                { src: "/images/dax-military-portrait.jpg", alt: "Dax Normand at the rifle range" },
+              ].map((img) => (
+                <div key={img.src} className="relative aspect-square overflow-hidden">
+                  <Image src={img.src} alt={img.alt} fill className="object-cover object-top" />
+                </div>
+              ))}
+            </div>
+            <p className="font-body text-[#555] text-xs tracking-wider uppercase text-center">
+              Dax serving with the Marines at Camp Lejeune
+            </p>
           </div>
         </div>
       </section>
