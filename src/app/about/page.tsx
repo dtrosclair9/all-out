@@ -258,6 +258,25 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+
+          {/* The motivation */}
+          <div className="mt-20 pt-12 border-t border-[#242424] flex flex-col items-center text-center">
+            <div className="relative aspect-[9/16] w-full max-w-sm overflow-hidden">
+              <Image
+                src="/images/dax-son.jpg"
+                alt="Dax's son at the shop"
+                fill
+                sizes="(max-width: 768px) 100vw, 384px"
+                className="object-cover"
+              />
+            </div>
+            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-xs mt-6 mb-2">
+              The Motivation
+            </p>
+            <p className="font-body text-[#888888] text-sm max-w-xs">
+              Dax&apos;s reason for going all out.
+            </p>
+          </div>
         </div>
       </section>
 
