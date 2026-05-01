@@ -81,7 +81,7 @@ const galleryPreview = [
   { src: "/images/auto-sports-car-baton-rouge-shop.jpg", alt: "Tesla in Baton Rouge shop" },
   { src: "/images/auto-corvette-orange-doors.jpg", alt: "Orange C8 Corvette scissor doors" },
   { src: "/images/auto-ford-lifted-led.jpg", alt: "Lifted Ford Super Duty with LED underglow" },
-  { src: "/images/wraps-vinyl-install.jpg", alt: "Technician applying vinyl wrap" },
+  { src: "/images/auto-mercedes-g63-black.jpg", alt: "Mercedes-Benz G63 — black on black" },
   { src: "/images/marine-fountain-boat-red.jpg", alt: "Fountain performance boat — red and black" },
 ];
 
