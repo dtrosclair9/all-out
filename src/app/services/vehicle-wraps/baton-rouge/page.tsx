@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70809",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/vehicle-wraps/baton-rouge",
+  url: "https://all-outwindowtint.com/services/vehicle-wraps/baton-rouge",
 };
 
 export default function VehicleWrapsBatonRougePage() {

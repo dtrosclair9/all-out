@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             </h2>
             <p>
               All-Out Window Tint (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the website
-              alloutwindowtint.com. This policy explains what information we
+              all-outwindowtint.com. This policy explains what information we
               collect when you visit our site or contact us, how we use it, and
               how we protect it. We do not sell your information to anyone.
             </p>

@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70737",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/residential-tinting/gonzales",
+  url: "https://all-outwindowtint.com/services/residential-tinting/gonzales",
   areaServed: ["Gonzales", "Prairieville", "Sorrento", "Geismar", "Ascension Parish"],
 };
 

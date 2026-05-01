@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70809",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/paint-protection-film/baton-rouge",
+  url: "https://all-outwindowtint.com/services/paint-protection-film/baton-rouge",
 };
 
 export default function PPFBatonRougePage() {

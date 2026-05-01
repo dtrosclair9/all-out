@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70737",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/marine-tinting/gonzales",
+  url: "https://all-outwindowtint.com/services/marine-tinting/gonzales",
 };
 
 export default function MarineTintingGonzalesPage() {

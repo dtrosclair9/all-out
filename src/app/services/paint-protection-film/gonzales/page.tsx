@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70737",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/paint-protection-film/gonzales",
+  url: "https://all-outwindowtint.com/services/paint-protection-film/gonzales",
 };
 
 export default function PPFGonzalesPage() {

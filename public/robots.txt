@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alloutwindowtint.com/sitemap.xml
+Sitemap: https://all-outwindowtint.com/sitemap.xml

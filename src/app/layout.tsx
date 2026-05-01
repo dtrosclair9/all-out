@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alloutwindowtint.com"),
+  metadataBase: new URL("https://all-outwindowtint.com"),
   title: "All-Out Window Tint | Gonzales & Baton Rouge, LA",
   description:
     "Professional window tinting, paint protection film, ceramic coating, and vehicle wraps in Gonzales and Baton Rouge, LA. Two locations. Family owned. Call (225) 251-9184.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "All-Out Window Tint | Gonzales & Baton Rouge, LA",
     description:
       "Professional window tinting, PPF, ceramic coating, and vehicle wraps in Gonzales and Baton Rouge, LA. Two locations. Family owned.",
-    url: "https://alloutwindowtint.com",
+    url: "https://all-outwindowtint.com",
     images: [
       {
         url: "/images/og-default.jpg",

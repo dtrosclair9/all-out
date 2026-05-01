@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70809",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/commercial-tinting/baton-rouge",
+  url: "https://all-outwindowtint.com/services/commercial-tinting/baton-rouge",
 };
 
 export default function CommercialTintingBatonRougePage() {

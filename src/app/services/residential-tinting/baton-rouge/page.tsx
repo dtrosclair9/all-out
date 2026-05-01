@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70809",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/residential-tinting/baton-rouge",
+  url: "https://all-outwindowtint.com/services/residential-tinting/baton-rouge",
   areaServed: ["Baton Rouge", "Central", "Zachary", "Denham Springs", "Walker", "East Baton Rouge Parish"],
 };
 

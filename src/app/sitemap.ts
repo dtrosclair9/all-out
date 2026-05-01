@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://alloutwindowtint.com";
+const BASE_URL = "https://all-outwindowtint.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

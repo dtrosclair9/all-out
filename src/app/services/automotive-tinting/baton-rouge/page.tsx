@@ -12,7 +12,7 @@ const schema = {
   "@type": ["LocalBusiness", "AutomotiveBusiness"],
   name: "All-Out Window Tint — Baton Rouge",
   description: "Professional automotive window tinting in Baton Rouge, LA.",
-  image: "https://alloutwindowtint.com/images/logo-primary.png",
+  image: "https://all-outwindowtint.com/images/logo-primary.png",
   telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
@@ -30,7 +30,7 @@ const schema = {
       closes: "17:00",
     },
   ],
-  url: "https://alloutwindowtint.com/services/automotive-tinting/baton-rouge",
+  url: "https://all-outwindowtint.com/services/automotive-tinting/baton-rouge",
   priceRange: "$$",
   areaServed: ["Baton Rouge", "Central", "Zachary", "Baker", "Denham Springs", "Walker", "Port Allen", "East Baton Rouge Parish"],
 };

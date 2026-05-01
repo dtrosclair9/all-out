@@ -26,7 +26,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "All-Out Window Tint — Baton Rouge",
-  image: "https://alloutwindowtint.com/images/logo-primary.png",
+  image: "https://all-outwindowtint.com/images/logo-primary.png",
   telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
@@ -49,7 +49,7 @@ const schema = {
       closes: "17:00",
     },
   ],
-  url: "https://alloutwindowtint.com/locations/baton-rouge",
+  url: "https://all-outwindowtint.com/locations/baton-rouge",
   priceRange: "$$",
   areaServed: areasServed.map((a) => ({ "@type": "City", name: a })),
 };

@@ -21,7 +21,7 @@ const schema = {
     postalCode: "70737",
     addressCountry: "US",
   },
-  url: "https://alloutwindowtint.com/services/vehicle-wraps/gonzales",
+  url: "https://all-outwindowtint.com/services/vehicle-wraps/gonzales",
 };
 
 export default function VehicleWrapsGonzalesPage() {

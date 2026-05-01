@@ -12,7 +12,7 @@ const schema = {
   "@type": ["LocalBusiness", "AutomotiveBusiness"],
   name: "All-Out Window Tint — Gonzales",
   description: "Professional automotive window tinting in Gonzales, LA. Serving Ascension Parish since 2020.",
-  image: "https://alloutwindowtint.com/images/logo-primary.png",
+  image: "https://all-outwindowtint.com/images/logo-primary.png",
   telephone: "+12252519184",
   address: {
     "@type": "PostalAddress",
@@ -30,7 +30,7 @@ const schema = {
       closes: "17:00",
     },
   ],
-  url: "https://alloutwindowtint.com/services/automotive-tinting/gonzales",
+  url: "https://all-outwindowtint.com/services/automotive-tinting/gonzales",
   priceRange: "$$",
   areaServed: ["Gonzales", "Prairieville", "Sorrento", "Geismar", "Donaldsonville", "St. Amant", "Ascension Parish"],
 };
