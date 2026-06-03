@@ -98,7 +98,7 @@ export default function ResidentialTintingPage() {
           {[
             { src: "/images/residential-pool-home.jpg", alt: "Pool home window tinting" },
             { src: "/images/residential-acadian-white.jpg", alt: "Acadian home tinting" },
-            { src: "/images/residential-acadian-2.jpg", alt: "Residential window film" },
+            { src: "/images/residential-brick-large-window.jpg", alt: "Tinted picture window on a brick home" },
           ].map((img) => (
             <div key={img.src} className="relative aspect-[4/3] overflow-hidden">
               <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
