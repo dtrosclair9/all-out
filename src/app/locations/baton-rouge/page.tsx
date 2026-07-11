@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/locations/baton-rouge",
   title: "Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps in Baton Rouge, LA. Visit All-Out Window Tint at 7987 Pecue Lane, Suite 7G. Call (225) 251-9184.",
-};
+    "Window tinting, paint protection film, ceramic coating, and wraps in Baton Rouge, LA. Visit All-Out Window Tint on Pecue Lane. Call (225) 251-9184 today.",
+});
 
 const services = [
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },

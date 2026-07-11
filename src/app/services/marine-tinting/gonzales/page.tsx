@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/marine-tinting/gonzales",
   title: "Marine Window Tinting & Wraps in Gonzales, LA | All-Out Window Tint",
   description:
-    "Marine window tinting and custom boat wraps in Gonzales, LA. Pontoons, center consoles, fishing boats. Marine-grade film. Call (225) 251-9184.",
-};
+    "Marine window tinting and custom boat wraps in Gonzales, LA. Pontoons, center consoles, and fishing boats with marine-grade film. Call (225) 251-9184 today.",
+});
 
 const schema = {
   "@context": "https://schema.org",

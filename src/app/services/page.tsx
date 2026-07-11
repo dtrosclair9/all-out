@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services",
   title: "Services | All-Out Window Tint — Gonzales & Baton Rouge, LA",
   description:
-    "Window tinting, ceramic coating, paint protection film, and vehicle wraps in Gonzales and Baton Rouge, LA. Automotive, residential, commercial, marine, and aviation. Two locations. Call (225) 251-9184.",
-};
+    "Window tinting, ceramic coating, PPF, and vehicle wraps in Gonzales and Baton Rouge, LA. Automotive, residential, commercial, and marine. Call (225) 251-9184.",
+});
 
 const services = [
   {

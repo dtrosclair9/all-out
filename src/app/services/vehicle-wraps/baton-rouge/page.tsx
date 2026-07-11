@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/vehicle-wraps/baton-rouge",
   title: "Vehicle Wraps in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Custom vehicle wraps in Baton Rouge, LA. Full wraps, color changes, fleet graphics, UTVs, and boats. Serving East Baton Rouge Parish. Premium vinyl. Call (225) 251-9184.",
-};
+    "Custom vehicle wraps in Baton Rouge, LA: full wraps, color changes, fleet graphics, UTVs, and boats in premium vinyl. Call (225) 251-9184 for a free quote.",
+});
 
 const schema = {
   "@context": "https://schema.org",

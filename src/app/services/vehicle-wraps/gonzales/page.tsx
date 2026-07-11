@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/vehicle-wraps/gonzales",
   title: "Vehicle Wraps in Gonzales, LA | All-Out Window Tint",
   description:
-    "Custom vehicle wraps in Gonzales, LA. Full wraps, color changes, fleet graphics, UTVs, and boats. Serving Ascension Parish. Premium vinyl. Call (225) 251-9184.",
-};
+    "Custom vehicle wraps in Gonzales, LA: full wraps, color changes, fleet graphics, UTVs, and boats in premium vinyl. Ascension Parish. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

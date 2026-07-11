@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/commercial-tinting/gonzales",
   title: "Commercial Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Commercial window tinting for storefronts, offices & fleet vehicles in Gonzales, LA. Serving Ascension Parish businesses since 2020. Free estimates. Call (225) 251-9184.",
-};
+    "Commercial window tinting for storefronts, offices, and fleets in Gonzales, LA. Serving Ascension Parish businesses since 2020. Call (225) 251-9184 today.",
+});
 
 const schema = {
   "@context": "https://schema.org",

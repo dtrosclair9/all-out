@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/marine-tinting/baton-rouge",
   title: "Marine Window Tinting & Wraps in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Marine window tinting and custom boat wraps in Baton Rouge, LA. Pontoons, center consoles, fishing boats. Marine-grade film. Serving East Baton Rouge Parish. Call (225) 251-9184.",
-};
+    "Marine window tinting and custom boat wraps in Baton Rouge, LA. Pontoons, center consoles, and fishing boats with marine-grade film. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

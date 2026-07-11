@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/paint-protection-film/baton-rouge",
   title: "Paint Protection Film (PPF) in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "PPF installation in Baton Rouge, LA. Self-healing paint protection film guards your finish against rock chips and road debris. Serving East Baton Rouge Parish. Call (225) 251-9184.",
-};
+    "Paint protection film in Baton Rouge, LA. Self-healing PPF guards your paint from rock chips and road debris. Serving East Baton Rouge. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

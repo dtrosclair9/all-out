@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/commercial-tinting/baton-rouge",
   title: "Commercial Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Commercial window tinting for storefronts, offices & fleets in Baton Rouge, LA. Serving East Baton Rouge Parish businesses. Reduce energy costs. Call (225) 251-9184.",
-};
+    "Commercial window tinting for storefronts, offices, and fleets in Baton Rouge, LA. Cut energy costs and glare for your business. Call (225) 251-9184 today.",
+});
 
 const schema = {
   "@context": "https://schema.org",

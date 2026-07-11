@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/marine-tinting",
   title: "Marine Tinting, Detailing & PPF | All-Out Window Tint",
   description:
-    "Marine tinting, detailing, paint protection film, and custom wraps in Gonzales and Baton Rouge, LA. Full protection for boats and watercraft. Call (225) 251-9184.",
-};
+    "Marine tinting, detailing, paint protection film, and custom boat wraps in Gonzales and Baton Rouge, LA. Full watercraft care. Call (225) 251-9184 today.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

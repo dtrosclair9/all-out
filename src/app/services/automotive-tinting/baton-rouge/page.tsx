@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/automotive-tinting/baton-rouge",
   title: "Automotive Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Best automotive window tinting in Baton Rouge, LA. Ceramic, carbon & dyed film. Serving Central, Denham Springs & East Baton Rouge Parish. Call (225) 251-9184.",
-};
+    "Automotive window tinting in Baton Rouge, LA: ceramic, carbon, and dyed film for cars, trucks, and SUVs. Serving East Baton Rouge Parish. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

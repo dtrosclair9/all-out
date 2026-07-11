@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/gallery",
   title: "Gallery | All-Out Window Tint — Gonzales & Baton Rouge, LA",
   description:
-    "Browse our portfolio of window tinting, PPF, and vehicle wrap work. Automotive, residential, commercial, and marine projects from our Gonzales and Baton Rouge, LA shops.",
-};
+    "Browse the All-Out Window Tint portfolio: automotive, residential, commercial, and marine tint, PPF, and wrap work from our Gonzales and Baton Rouge shops.",
+});
 
 const categories = [
   {

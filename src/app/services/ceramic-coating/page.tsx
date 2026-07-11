@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/ceramic-coating",
   title: "Ceramic Coating in Gonzales & Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Authorized System X ceramic coating installer in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation protection. Lifetime warranty available. Free quotes at both locations. Call (225) 251-9184.",
-};
+    "Authorized System X ceramic coating in Gonzales and Baton Rouge, LA. Automotive, marine, and aviation paint protection. Call (225) 251-9184 for a free quote.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/commercial-tinting",
   title: "Commercial Window Tinting | All-Out Window Tint",
   description:
-    "Commercial window tinting for storefronts, offices, and fleet vehicles in Gonzales and Baton Rouge, LA. Cut energy costs, reduce glare, protect your business. Call (225) 251-9184.",
-};
+    "Commercial window tinting for storefronts, offices, and fleet vehicles in Gonzales and Baton Rouge, LA. Cut energy costs and glare. Call (225) 251-9184.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

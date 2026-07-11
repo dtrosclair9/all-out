@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/locations",
   title: "Locations | All-Out Window Tint — Gonzales & Baton Rouge, LA",
   description:
-    "All-Out Window Tint has two locations in Louisiana — Gonzales and Baton Rouge. Professional window tinting, PPF, and vehicle wraps near you.",
-};
+    "All-Out Window Tint has two Louisiana locations, Gonzales and Baton Rouge, for window tinting, PPF, ceramic coating, and wraps. Call us at (225) 251-9184.",
+});
 
 const locations = [
   {

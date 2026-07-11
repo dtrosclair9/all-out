@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/paint-protection-film",
   title: "Paint Protection Film (PPF) | All-Out Window Tint",
   description:
-    "PPF installation in Gonzales and Baton Rouge, LA. Self-healing paint protection film guards against rock chips, scratches, and road debris. Full and partial coverage. Call (225) 251-9184.",
-};
+    "Paint protection film (PPF) in Gonzales and Baton Rouge, LA. Self-healing film guards against rock chips, scratches, and road debris. Call (225) 251-9184.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

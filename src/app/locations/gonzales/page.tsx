@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/locations/gonzales",
   title: "Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Professional window tinting, paint protection film, and vehicle wraps in Gonzales, LA. Serving Ascension Parish since 2020. Visit All-Out Window Tint at 43469 Cannon Road. Call (225) 251-9184.",
-};
+    "Window tinting, PPF, ceramic coating, and vehicle wraps in Gonzales, LA. Serving Ascension Parish since 2020 from Cannon Road. Call (225) 251-9184 today.",
+});
 
 const services = [
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },

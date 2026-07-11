@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/residential-tinting",
   title: "Residential Window Tinting | All-Out Window Tint",
   description:
-    "Residential window tinting in Gonzales and Baton Rouge, LA. Keep your home cooler, cut energy costs, and protect your furniture. Two locations. Call (225) 251-9184.",
-};
+    "Residential window tinting in Gonzales and Baton Rouge, LA. Keep your home cooler, cut energy costs, and protect your furniture. Call (225) 251-9184 today.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

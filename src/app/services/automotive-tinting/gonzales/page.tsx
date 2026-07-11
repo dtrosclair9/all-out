@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/automotive-tinting/gonzales",
   title: "Automotive Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Best automotive window tinting in Gonzales, LA. Ceramic, carbon & dyed film. Serving Prairieville, Sorrento & Ascension Parish since 2020. Call (225) 251-9184.",
-};
+    "Automotive window tinting in Gonzales, LA: ceramic, carbon, and dyed film. Serving Prairieville, Sorrento, and Ascension Parish since 2020. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

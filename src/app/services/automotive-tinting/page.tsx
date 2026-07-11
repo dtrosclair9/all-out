@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/automotive-tinting",
   title: "Automotive Window Tinting | All-Out Window Tint",
   description:
-    "Professional automotive window tinting in Gonzales and Baton Rouge, LA. Cars, trucks, SUVs, and exotics. Precision installation at both locations. Call (225) 251-9184.",
-};
+    "Automotive window tinting in Gonzales and Baton Rouge, LA. Ceramic, carbon, and dyed film for cars, trucks, SUVs, and exotics. Call (225) 251-9184 for a quote.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -122,7 +123,7 @@ export default function AutomotiveTintingPage() {
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               PROFESSIONAL TINTING
               <br />
-              <span className="text-[#a60303]">DONE RIGHT THE FIRST TIME.</span>
+              <span className="text-[#a60303]">BUILT FOR LOUISIANA HEAT.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>

@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/residential-tinting/gonzales",
   title: "Residential Window Tinting in Gonzales, LA | All-Out Window Tint",
   description:
-    "Residential window tinting in Gonzales, LA. Keep your home cooler and cut energy costs. Serving Prairieville, Sorrento & Ascension Parish. Call (225) 251-9184.",
-};
+    "Residential window tinting in Gonzales, LA. Keep your home cooler and cut energy costs. Serving Prairieville and Ascension Parish. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

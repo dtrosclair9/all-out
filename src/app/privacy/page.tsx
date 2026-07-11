@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/privacy",
   title: "Privacy Policy | All-Out Window Tint",
   description:
-    "Privacy policy for All-Out Window Tint. Learn how we collect, use, and protect your personal information.",
-};
+    "Privacy policy for All-Out Window Tint in Gonzales and Baton Rouge, LA. Learn what information our site and forms collect and how we protect and use it.",
+});
 
 export default function PrivacyPage() {
   const updated = "April 7, 2025";

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/vehicle-wraps",
   title: "Vehicle Wraps & Vinyl | All-Out Window Tint",
   description:
-    "Custom vehicle wraps and vinyl in Gonzales and Baton Rouge, LA. Full wraps, partial wraps, color changes, fleet graphics, UTVs, and boats. Call (225) 251-9184.",
-};
+    "Custom vehicle wraps and vinyl in Gonzales and Baton Rouge, LA. Full and partial wraps, color changes, fleet graphics, UTVs, and boats. Call (225) 251-9184.",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

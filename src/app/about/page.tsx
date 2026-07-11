@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import AutoplayVideo from "@/components/AutoplayVideo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/about",
   title: "About | All-Out Window Tint — Gonzales & Baton Rouge, LA",
   description:
-    "Meet the team behind All-Out Window Tint. Family owned and operated with two locations in Gonzales and Baton Rouge, LA since 2020.",
-};
+    "Meet the family behind All-Out Window Tint. Window tinting, PPF, ceramic coating, and wraps at two locations in Gonzales and Baton Rouge, LA since 2020.",
+});
 
 const team = [
   { img: "/images/team-member-6.jpg", name: "Dax", role: "Owner" },

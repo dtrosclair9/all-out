@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
+  path: "/services/residential-tinting/baton-rouge",
   title: "Residential Window Tinting in Baton Rouge, LA | All-Out Window Tint",
   description:
-    "Residential window tinting in Baton Rouge, LA. Reduce heat, cut energy costs & add privacy. Serving Central, Denham Springs & East Baton Rouge Parish. Call (225) 251-9184.",
-};
+    "Residential window tinting in Baton Rouge, LA. Reduce heat, cut energy costs, and add privacy at home. Serving East Baton Rouge Parish. Call (225) 251-9184.",
+});
 
 const schema = {
   "@context": "https://schema.org",

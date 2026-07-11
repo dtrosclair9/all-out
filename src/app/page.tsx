@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import AutoplayVideo from "@/components/AutoplayVideo";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  path: "/",
+  title: "Window Tinting in Gonzales & Baton Rouge, LA | All-Out Window Tint",
+  description:
+    "Window tinting, paint protection film, ceramic coating, and vehicle wraps in Gonzales and Baton Rouge, LA. Family owned, two locations. Call (225) 251-9184.",
+});
 
 const services = [
   {
@@ -147,8 +155,8 @@ export default function Home() {
               OUR SERVICES
             </h2>
             <p className="font-body text-[#888888] text-base mt-4 max-w-xl mx-auto">
-              Available at both our Gonzales and Baton Rouge locations. Every
-              job done right.
+              Available at both our Gonzales and Baton Rouge locations.
+              Precision installation on every vehicle, home, and business.
             </p>
           </div>
 
