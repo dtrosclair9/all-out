@@ -34,3 +34,29 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display), sans-serif;
   letter-spacing: 0.02em;
 }
+
+/* Accessibility: visible keyboard focus indicator on every interactive element */
+:focus-visible {
+  outline: 3px solid #f56565;
+  outline-offset: 2px;
+}
+
+/* Accessibility: "Skip to main content" link — hidden until keyboard-focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background-color: #a60303;
+  color: #ffffff;
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}

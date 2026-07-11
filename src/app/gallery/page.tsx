@@ -99,7 +99,7 @@ export default function GalleryPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
             Our Work
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6">

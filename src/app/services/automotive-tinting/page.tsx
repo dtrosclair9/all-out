@@ -67,12 +67,12 @@ export default function AutomotiveTintingPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center gap-2 font-body text-xs text-[#555] mb-6">
-            <Link href="/services" className="hover:text-[#a60303] transition-colors">Services</Link>
+          <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6">
+            <Link href="/services" className="hover:text-[#f56565] transition-colors">Services</Link>
             <span>/</span>
             <span className="text-white">Automotive Tinting</span>
           </nav>
-          <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
             Automotive Window Tinting
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -123,7 +123,7 @@ export default function AutomotiveTintingPage() {
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               PROFESSIONAL TINTING
               <br />
-              <span className="text-[#a60303]">BUILT FOR LOUISIANA HEAT.</span>
+              <span className="text-[#f56565]">BUILT FOR LOUISIANA HEAT.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
@@ -168,7 +168,7 @@ export default function AutomotiveTintingPage() {
             </ul>
 
             <div className="bg-[#141414] p-6 border border-[#242424]">
-              <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-3">Louisiana Tint Law</p>
+              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-3">Louisiana Tint Law</p>
               <p className="font-body text-[#888888] text-sm leading-relaxed">
                 Front side windows must allow at least <strong className="text-white">25% VLT</strong>. Rear
                 windows and the rear windshield can be any shade on non-passenger
@@ -183,7 +183,7 @@ export default function AutomotiveTintingPage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">Two Locations</p>
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Two Locations</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">
               AUTOMOTIVE TINTING NEAR YOU
             </h2>
@@ -206,13 +206,13 @@ export default function AutomotiveTintingPage() {
               },
             ].map((loc) => (
               <div key={loc.city} className="bg-[#0a0a0a] p-10">
-                <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-4 inline-block">{loc.tag}</span>
+                <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-4 inline-block">{loc.tag}</span>
                 <h3 className="font-display text-white text-3xl font-bold mb-3">{loc.city}</h3>
                 <p className="font-body text-white text-sm mb-2">{loc.address}</p>
                 <p className="font-body text-[#888888] text-xs mb-6">{loc.areas}</p>
                 <Link
                   href={loc.href}
-                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
+                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
                 >
                   Automotive Tinting in {loc.city} →
                 </Link>
@@ -226,7 +226,7 @@ export default function AutomotiveTintingPage() {
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
           </div>
           <div className="space-y-0 divide-y divide-[#242424]">

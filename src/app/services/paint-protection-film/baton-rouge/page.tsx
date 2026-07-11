@@ -32,14 +32,14 @@ export default function PPFBatonRougePage() {
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center gap-2 font-body text-xs text-[#555] mb-6 flex-wrap">
-            <Link href="/services" className="hover:text-[#a60303] transition-colors">Services</Link>
+          <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
+            <Link href="/services" className="hover:text-[#f56565] transition-colors">Services</Link>
             <span>/</span>
-            <Link href="/services/paint-protection-film" className="hover:text-[#a60303] transition-colors">Paint Protection Film</Link>
+            <Link href="/services/paint-protection-film" className="hover:text-[#f56565] transition-colors">Paint Protection Film</Link>
             <span>/</span>
             <span className="text-white">Baton Rouge</span>
           </nav>
-          <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">Baton Rouge, Louisiana</p>
+          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Baton Rouge, Louisiana</p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
             PAINT PROTECTION FILM
             <br />IN BATON ROUGE, LA
@@ -61,7 +61,7 @@ export default function PPFBatonRougePage() {
           <div>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               BATON ROUGE ROADS
-              <br /><span className="text-[#a60303]">DON&apos;T HAVE TO SHOW ON YOUR CAR.</span>
+              <br /><span className="text-[#f56565]">DON&apos;T HAVE TO SHOW ON YOUR CAR.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
@@ -87,10 +87,10 @@ export default function PPFBatonRougePage() {
 
           <div>
             <div className="bg-[#141414] border border-[#242424] p-8 mb-8">
-              <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-4">Baton Rouge Location</p>
+              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-4">Baton Rouge Location</p>
               <div className="space-y-3">
-                <a href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">7987 Pecue Lane, Suite 7G, Baton Rouge, LA 70809</a>
-                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#a60303] transition-colors block">(225) 251-9184</a>
+                <a href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#f56565] transition-colors block">7987 Pecue Lane, Suite 7G, Baton Rouge, LA 70809</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors block">(225) 251-9184</a>
                 <p className="font-body text-[#888888] text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</p>
               </div>
             </div>
@@ -109,11 +109,11 @@ export default function PPFBatonRougePage() {
       <section className="bg-[#0a0a0a] py-14 px-6 border-t border-[#242424]">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="font-display text-[#a60303] tracking-widest uppercase text-xs mb-1">Original Location</p>
+            <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-1">Original Location</p>
             <p className="font-display text-white text-lg font-bold">PPF — Gonzales</p>
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
-          <Link href="/services/paint-protection-film/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#a60303] px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+          <Link href="/services/paint-protection-film/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
         </div>
       </section>
 

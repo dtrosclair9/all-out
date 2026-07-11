@@ -14,13 +14,13 @@ export default function PrivacyPage() {
   return (
     <section className="bg-[#0a0a0a] min-h-screen pt-36 pb-24 px-6">
       <div className="max-w-3xl mx-auto">
-        <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+        <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
           Legal
         </p>
         <h1 className="font-display text-white text-4xl md:text-5xl font-bold mb-4">
           PRIVACY POLICY
         </h1>
-        <p className="font-body text-[#555] text-sm mb-12">
+        <p className="font-body text-[#888888] text-sm mb-12">
           Last updated: {updated}
         </p>
 
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
                 href="https://formspree.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#a60303] hover:underline"
+                className="text-[#f56565] hover:underline"
               >
                 Formspree
               </a>
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
               <p>All-Out Window Tint</p>
               <p>43469 Cannon Road, Gonzales, LA 70737</p>
               <p>
-                <a href="tel:2252519184" className="text-[#a60303] hover:underline">
+                <a href="tel:2252519184" className="text-[#f56565] hover:underline">
                   (225) 251-9184
                 </a>
               </p>
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
         <div className="mt-12 pt-8 border-t border-[#1e1e1e]">
           <Link
             href="/"
-            className="font-display tracking-widest uppercase text-[#a60303] hover:text-[#cc0404] text-sm transition-colors duration-200"
+            className="font-display tracking-widest uppercase text-[#f56565] hover:text-[#cc0404] text-sm transition-colors duration-200"
           >
             Back to Home
           </Link>

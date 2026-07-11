@@ -72,7 +72,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors duration-200"
+                className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors duration-200"
               >
                 Home
               </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
             <li className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setServicesOpen((v) => !v)}
-                className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors duration-200 flex items-center gap-1"
+                className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors duration-200 flex items-center gap-1"
               >
                 Services
                 <svg
@@ -110,7 +110,7 @@ export default function Navbar() {
                   <Link
                     href="/services"
                     onClick={() => setServicesOpen(false)}
-                    className="block font-display text-xs tracking-widest uppercase text-[#a60303] hover:bg-[#141414] px-5 py-3 transition-colors duration-150"
+                    className="block font-display text-xs tracking-widest uppercase text-[#f56565] hover:bg-[#141414] px-5 py-3 transition-colors duration-150"
                   >
                     All Services →
                   </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors duration-200"
+                  className="font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors duration-200"
                 >
                   {link.label}
                 </Link>
@@ -164,7 +164,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setMenuOpen(false)}
-              className="block font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors"
+              className="block font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors"
             >
               Home
             </Link>
@@ -174,7 +174,7 @@ export default function Navbar() {
           <li>
             <button
               onClick={() => setMobileServicesOpen((v) => !v)}
-              className="w-full flex items-center justify-between font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors"
+              className="w-full flex items-center justify-between font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors"
             >
               Services
               <svg
@@ -197,7 +197,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
-                      className="block font-display text-xs tracking-widest uppercase text-white/60 hover:text-[#a60303] transition-colors"
+                      className="block font-display text-xs tracking-widest uppercase text-white/60 hover:text-[#f56565] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -207,7 +207,7 @@ export default function Navbar() {
                   <Link
                     href="/services"
                     onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
-                    className="block font-display text-xs tracking-widest uppercase text-[#a60303] transition-colors"
+                    className="block font-display text-xs tracking-widest uppercase text-[#f56565] transition-colors"
                   >
                     All Services →
                   </Link>
@@ -221,7 +221,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#a60303] transition-colors"
+                className="block font-display text-sm tracking-widest uppercase text-white/80 hover:text-[#f56565] transition-colors"
               >
                 {link.label}
               </Link>

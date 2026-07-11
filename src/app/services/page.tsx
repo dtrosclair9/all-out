@@ -172,7 +172,7 @@ export default function ServicesPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
             What We Offer
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6">
@@ -231,7 +231,7 @@ export default function ServicesPage() {
 
             {/* Content */}
             <div style={i % 2 !== 0 ? { direction: "ltr" } : undefined}>
-              <p className="font-display text-[#a60303] tracking-[0.2em] uppercase text-xs mb-2">
+              <p className="font-display text-[#f56565] tracking-[0.2em] uppercase text-xs mb-2">
                 {service.title}
               </p>
               <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4 leading-tight">

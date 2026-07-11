@@ -110,7 +110,7 @@ export default function Home() {
             GO
             <br />
             <span
-              className="text-[#a60303]"
+              className="text-[#f56565]"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)" }}
             >ALL OUT.</span>
           </h1>
@@ -148,7 +148,7 @@ export default function Home() {
       <section className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
               What We Do
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
@@ -180,7 +180,7 @@ export default function Home() {
 
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-8 h-8 text-[#a60303] shrink-0">
+                    <div className="w-8 h-8 text-[#f56565] shrink-0">
                       <svg viewBox="0 0 24 24" fill="currentColor">
                         {service.icon}
                       </svg>
@@ -192,7 +192,7 @@ export default function Home() {
                   <p className="font-body text-[#888888] text-sm leading-relaxed mb-4">
                     {service.desc}
                   </p>
-                  <span className="font-display text-[#a60303] text-xs tracking-widest uppercase group-hover:text-white transition-colors duration-200">
+                  <span className="font-display text-[#f56565] text-xs tracking-widest uppercase group-hover:text-white transition-colors duration-200">
                     Learn More →
                   </span>
                 </div>
@@ -205,7 +205,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/services"
-              className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-8 py-4 text-sm transition-colors duration-200 inline-block"
+              className="font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-8 py-4 text-sm transition-colors duration-200 inline-block"
             >
               View All Services
             </Link>
@@ -249,7 +249,7 @@ export default function Home() {
           </div>
 
           <div>
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
               Why All-Out
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -311,7 +311,7 @@ export default function Home() {
       <section className="bg-[#141414] py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
               Find Us
             </p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">
@@ -338,7 +338,7 @@ export default function Home() {
               },
             ].map((loc) => (
               <div key={loc.city} className="bg-[#141414] p-10">
-                <span className="font-display text-[#a60303] tracking-[0.25em] uppercase text-xs mb-4 inline-block">
+                <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-4 inline-block">
                   {loc.tag}
                 </span>
                 <h3 className="font-display text-white text-3xl font-bold mb-4">{loc.city}</h3>
@@ -347,7 +347,7 @@ export default function Home() {
                 <p className="font-body text-[#888888] text-xs mb-6">{loc.areas}</p>
                 <Link
                   href={loc.href}
-                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
+                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
                 >
                   Location Details
                 </Link>
@@ -361,7 +361,7 @@ export default function Home() {
       <section className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
               Our Work
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
@@ -390,7 +390,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/gallery"
-              className="font-display tracking-widest uppercase border border-[#a60303] text-[#a60303] hover:bg-[#a60303] hover:text-white px-8 py-4 text-sm transition-colors duration-200 inline-block"
+              className="font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-8 py-4 text-sm transition-colors duration-200 inline-block"
             >
               View Full Gallery
             </Link>
@@ -408,7 +408,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/75" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="font-display text-[#a60303] tracking-[0.3em] uppercase text-sm mb-4">
+          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-4">
             Ready to Get Started?
           </p>
           <h2 className="font-display text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
