@@ -50,8 +50,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || menuOpen
-          ? "bg-[#0a0a0a]/95 backdrop-blur-sm shadow-lg shadow-black/40"
-          : "bg-gradient-to-b from-black/70 to-transparent"
+          ? "bg-black shadow-lg shadow-black/40"
+          : "bg-black"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
