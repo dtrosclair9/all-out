@@ -68,11 +68,11 @@ export default function CeramicCoatingPage() {
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6">
-            <Link href="/services" className="hover:text-[#f56565] transition-colors">Services</Link>
+            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
             <span className="text-white">Ceramic Coating</span>
           </nav>
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
             Authorized System X Installer
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -118,7 +118,7 @@ export default function CeramicCoatingPage() {
               {/* Right: text only */}
               <div className="relative bg-[#1a1a1a] flex items-center justify-center p-8 md:p-12">
                 <div>
-                  <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-xs mb-4">Authorized Installer</p>
+                  <p className="font-display text-white tracking-[0.3em] uppercase text-xs mb-4">Authorized Installer</p>
                   <p className="font-display text-white text-xl md:text-2xl font-bold leading-tight">
                     WE USE SYSTEM X.<br />BECAUSE THE BEST PRODUCTS<br />GET THE BEST RESULTS.
                   </p>
@@ -135,7 +135,7 @@ export default function CeramicCoatingPage() {
           <div>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               NOT A WAX.
-              <br /><span className="text-[#f56565]">A PERMANENT BOND.</span>
+              <br /><span className="text-[#E01818]">A PERMANENT BOND.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
@@ -164,7 +164,7 @@ export default function CeramicCoatingPage() {
           </div>
           <div className="space-y-4">
             <div className="bg-[#141414] border border-[#242424] p-6">
-              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-3">What Ceramic Coating Does</p>
+              <p className="font-display text-white tracking-widest uppercase text-xs mb-3">What Ceramic Coating Does</p>
               <ul className="space-y-3">
                 {[
                   "Bonds permanently to paint, glass, gelcoat, or aircraft surfaces",
@@ -257,7 +257,7 @@ export default function CeramicCoatingPage() {
                     Most Popular
                   </span>
                 )}
-                <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-2">{item.line}</p>
+                <p className="font-display text-white tracking-widest uppercase text-xs mb-2">{item.line}</p>
                 <h3 className="font-display text-white text-xl font-bold mb-1 leading-tight">{item.product}</h3>
                 <p className="font-display text-white/40 text-xs tracking-widest uppercase mb-4">{item.warranty}</p>
                 <p className="font-body text-[#888888] text-sm leading-relaxed mb-6">{item.desc}</p>
@@ -288,7 +288,7 @@ export default function CeramicCoatingPage() {
             />
           </div>
           <div>
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-xs mb-3">Why It Matters</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-xs mb-3">Why It Matters</p>
             <h2 className="font-display text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
               AUTHORIZED SYSTEM X INSTALLER
             </h2>
@@ -307,10 +307,10 @@ export default function CeramicCoatingPage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Complete Protection</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">Complete Protection</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               PAIR IT WITH
-              <br /><span className="text-[#f56565]">TINT & PPF.</span>
+              <br /><span className="text-[#E01818]">TINT & PPF.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
@@ -327,8 +327,8 @@ export default function CeramicCoatingPage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mt-8">
-              <Link href="/services/paint-protection-film" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-5 py-3 text-xs transition-colors duration-200">Paint Protection Film →</Link>
-              <Link href="/services/automotive-tinting" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-5 py-3 text-xs transition-colors duration-200">Automotive Tinting →</Link>
+              <Link href="/services/paint-protection-film" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-5 py-3 text-xs transition-colors duration-200">Paint Protection Film →</Link>
+              <Link href="/services/automotive-tinting" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-5 py-3 text-xs transition-colors duration-200">Automotive Tinting →</Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-px bg-[#242424]">
@@ -339,7 +339,7 @@ export default function CeramicCoatingPage() {
               { label: "All Three Combined", desc: "Complete protection, one shop", icon: "◎" },
             ].map((item) => (
               <div key={item.label} className="bg-[#141414] p-6">
-                <p className="font-display text-[#f56565] text-xl mb-3">{item.icon}</p>
+                <p className="font-display text-[#E01818] text-xl mb-3">{item.icon}</p>
                 <p className="font-display text-white text-sm font-bold mb-1">{item.label}</p>
                 <p className="font-body text-[#888888] text-xs leading-relaxed">{item.desc}</p>
               </div>
@@ -352,7 +352,7 @@ export default function CeramicCoatingPage() {
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Two Locations</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">Two Locations</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">
               CERAMIC COATING NEAR YOU
             </h2>
@@ -375,14 +375,14 @@ export default function CeramicCoatingPage() {
               },
             ].map((loc) => (
               <div key={loc.city} className="bg-[#141414] p-10">
-                <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-4 inline-block">{loc.tag}</span>
+                <span className="font-display text-white tracking-[0.25em] uppercase text-xs mb-4 inline-block">{loc.tag}</span>
                 <h3 className="font-display text-white text-3xl font-bold mb-3">{loc.city}</h3>
                 <p className="font-body text-white text-sm mb-1">{loc.address}</p>
-                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors block mb-2">{loc.phone}</a>
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-white transition-colors block mb-2">{loc.phone}</a>
                 <p className="font-body text-[#888888] text-xs mb-6">{loc.areas}</p>
                 <Link
                   href="/contact"
-                  className="font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
+                  className="font-display tracking-widest uppercase border border-[#a60303] text-white hover:bg-[#a60303] hover:text-white px-6 py-3 text-xs transition-colors duration-200 inline-block"
                 >
                   Get a Quote in {loc.city} →
                 </Link>
@@ -396,7 +396,7 @@ export default function CeramicCoatingPage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
           </div>
           <div className="space-y-0 divide-y divide-[#242424]">

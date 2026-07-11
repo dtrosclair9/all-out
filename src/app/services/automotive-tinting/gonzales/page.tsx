@@ -45,13 +45,13 @@ export default function AutomotiveTintingGonzalesPage() {
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
-            <Link href="/services" className="hover:text-[#f56565] transition-colors">Services</Link>
+            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
-            <Link href="/services/automotive-tinting" className="hover:text-[#f56565] transition-colors">Automotive Tinting</Link>
+            <Link href="/services/automotive-tinting" className="hover:text-white transition-colors">Automotive Tinting</Link>
             <span>/</span>
             <span className="text-white">Gonzales</span>
           </nav>
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Gonzales, Louisiana</p>
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">Gonzales, Louisiana</p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
             AUTOMOTIVE WINDOW TINTING
             <br />IN GONZALES, LA
@@ -79,7 +79,7 @@ export default function AutomotiveTintingGonzalesPage() {
           <div>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               GONZALES&apos; GO-TO
-              <br /><span className="text-[#f56565]">WINDOW TINT SHOP.</span>
+              <br /><span className="text-[#E01818]">WINDOW TINT SHOP.</span>
             </h2>
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
               <p>
@@ -109,26 +109,26 @@ export default function AutomotiveTintingGonzalesPage() {
           <div>
             {/* Location card */}
             <div className="bg-[#141414] border border-[#242424] p-8 mb-8">
-              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-4">Gonzales Location</p>
+              <p className="font-display text-white tracking-widest uppercase text-xs mb-4">Gonzales Location</p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
                   </svg>
                   <div>
-                    <a href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-[#f56565] transition-colors">
+                    <a href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737" target="_blank" rel="noopener noreferrer" className="font-body text-white text-sm hover:text-white transition-colors">
                       43469 Cannon Road<br />Gonzales, LA 70737
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                   </svg>
-                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors">(225) 251-9184</a>
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-white transition-colors">(225) 251-9184</a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
                   </svg>
                   <span className="font-body text-white text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</span>
@@ -172,11 +172,11 @@ export default function AutomotiveTintingGonzalesPage() {
       <section className="bg-[#0a0a0a] py-14 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-[#242424] pt-14">
           <div>
-            <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-1">Also Available</p>
+            <p className="font-display text-white tracking-widest uppercase text-xs mb-1">Also Available</p>
             <p className="font-display text-white text-lg font-bold">Automotive Tinting — Baton Rouge</p>
             <p className="font-body text-[#888888] text-sm mt-1">7987 Pecue Lane, Suite 7G — Baton Rouge, LA 70809</p>
           </div>
-          <Link href="/services/automotive-tinting/baton-rouge" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-6 py-3 text-sm transition-colors duration-200 shrink-0">
+          <Link href="/services/automotive-tinting/baton-rouge" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">
             Baton Rouge Location →
           </Link>
         </div>

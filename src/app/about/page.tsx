@@ -44,7 +44,7 @@ export default function AboutPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
             Our Story
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6">
@@ -73,7 +73,7 @@ export default function AboutPage() {
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-8">
               <p className="font-display text-white text-2xl font-bold">Reed Babin</p>
-              <p className="font-body text-[#f56565] text-sm tracking-wider uppercase">
+              <p className="font-body text-white text-sm tracking-wider uppercase">
                 Founder · Certified Installer
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               BUILT BY SOMEONE
               <br />
-              <span className="text-[#f56565]">WHO GOES ALL OUT.</span>
+              <span className="text-[#E01818]">WHO GOES ALL OUT.</span>
             </h2>
 
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
@@ -150,7 +150,7 @@ export default function AboutPage() {
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
               DISCIPLINE, DRIVE,
               <br />
-              <span className="text-[#f56565]">AND A STANDARD TO MATCH.</span>
+              <span className="text-[#E01818]">AND A STANDARD TO MATCH.</span>
             </h2>
 
             <div className="space-y-4 font-body text-[#888888] text-base leading-relaxed">
@@ -192,7 +192,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="font-display text-white text-2xl font-bold">Dax Normand</p>
-                <p className="font-body text-[#f56565] text-xs tracking-wider uppercase">Co-Owner</p>
+                <p className="font-body text-white text-xs tracking-wider uppercase">Co-Owner</p>
               </div>
             </div>
 
@@ -220,7 +220,7 @@ export default function AboutPage() {
       <section className="py-20 px-6 bg-[#141414]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
               The People Behind the Work
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
@@ -254,7 +254,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-3 pb-1">
                   <p className="font-display text-white text-sm font-bold">{member.name}</p>
-                  <p className="font-body text-[#f56565] text-xs tracking-wide uppercase">{member.role}</p>
+                  <p className="font-body text-white text-xs tracking-wide uppercase">{member.role}</p>
                 </div>
               </div>
             ))}
@@ -271,7 +271,7 @@ export default function AboutPage() {
                 className="object-cover"
               />
             </div>
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-xs mt-6 mb-2">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-xs mt-6 mb-2">
               The Motivation
             </p>
             <p className="font-body text-[#888888] text-sm max-w-xs">
@@ -285,7 +285,7 @@ export default function AboutPage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
               The Process
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
@@ -305,7 +305,7 @@ export default function AboutPage() {
       <section className="py-20 px-6 bg-[#141414]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
               What Drives Us
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
@@ -333,7 +333,7 @@ export default function AboutPage() {
       <section className="py-20 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
               Our Work
             </p>
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">

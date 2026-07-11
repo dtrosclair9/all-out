@@ -74,7 +74,7 @@ export default function FranchisePage() {
 
             {/* Left — copy */}
             <div className="pt-4">
-              <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+              <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
                 Franchise Opportunities
               </p>
               <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -111,20 +111,20 @@ export default function FranchisePage() {
 
             {/* Right — inquiry form */}
             <div className="bg-[#141414] border border-[#242424] p-8">
-              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-1">Start Here</p>
+              <p className="font-display text-white tracking-widest uppercase text-xs mb-1">Start Here</p>
               <h2 className="font-display text-white text-2xl font-bold mb-6">FRANCHISE INQUIRY</h2>
 
               {formState === "success" ? (
                 <div className="py-12 text-center">
                   <div className="w-12 h-12 border-2 border-[#a60303] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-[#f56565]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#E01818]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <p className="font-display text-white text-lg font-bold mb-2">INQUIRY RECEIVED</p>
                   <p className="font-body text-[#888888] text-sm leading-relaxed">
                     Dax or Reed will be in touch shortly. If you&apos;d prefer to talk now, call{" "}
-                    <a href="tel:2252519184" className="text-[#f56565]">(225) 251-9184</a>.
+                    <a href="tel:2252519184" className="text-[#E01818]">(225) 251-9184</a>.
                   </p>
                 </div>
               ) : (
@@ -132,7 +132,7 @@ export default function FranchisePage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="f-name" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                        Full Name <span className="text-[#f56565]">*</span>
+                        Full Name <span className="text-white">*</span>
                       </label>
                       <input
                         id="f-name" type="text" name="name" value={form.name} onChange={handleChange} required
@@ -142,7 +142,7 @@ export default function FranchisePage() {
                     </div>
                     <div>
                       <label htmlFor="f-phone" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                        Phone <span className="text-[#f56565]">*</span>
+                        Phone <span className="text-white">*</span>
                       </label>
                       <input
                         id="f-phone" type="tel" name="phone" value={form.phone} onChange={handleChange} required
@@ -154,7 +154,7 @@ export default function FranchisePage() {
 
                   <div>
                     <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                      Email <span className="text-[#f56565]">*</span>
+                      Email <span className="text-white">*</span>
                     </label>
                     <input
                       id="f-email" type="email" name="email" value={form.email} onChange={handleChange} required
@@ -165,7 +165,7 @@ export default function FranchisePage() {
 
                   <div>
                     <label htmlFor="f-location" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                      Target Market / City <span className="text-[#f56565]">*</span>
+                      Target Market / City <span className="text-white">*</span>
                     </label>
                     <input
                       id="f-location" type="text" name="location" value={form.location} onChange={handleChange} required
@@ -281,7 +281,7 @@ export default function FranchisePage() {
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">The Opportunity</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">The Opportunity</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">
               WHY THIS BUSINESS MODEL WORKS
             </h2>
@@ -322,10 +322,10 @@ export default function FranchisePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">What You Get</p>
+              <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">What You Get</p>
               <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 YOU&apos;RE NOT
-                <br /><span className="text-[#f56565]">BUILDING FROM ZERO.</span>
+                <br /><span className="text-[#E01818]">BUILDING FROM ZERO.</span>
               </h2>
               <p className="font-body text-[#888888] text-base leading-relaxed">
                 Five years of refining this business — the processes, the vendor relationships,
@@ -374,7 +374,7 @@ export default function FranchisePage() {
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">Who We&apos;re Looking For</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">Who We&apos;re Looking For</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">THE IDEAL PARTNER</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#242424]">
@@ -397,7 +397,7 @@ export default function FranchisePage() {
               },
             ].map((item) => (
               <div key={item.type} className="bg-[#141414] p-8">
-                <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-3">{item.type}</p>
+                <p className="font-display text-white tracking-widest uppercase text-xs mb-3">{item.type}</p>
                 <p className="font-body text-[#888888] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -409,7 +409,7 @@ export default function FranchisePage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">How It Works</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">How It Works</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">THE PATH TO OPENING</h2>
           </div>
           <div className="space-y-0 divide-y divide-[#242424]">
@@ -422,7 +422,7 @@ export default function FranchisePage() {
               { step: "06", title: "Open Your Doors", desc: "Launch with the All-Out brand, processes, and support behind you. We don't disappear after you sign." },
             ].map((item) => (
               <div key={item.step} className="py-6 flex gap-8 items-start">
-                <span className="font-display text-[#f56565] text-2xl font-bold shrink-0 w-10">{item.step}</span>
+                <span className="font-display text-[#E01818] text-2xl font-bold shrink-0 w-10">{item.step}</span>
                 <div>
                   <h3 className="font-display text-white text-base font-bold mb-1 tracking-wide">{item.title}</h3>
                   <p className="font-body text-[#888888] text-sm leading-relaxed">{item.desc}</p>
@@ -436,7 +436,7 @@ export default function FranchisePage() {
       {/* ── FOUNDERS NOTE ── */}
       <section className="bg-[#141414] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-6">From Dax & Reed</p>
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-6">From Dax & Reed</p>
           <blockquote className="font-display text-white text-2xl md:text-3xl font-bold leading-tight mb-8">
             &ldquo;WE OPENED ALL-OUT DURING COVID WITH NOTHING BUT A SKILL SET AND A WORK ETHIC. FIVE YEARS LATER, WE HAVE TWO LOCATIONS AND A MODEL THAT WORKS. WE WANT TO PUT THAT IN THE RIGHT HANDS.&rdquo;
           </blockquote>
@@ -466,7 +466,7 @@ export default function FranchisePage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
             <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
           </div>
           <div className="space-y-0 divide-y divide-[#242424]">

@@ -39,7 +39,7 @@ export default function LocationsPage() {
       {/* Header */}
       <section className="bg-[#0a0a0a] pt-36 pb-16 px-6 border-b border-[#1e1e1e]">
         <div className="max-w-7xl mx-auto">
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
             Find Us
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-4">
@@ -58,7 +58,7 @@ export default function LocationsPage() {
           {locations.map((loc) => (
             <div key={loc.city} className="bg-[#0a0a0a] p-10 flex flex-col">
               {/* Tag */}
-              <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-6 inline-block">
+              <span className="font-display text-white tracking-[0.25em] uppercase text-xs mb-6 inline-block">
                 {loc.tag}
               </span>
 
@@ -71,7 +71,7 @@ export default function LocationsPage() {
               {/* Info */}
               <div className="space-y-4 mb-10">
                 <div className="flex items-start gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
                   </svg>
                   <div>
@@ -80,15 +80,15 @@ export default function LocationsPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                   </svg>
-                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors duration-200">
+                  <a href="tel:2252519184" className="font-body text-white text-sm hover:text-white transition-colors duration-200">
                     {loc.phone}
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
                   </svg>
                   <p className="font-body text-white text-sm">{loc.hours}</p>

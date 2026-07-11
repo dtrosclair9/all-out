@@ -72,7 +72,7 @@ export default function ContactPage() {
       {/* ── HERO ── */}
       <section className="bg-[#0a0a0a] pt-36 pb-16 px-6 border-b border-[#1e1e1e]">
         <div className="max-w-7xl mx-auto">
-          <p className="font-display text-[#f56565] tracking-[0.3em] uppercase text-sm mb-3">
+          <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">
             Get In Touch
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold leading-tight mb-4">
@@ -91,13 +91,13 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1e1e1e]">
           {/* Gonzales */}
           <div className="bg-[#0a0a0a] p-8">
-            <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-3 inline-block">
+            <span className="font-display text-white tracking-[0.25em] uppercase text-xs mb-3 inline-block">
               Original Location
             </span>
             <h2 className="font-display text-white text-xl font-bold mb-4">Gonzales</h2>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <svg className="w-4 h-4 text-[#f56565] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
                 </svg>
                 <div>
@@ -105,22 +105,22 @@ export default function ContactPage() {
                     href="https://maps.google.com/?q=43469+Cannon+Road,+Gonzales,+LA+70737"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-body text-white text-sm hover:text-[#f56565] transition-colors leading-relaxed"
+                    className="font-body text-white text-sm hover:text-white transition-colors leading-relaxed"
                   >
                     43469 Cannon Road<br />Gonzales, LA 70737
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                 </svg>
-                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors duration-200">
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-white transition-colors duration-200">
                   (225) 251-9184
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
                 </svg>
                 <span className="font-body text-white text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</span>
@@ -128,7 +128,7 @@ export default function ContactPage() {
             </div>
             <Link
               href="/locations/gonzales"
-              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-5 py-2.5 text-xs transition-colors duration-200"
+              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-5 py-2.5 text-xs transition-colors duration-200"
             >
               Location Details
             </Link>
@@ -136,13 +136,13 @@ export default function ContactPage() {
 
           {/* Baton Rouge */}
           <div className="bg-[#0a0a0a] p-8">
-            <span className="font-display text-[#f56565] tracking-[0.25em] uppercase text-xs mb-3 inline-block">
+            <span className="font-display text-white tracking-[0.25em] uppercase text-xs mb-3 inline-block">
               Now Open
             </span>
             <h2 className="font-display text-white text-xl font-bold mb-4">Baton Rouge</h2>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <svg className="w-4 h-4 text-[#f56565] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
                 </svg>
                 <div>
@@ -150,22 +150,22 @@ export default function ContactPage() {
                     href="https://maps.google.com/?q=7987+Pecue+Lane,+Baton+Rouge,+LA+70809"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-body text-white text-sm hover:text-[#f56565] transition-colors leading-relaxed"
+                    className="font-body text-white text-sm hover:text-white transition-colors leading-relaxed"
                   >
                     7987 Pecue Lane, Suite 7G<br />Baton Rouge, LA 70809
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" />
                 </svg>
-                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-[#f56565] transition-colors duration-200">
+                <a href="tel:2252519184" className="font-body text-white text-sm hover:text-white transition-colors duration-200">
                   (225) 251-9184
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-[#f56565] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#E01818] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
                 </svg>
                 <span className="font-body text-white text-sm">Mon – Fri: 9AM – 5PM · Sat–Sun: By Appt</span>
@@ -173,7 +173,7 @@ export default function ContactPage() {
             </div>
             <Link
               href="/locations/baton-rouge"
-              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-[#f56565] px-5 py-2.5 text-xs transition-colors duration-200"
+              className="mt-5 inline-block font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-5 py-2.5 text-xs transition-colors duration-200"
             >
               Location Details
             </Link>
@@ -189,7 +189,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             {formState === "success" ? (
               <div className="border border-[#a60303] p-10 text-center">
-                <svg className="w-12 h-12 text-[#f56565] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-12 h-12 text-[#E01818] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <h2 className="font-display text-white text-2xl font-bold mb-2">
@@ -198,13 +198,13 @@ export default function ContactPage() {
                 <p className="font-body text-[#888888] text-sm leading-relaxed">
                   We&apos;ll reach out shortly — usually the same day. If it&apos;s urgent,
                   give us a call at{" "}
-                  <a href="tel:2252519184" className="text-[#f56565] hover:underline">
+                  <a href="tel:2252519184" className="text-white hover:underline">
                     (225) 251-9184
                   </a>.
                 </p>
                 <button
                   onClick={() => setFormState("idle")}
-                  className="mt-8 font-display tracking-widest uppercase border border-[#a60303] text-[#f56565] hover:bg-[#a60303] hover:text-white px-6 py-3 text-sm transition-colors duration-200"
+                  className="mt-8 font-display tracking-widest uppercase border border-[#a60303] text-white hover:bg-[#a60303] hover:text-white px-6 py-3 text-sm transition-colors duration-200"
                 >
                   Send Another
                 </button>
@@ -213,7 +213,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                    Preferred Location <span className="text-[#f56565]">*</span>
+                    Preferred Location <span className="text-white">*</span>
                   </label>
                   <div className="grid grid-cols-2 gap-3">
                     {["Gonzales", "Baton Rouge"].map((loc) => (
@@ -236,7 +236,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="field-name" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                      Full Name <span className="text-[#f56565]">*</span>
+                      Full Name <span className="text-white">*</span>
                     </label>
                     <input
                       id="field-name"
@@ -251,7 +251,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="field-phone" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                      Phone <span className="text-[#f56565]">*</span>
+                      Phone <span className="text-white">*</span>
                     </label>
                     <input
                       id="field-phone"
@@ -283,7 +283,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="field-service" className="block font-display text-xs tracking-widest uppercase text-[#888888] mb-2">
-                    Service Needed <span className="text-[#f56565]">*</span>
+                    Service Needed <span className="text-white">*</span>
                   </label>
                   <select
                     id="field-service"
@@ -370,12 +370,12 @@ export default function ContactPage() {
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-8">
             <div className="border border-[#1e1e1e] p-6">
-              <p className="font-display text-[#f56565] tracking-widest uppercase text-xs mb-3">
+              <p className="font-display text-white tracking-widest uppercase text-xs mb-3">
                 Prefer to Call?
               </p>
               <a
                 href="tel:2252519184"
-                className="font-display text-white text-2xl font-bold hover:text-[#f56565] transition-colors duration-200 block mb-2"
+                className="font-display text-white text-2xl font-bold hover:text-white transition-colors duration-200 block mb-2"
               >
                 (225) 251-9184
               </a>
@@ -397,7 +397,7 @@ export default function ContactPage() {
                   { step: "04", text: "Pick up your vehicle looking sharp." },
                 ].map((item) => (
                   <li key={item.step} className="flex gap-4">
-                    <span className="font-display text-[#f56565] text-sm shrink-0 pt-0.5">{item.step}</span>
+                    <span className="font-display text-white text-sm shrink-0 pt-0.5">{item.step}</span>
                     <p className="font-body text-[#888888] text-sm leading-relaxed">{item.text}</p>
                   </li>
                 ))}
@@ -413,7 +413,7 @@ export default function ContactPage() {
                   href="https://www.facebook.com/alloutwindowtintllc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-body text-sm text-[#888888] hover:text-[#f56565] transition-colors duration-200"
+                  className="flex items-center gap-2 font-body text-sm text-[#888888] hover:text-white transition-colors duration-200"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -425,7 +425,7 @@ export default function ContactPage() {
                   href="https://www.instagram.com/alloutwindowtint"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-body text-sm text-[#888888] hover:text-[#f56565] transition-colors duration-200"
+                  className="flex items-center gap-2 font-body text-sm text-[#888888] hover:text-white transition-colors duration-200"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"/>
