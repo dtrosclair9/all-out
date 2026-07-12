@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/paint-protection-film/gonzales",
 };
 
+const faqs = [
+  {
+    q: "What is the difference between paint protection film and ceramic coating?",
+    a: "Paint protection film (PPF) is a thick, clear physical layer that absorbs rock chips and scratches before they reach your paint. Ceramic coating is a thin liquid layer that makes the surface slick and easier to clean but does not stop impact. Many owners run PPF on high-impact areas and ceramic over the rest.",
+  },
+  {
+    q: "Does PPF really self-heal scratches?",
+    a: "Quality PPF does self-heal light surface swirls and fine scratches with heat. In Louisiana, the sun and summer temperatures are often enough to trigger it, and warm water speeds it up. Deeper cuts are a different story, but the everyday marks the road leaves behind tend to disappear.",
+  },
+  {
+    q: "Should I get full-front or full-vehicle PPF?",
+    a: "It depends on how and where you drive. The front bumper, hood, mirrors, and fenders take the most abuse from gravel roads, construction, and highway debris around Ascension Parish, so a front-end package covers the highest-risk areas. Full-vehicle coverage protects everything. We will help you weigh it against your driving.",
+  },
+  {
+    q: "Is PPF visible once it is installed?",
+    a: "Properly installed PPF is essentially invisible, with clean edges and no cloudiness. It comes in gloss to keep your factory shine or matte to give glossy paint a satin look. Either way, it protects without changing the character of your finish.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function PPFGonzalesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -116,6 +146,25 @@ export default function PPFGonzalesPage() {
             <p className="font-body text-[#888888] text-sm mt-1">7987 Pecue Lane, Suite 7G — Baton Rouge, LA 70809</p>
           </div>
           <Link href="/services/paint-protection-film/baton-rouge" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Baton Rouge Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

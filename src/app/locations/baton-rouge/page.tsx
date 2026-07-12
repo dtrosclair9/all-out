@@ -55,12 +55,53 @@ const schema = {
   areaServed: areasServed.map((a) => ({ "@type": "City", name: a })),
 };
 
+const faqs = [
+  {
+    q: "What services are available at the Baton Rouge location?",
+    a: "All of them. Our Pecue Lane shop offers automotive window tinting, paint protection film (PPF), ceramic coating, vehicle wraps and vinyl, marine tinting and wraps, and residential and commercial window film, the same full lineup as our Gonzales location.",
+  },
+  {
+    q: "Where exactly is the Baton Rouge shop?",
+    a: "We are at 7987 Pecue Lane, Suite 7G in south Baton Rouge, easy to reach from Perkins Road, Airline Highway, and I-10.",
+  },
+  {
+    q: "Is the Baton Rouge location the same company as Gonzales?",
+    a: "Yes. Same owners, same trained team, and the same standard we built in Gonzales since 2020. We opened the Baton Rouge location to serve the capital area without changing the quality that earned our reputation.",
+  },
+  {
+    q: "What is the tint law in Louisiana?",
+    a: "Front side windows must allow at least 40% of light through (40% VLT). Multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass, and Louisiana allows a medical exemption for darker tint with documentation. We keep every install within the legal limits.",
+  },
+  {
+    q: "What areas around Baton Rouge do you serve?",
+    a: "From our Pecue Lane shop we serve East Baton Rouge Parish and the surrounding area, including Central, Zachary, Baker, Denham Springs, Walker, and Port Allen.",
+  },
+  {
+    q: "Do you offer free quotes at the Baton Rouge shop?",
+    a: "Yes. Quotes are free. Call us or send a message through the contact form and we will get you an estimate, often the same day for standard vehicles.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function BatonRougePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Header */}
@@ -258,6 +299,25 @@ export default function BatonRougePage() {
           >
             View Location
           </Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">BATON ROUGE — COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/marine-tinting/baton-rouge",
 };
 
+const faqs = [
+  {
+    q: "What boats do you tint at your Baton Rouge location?",
+    a: "Pontoons, center consoles, bay boats, fishing boats, ski boats, cruisers, and yacht enclosures. If you keep a boat on False River, the Amite, or the Mississippi, our Pecue Lane shop can tint the glass and enclosures with marine-grade film built for high-UV, high-moisture use.",
+  },
+  {
+    q: "Does marine film protect my boat's electronics and upholstery?",
+    a: "Yes. Marine window film blocks 99% of UV rays, which are the main cause of cracked dashes, faded seats, and sun-damaged electronics at the helm. It also cuts glare on the water, which makes for easier, safer running.",
+  },
+  {
+    q: "Can you wrap my console and dash, not just tint the windows?",
+    a: "Absolutely. We do custom vinyl wraps for consoles, dashboards, cabin walls, and helm stations. It is a way to refresh or restyle the interior of your boat without a full renovation. Bring it by our Baton Rouge shop for a look and a quote.",
+  },
+  {
+    q: "Do I need an appointment to bring my boat in?",
+    a: "Call ahead before bringing your boat to our Pecue Lane location so we can plan for the size and give you an accurate timeline. Bring it on the trailer and we will take it from there.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function MarineTintingBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -116,6 +146,25 @@ export default function MarineTintingBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/marine-tinting/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

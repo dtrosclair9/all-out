@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/commercial-tinting/gonzales",
 };
 
+const faqs = [
+  {
+    q: "Can you install commercial film without shutting down my business?",
+    a: "Yes. We work around your business hours and can schedule larger projects in phases to keep disruption to a minimum. For storefronts along LA-30 and offices around Gonzales, after-hours installation is available so your doors stay open during business.",
+  },
+  {
+    q: "Does commercial window film lower energy costs?",
+    a: "It reduces solar heat gain through your glass, which is a major driver of cooling costs and hot spots near windows in Louisiana's climate. Many businesses see the film pay for itself in energy savings over time, though the payback depends on your building, glass, and usage.",
+  },
+  {
+    q: "Do you offer safety or security film for storefronts?",
+    a: "Yes. Security film helps hold glass together on impact, which slows break-ins and adds protection against storm debris. It is a popular add-on for retail storefronts and offices around Ascension Parish. Ask us which film fits your building.",
+  },
+  {
+    q: "Do you handle commercial fleets and multiple locations?",
+    a: "We do. Fleet accounts are welcome and we offer volume pricing for consistent installs across your vehicles or across multiple building locations. Call our Gonzales shop and we will put together a quote for the whole account.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function CommercialTintingGonzalesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -128,6 +158,25 @@ export default function CommercialTintingGonzalesPage() {
             <p className="font-body text-[#888888] text-sm mt-1">7987 Pecue Lane, Suite 7G — Baton Rouge, LA 70809</p>
           </div>
           <Link href="/services/commercial-tinting/baton-rouge" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Baton Rouge Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

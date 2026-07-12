@@ -55,12 +55,53 @@ const schema = {
   areaServed: areasServed.map((a) => ({ "@type": "City", name: a })),
 };
 
+const faqs = [
+  {
+    q: "What services do you offer at the Gonzales location?",
+    a: "Our Cannon Road shop is a full-service auto spa. We do automotive window tinting, paint protection film (PPF), ceramic coating, vehicle wraps and vinyl, marine tinting and wraps, and residential and commercial window film, all under one roof.",
+  },
+  {
+    q: "Is my car tint legal in Louisiana?",
+    a: "Louisiana law requires front side windows to allow at least 40% of light through (40% VLT). On SUVs, trucks, and vans, the back and rear windows can legally go darker. Louisiana also allows a medical exemption for darker tint with documentation. We stay current on the limits and keep your vehicle compliant.",
+  },
+  {
+    q: "Do I need an appointment, or can I stop by?",
+    a: "You are welcome to stop by our Cannon Road shop for a free quote, but calling ahead is the best way to make sure we can get to your vehicle quickly and give you an accurate turnaround. Larger jobs like wraps and full PPF are scheduled in advance.",
+  },
+  {
+    q: "What areas does the Gonzales shop serve?",
+    a: "We serve customers across Ascension Parish, including Prairieville, Sorrento, Geismar, St. Amant, Dutchtown, and Donaldsonville, along with the surrounding area.",
+  },
+  {
+    q: "How long has All-Out been in Gonzales?",
+    a: "The Gonzales shop on Cannon Road is our original location and has been serving Ascension Parish since 2020. It is where All-Out Window Tint started before we expanded to Baton Rouge.",
+  },
+  {
+    q: "Do you offer free estimates?",
+    a: "Yes. Estimates are free. Call us or fill out the contact form and we will get you a quote. For most vehicles we can give you a same-day quote.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function GonzalesPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Header */}
@@ -258,6 +299,25 @@ export default function GonzalesPage() {
           >
             View Location
           </Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">GONZALES — COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

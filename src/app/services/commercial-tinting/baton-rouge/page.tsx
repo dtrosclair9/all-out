@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/commercial-tinting/baton-rouge",
 };
 
+const faqs = [
+  {
+    q: "Do you tint large office buildings and multi-suite properties in Baton Rouge?",
+    a: "Yes. We handle accounts of every size, from a single-suite office to multi-building campuses. Our Pecue Lane location serves commercial properties throughout East Baton Rouge Parish, and we can schedule large jobs in phases to fit your operations.",
+  },
+  {
+    q: "Will commercial film cut heat and glare for my employees?",
+    a: "Yes. Commercial film reduces solar heat gain and cuts glare on employee screens, which makes glass-heavy Baton Rouge offices and storefronts far more comfortable through the hot months. It also protects merchandise and interiors from UV fading.",
+  },
+  {
+    q: "Can you match the tint across a whole building for a consistent look?",
+    a: "We can. Using a consistent film across your storefront or office gives the exterior a clean, uniform, professional appearance rather than a patchwork of shades. We will help you pick a film that performs and looks right across the whole property.",
+  },
+  {
+    q: "Do you offer after-hours installation in Baton Rouge?",
+    a: "Yes. For businesses that cannot close during the day, we offer after-hours installation so the work happens without interrupting your operations. Let us know your hours and we will plan around them.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function CommercialTintingBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -127,6 +157,25 @@ export default function CommercialTintingBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/commercial-tinting/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

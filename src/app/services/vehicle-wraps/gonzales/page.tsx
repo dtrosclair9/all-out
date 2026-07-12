@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/vehicle-wraps/gonzales",
 };
 
+const faqs = [
+  {
+    q: "How long does a full vehicle wrap take?",
+    a: "A full wrap is a multi-day job, not a same-day service. Most of the work is in the prep, the precision cutting, and the careful install that gives you clean edges with no lifting or air pockets. We will give you an exact timeline when we quote your specific vehicle.",
+  },
+  {
+    q: "Will a wrap damage my paint?",
+    a: "On healthy factory paint, a properly installed and properly removed wrap protects the surface underneath rather than harming it. If a vehicle has aftermarket paint or existing damage, let us take a look first so we can set the right expectations before we start.",
+  },
+  {
+    q: "How long does a vehicle wrap last?",
+    a: "Wrap life depends on the film, the color, and how much sun and weather it sees. Louisiana's intense sun is hard on any finish, so a wrap that is washed by hand and parked in the shade when possible will last considerably longer. We will walk you through care at pickup.",
+  },
+  {
+    q: "Can you wrap my UTV or side-by-side?",
+    a: "Yes. Camo wraps and custom color changes on Polaris, Can-Am, and other side-by-sides are popular with our Ascension Parish customers. We also wrap ATVs, trailers, boats, and commercial vehicles. If it moves, bring it to our Gonzales shop.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function VehicleWrapsGonzalesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -114,6 +144,25 @@ export default function VehicleWrapsGonzalesPage() {
             <p className="font-body text-[#888888] text-sm mt-1">7987 Pecue Lane, Suite 7G — Baton Rouge, LA 70809</p>
           </div>
           <Link href="/services/vehicle-wraps/baton-rouge" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Baton Rouge Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

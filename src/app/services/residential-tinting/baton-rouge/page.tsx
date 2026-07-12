@@ -26,10 +26,40 @@ const schema = {
   areaServed: ["Baton Rouge", "Central", "Zachary", "Denham Springs", "Walker", "East Baton Rouge Parish"],
 };
 
+const faqs = [
+  {
+    q: "Does residential film reduce glare on TVs and computer screens?",
+    a: "Yes. Cutting glare is one of the most common reasons Baton Rouge homeowners add film, especially for home offices and media rooms where afternoon sun washes out screens. The same film also blocks solar heat and 99% of UV rays.",
+  },
+  {
+    q: "Will window film damage my double-pane windows?",
+    a: "The right film matched to the right glass will not. Some films can add heat stress to certain double-pane units, which is exactly why we assess your windows first and recommend a film suited to them rather than applying a one-size-fits-all product.",
+  },
+  {
+    q: "How long does home window tinting take?",
+    a: "Most homes are completed in a single visit. The exact time depends on how many windows you are treating and the type of film, and we will give you a clear estimate when we quote the job. We schedule around your availability.",
+  },
+  {
+    q: "Do you serve homes outside of Baton Rouge?",
+    a: "Yes. From our Pecue Lane location we serve homeowners throughout East Baton Rouge Parish, including Central, Zachary, Baker, Denham Springs, Walker, and Port Allen.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function ResidentialTintingBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -127,6 +157,25 @@ export default function ResidentialTintingBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/residential-tinting/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

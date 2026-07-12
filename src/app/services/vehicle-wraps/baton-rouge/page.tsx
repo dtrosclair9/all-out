@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/vehicle-wraps/baton-rouge",
 };
 
+const faqs = [
+  {
+    q: "Do you do commercial fleet wraps and lettering in Baton Rouge?",
+    a: "Yes. Fleet graphics, full and partial wraps, and custom lettering are a core part of what we do at our Pecue Lane shop, and we offer volume pricing for businesses branding multiple vehicles. It is one of the most cost-effective forms of advertising a Baton Rouge business can buy.",
+  },
+  {
+    q: "What is the difference between a wrap and a paint job?",
+    a: "A wrap is a premium vinyl film applied over your existing paint. Unlike paint, it is reversible, it protects the factory finish underneath, and it comes in matte, satin, gloss, and textured looks you cannot easily get from paint. Installed by trained hands, the result is clean and seamless.",
+  },
+  {
+    q: "How do I take care of my wrap in the Louisiana sun?",
+    a: "Hand wash it, skip harsh automated brushes and aggressive chemicals, and park in the shade when you can. Baton Rouge sun is tough on any finish, and a little care goes a long way toward keeping the color and gloss looking fresh. We will go over the details when you pick up.",
+  },
+  {
+    q: "Can I change my vehicle's color with a wrap?",
+    a: "Yes, that is one of the most popular reasons people wrap. You can switch to matte, satin, gloss, or a textured finish and change it back later, since a wrap does not permanently alter the paint underneath.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function VehicleWrapsBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -126,6 +156,25 @@ export default function VehicleWrapsBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/vehicle-wraps/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

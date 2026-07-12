@@ -36,10 +36,40 @@ const schema = {
   areaServed: ["Gonzales", "Prairieville", "Sorrento", "Geismar", "Donaldsonville", "St. Amant", "Ascension Parish"],
 };
 
+const faqs = [
+  {
+    q: "Is my car window tint legal in Louisiana?",
+    a: "Louisiana law requires front side windows to allow at least 40% of light through (40% VLT). On multipurpose vehicles like SUVs, trucks, and vans, the back and rear windows can legally go much darker. Louisiana also allows a medical exemption for darker tint with the proper documentation. We stay current on the state limits and will help you choose a shade that keeps your vehicle street-legal.",
+  },
+  {
+    q: "Can I wait for my car, or do I drop it off?",
+    a: "Most vehicles are ready the same day. Our Cannon Road shop in Gonzales runs most jobs on a drop-off basis so you are not stuck waiting for hours. Call ahead and we will give you a realistic turnaround for your specific vehicle.",
+  },
+  {
+    q: "How soon can I roll my windows down after tinting?",
+    a: "Give the film a few days to fully cure before rolling your windows down. Louisiana's heat and humidity actually help the film cure faster, but the short wait is worth it to avoid peeling a fresh edge.",
+  },
+  {
+    q: "Which areas around Gonzales do you tint cars for?",
+    a: "Our Gonzales shop serves drivers from across Ascension Parish, including Prairieville, Sorrento, Geismar, St. Amant, Dutchtown, and Donaldsonville. If you can get to Cannon Road, we can tint your vehicle.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function AutomotiveTintingGonzalesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
@@ -183,6 +213,25 @@ export default function AutomotiveTintingGonzalesPage() {
       </section>
 
       {/* CTA */}
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#a60303] py-16 px-6 text-center">
         <h2 className="font-display text-white text-3xl md:text-4xl font-bold mb-4">TINT YOUR CAR IN GONZALES</h2>
         <p className="font-body text-white/80 text-base mb-8 max-w-md mx-auto">

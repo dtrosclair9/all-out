@@ -25,10 +25,40 @@ const schema = {
   url: "https://all-outwindowtint.com/services/paint-protection-film/baton-rouge",
 };
 
+const faqs = [
+  {
+    q: "Is PPF worth it for a new car in Baton Rouge?",
+    a: "For a new or newly detailed vehicle, PPF is one of the best ways to preserve the factory finish and protect resale value. I-10, Airline Highway, and Baton Rouge construction zones throw constant debris at your paint, and film takes those hits so your finish does not.",
+  },
+  {
+    q: "Can PPF and ceramic coating be combined?",
+    a: "Yes, and they work well together. The usual order is PPF first on the high-impact panels, then a ceramic coating on top for an easier-to-clean, slick surface. We will explain what makes sense for your vehicle and how you drive it.",
+  },
+  {
+    q: "Where does my car need PPF the most?",
+    a: "The front bumper, hood, front fenders, mirrors, and rocker panels take the worst of it on Baton Rouge roads. Door edges and door cups are also common add-ons. If you would rather cover everything, full-vehicle PPF wraps the whole exterior.",
+  },
+  {
+    q: "Will PPF change the way my paint looks?",
+    a: "No. Clear PPF keeps your paint looking factory fresh while adding a protective layer. If you want a different look, we also offer matte PPF that turns a glossy finish into a satin one. Come by our Pecue Lane shop and we will show you both.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function PPFBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -114,6 +144,25 @@ export default function PPFBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/paint-protection-film/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

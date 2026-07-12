@@ -36,10 +36,40 @@ const schema = {
   areaServed: ["Baton Rouge", "Central", "Zachary", "Baker", "Denham Springs", "Walker", "Port Allen", "East Baton Rouge Parish"],
 };
 
+const faqs = [
+  {
+    q: "Is window tint legal in Baton Rouge, LA?",
+    a: "The same statewide law applies in Baton Rouge: front side windows must allow at least 40% of light through (40% VLT), while multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass. Louisiana also offers a medical exemption for darker tint with documentation. We keep your install within the legal limits for your vehicle type.",
+  },
+  {
+    q: "What is the best tint for Baton Rouge heat?",
+    a: "For rejecting heat, ceramic film is the top choice. It blocks a high percentage of the infrared heat that makes a parked car unbearable in a Baton Rouge summer, without interfering with your phone signal, GPS, or defroster. We carry ceramic, carbon, and dyed film and will match one to your goals and budget.",
+  },
+  {
+    q: "Where is your Baton Rouge tint shop located?",
+    a: "We are at 7987 Pecue Lane, Suite 7G in south Baton Rouge, easy to reach from Perkins Road, Airline Highway, and I-10. We tint vehicles for drivers throughout East Baton Rouge Parish, including Central, Zachary, Baker, Denham Springs, Walker, and Port Allen.",
+  },
+  {
+    q: "How long does a tint job take at your Baton Rouge shop?",
+    a: "Most cars take a few hours, and larger SUVs and trucks may take a bit longer. We run most jobs on a drop-off basis and offer same-day quotes. Call ahead and we will give you an accurate estimate for your vehicle.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function AutomotiveTintingBatonRougePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
@@ -154,6 +184,25 @@ export default function AutomotiveTintingBatonRougePage() {
             <p className="font-body text-[#888888] text-sm mt-1">43469 Cannon Road — Gonzales, LA 70737</p>
           </div>
           <Link href="/services/automotive-tinting/gonzales" className="font-display tracking-widest uppercase border border-[#2a2a2a] hover:border-[#a60303] text-white hover:text-white px-6 py-3 text-sm transition-colors duration-200 shrink-0">Gonzales Location →</Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* TODO(owner): confirm specifics (price ranges, warranty terms) to strengthen */}
+      <section className="bg-[#141414] py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-display text-white tracking-[0.3em] uppercase text-sm mb-3">FAQ</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">COMMON QUESTIONS</h2>
+          </div>
+          <div className="space-y-0 divide-y divide-[#242424]">
+            {faqs.map((item) => (
+              <div key={item.q} className="py-6">
+                <h3 className="font-display text-white text-base font-bold mb-3 tracking-wide">{item.q}</h3>
+                <p className="font-body text-[#888888] text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
