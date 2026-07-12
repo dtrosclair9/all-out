@@ -59,7 +59,7 @@ export default function ResidentialTintingPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6">
             <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
             <span className="text-white">Residential Tinting</span>

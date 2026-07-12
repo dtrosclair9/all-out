@@ -39,7 +39,7 @@ const schema = {
 const faqs = [
   {
     q: "Is my car window tint legal in Louisiana?",
-    a: "Louisiana law requires front side windows to allow at least 40% of light through (40% VLT). On multipurpose vehicles like SUVs, trucks, and vans, the back and rear windows can legally go much darker. Louisiana also allows a medical exemption for darker tint with the proper documentation. We stay current on the state limits and will help you choose a shade that keeps your vehicle street-legal.",
+    a: "Louisiana law requires front side windows to allow at least 25% of light through (25% VLT). On multipurpose vehicles like SUVs, trucks, and vans, the back and rear windows can legally go much darker. Louisiana also allows a medical exemption for darker tint with the proper documentation. We stay current on the state limits and will help you choose a shade that keeps your vehicle street-legal.",
   },
   {
     q: "Can I wait for my car, or do I drop it off?",
@@ -74,7 +74,7 @@ export default function AutomotiveTintingGonzalesPage() {
       {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
             <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
             <Link href="/services/automotive-tinting" className="hover:text-white transition-colors">Automotive Tinting</Link>

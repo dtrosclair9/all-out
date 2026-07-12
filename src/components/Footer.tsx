@@ -23,9 +23,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-white tracking-widest uppercase text-sm mb-5">
+            <h2 className="font-display text-white tracking-widest uppercase text-sm mb-5">
               Services
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {[
                 { label: "Ceramic Coating", href: "/services/ceramic-coating" },
@@ -50,9 +50,9 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-display text-white tracking-widest uppercase text-sm mb-5">
+            <h2 className="font-display text-white tracking-widest uppercase text-sm mb-5">
               Navigation
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {[
                 { href: "/", label: "Home" },
@@ -77,9 +77,9 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="font-display text-white tracking-widest uppercase text-sm mb-5">
+            <h2 className="font-display text-white tracking-widest uppercase text-sm mb-5">
               Locations
-            </h4>
+            </h2>
             <ul className="space-y-5">
               <li className="flex items-start gap-3">
                 <svg className="w-4 h-4 text-[#E01818] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">

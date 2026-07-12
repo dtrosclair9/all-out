@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: "Is my car tint legal in Louisiana?",
-    a: "Louisiana law requires front side windows to allow at least 40% of light through (40% VLT). On SUVs, trucks, and vans, the back and rear windows can legally go darker. Louisiana also allows a medical exemption for darker tint with documentation. We stay current on the limits and keep your vehicle compliant.",
+    a: "Louisiana law requires front side windows to allow at least 25% of light through (25% VLT). On SUVs, trucks, and vans, the back and rear windows can legally go darker. Louisiana also allows a medical exemption for darker tint with documentation. We stay current on the limits and keep your vehicle compliant.",
   },
   {
     q: "Do I need an appointment, or can I stop by?",

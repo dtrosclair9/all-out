@@ -39,7 +39,7 @@ const schema = {
 const faqs = [
   {
     q: "Is window tint legal in Baton Rouge, LA?",
-    a: "The same statewide law applies in Baton Rouge: front side windows must allow at least 40% of light through (40% VLT), while multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass. Louisiana also offers a medical exemption for darker tint with documentation. We keep your install within the legal limits for your vehicle type.",
+    a: "The same statewide law applies in Baton Rouge: front side windows must allow at least 25% of light through (25% VLT), while multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass. Louisiana also offers a medical exemption for darker tint with documentation. We keep your install within the legal limits for your vehicle type.",
   },
   {
     q: "What is the best tint for Baton Rouge heat?",
@@ -73,7 +73,7 @@ export default function AutomotiveTintingBatonRougePage() {
 
       <section className="pt-32 pb-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-body text-xs text-[#888888] mb-6 flex-wrap">
             <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
             <Link href="/services/automotive-tinting" className="hover:text-white transition-colors">Automotive Tinting</Link>

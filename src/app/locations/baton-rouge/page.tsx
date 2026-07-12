@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     q: "What is the tint law in Louisiana?",
-    a: "Front side windows must allow at least 40% of light through (40% VLT). Multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass, and Louisiana allows a medical exemption for darker tint with documentation. We keep every install within the legal limits.",
+    a: "Front side windows must allow at least 25% of light through (25% VLT). Multipurpose vehicles like SUVs and trucks can run darker film on the back and rear glass, and Louisiana allows a medical exemption for darker tint with documentation. We keep every install within the legal limits.",
   },
   {
     q: "What areas around Baton Rouge do you serve?",
