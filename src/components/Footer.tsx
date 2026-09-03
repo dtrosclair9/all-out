@@ -155,6 +155,9 @@ export default function Footer() {
             <Link href="/accessibility" className="text-[#888888] hover:text-white text-xs font-body transition-colors duration-200">
               Accessibility
             </Link>
+            <a href="https://strykora.com" target="_blank" rel="noopener" className="text-[#888888] hover:text-white text-xs font-body transition-colors duration-200">
+              Website by Strykora
+            </a>
           </div>
         </div>
       </div>
