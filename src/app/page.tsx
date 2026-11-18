@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import AutoplayVideo from "@/components/AutoplayVideo";
+import BackgroundVideo from "@/components/BackgroundVideo";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -98,9 +98,11 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-[#0a0a0a]">
-        <AutoplayVideo
+        <BackgroundVideo
+          fill
           src="/hero.mp4"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="object-cover"
+          buttonClassName="bottom-6 right-5"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-[#0a0a0a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />

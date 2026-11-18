@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/site";
-import AutoplayVideo from "@/components/AutoplayVideo";
+import BackgroundVideo from "@/components/BackgroundVideo";
 
 export const metadata = pageMetadata({
   path: "/about",
@@ -292,10 +292,11 @@ export default function AboutPage() {
               WATCH US WORK
             </h2>
           </div>
-          <div className="w-full border border-[#1e1e1e] bg-black">
-            <AutoplayVideo
+          <div className="relative w-full border border-[#1e1e1e] bg-black">
+            <BackgroundVideo
               src="/service-clip.mp4"
               className="w-full max-h-[500px] object-contain block mx-auto"
+              buttonClassName="bottom-3 right-3"
             />
           </div>
         </div>
