@@ -76,7 +76,7 @@ export default function ContactPage() {
             Get In Touch
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold leading-tight mb-4">
-            REQUEST A FREE QUOTE
+            REQUEST A FREE QUOTE IN GONZALES OR BATON ROUGE
           </h1>
           <p className="font-body text-[#888888] text-base max-w-xl leading-relaxed">
             Fill out the form below and we&apos;ll get back to you fast — usually

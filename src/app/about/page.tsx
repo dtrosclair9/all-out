@@ -48,7 +48,7 @@ export default function AboutPage() {
             Our Story
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6">
-            ABOUT US
+            ABOUT ALL OUT WINDOW TINT, GONZALES &amp; BATON ROUGE
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
             All-Out Window Tint was built by two people who bet on themselves —
@@ -291,6 +291,7 @@ export default function AboutPage() {
             <h2 className="font-display text-white text-4xl md:text-5xl font-bold">
               WATCH US WORK
             </h2>
+            <p className="mt-4 text-white/80 font-body max-w-2xl mx-auto">A short clip from inside the shop.</p>
           </div>
           <div className="relative w-full border border-[#1e1e1e] bg-black">
             <BackgroundVideo

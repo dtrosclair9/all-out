@@ -259,7 +259,7 @@ export default function CeramicCoatingPage() {
                 )}
                 <p className="font-display text-white tracking-widest uppercase text-xs mb-2">{item.line}</p>
                 <h3 className="font-display text-white text-xl font-bold mb-1 leading-tight">{item.product}</h3>
-                <p className="font-display text-white/40 text-xs tracking-widest uppercase mb-4">{item.warranty}</p>
+                <p className="font-display text-white/70 text-xs tracking-widest uppercase mb-4">{item.warranty}</p>
                 <p className="font-body text-[#888888] text-sm leading-relaxed mb-6">{item.desc}</p>
                 <ul className="space-y-2">
                   {item.features.map((f) => (

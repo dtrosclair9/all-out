@@ -103,7 +103,7 @@ export default function GalleryPage() {
             Our Work
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-6">
-            WINDOW TINT GALLERY
+            WINDOW TINT &amp; PPF GALLERY, GONZALES &amp; BATON ROUGE
           </h1>
           <p className="font-body text-[#888888] text-lg max-w-2xl leading-relaxed">
             Browse our portfolio of window tinting, PPF, and vehicle wrap work.

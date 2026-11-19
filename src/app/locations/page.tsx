@@ -43,7 +43,7 @@ export default function LocationsPage() {
             Find Us
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-bold mb-4">
-            OUR LOCATIONS
+            WINDOW TINT SHOPS IN GONZALES &amp; BATON ROUGE
           </h1>
           <p className="font-body text-[#888888] text-base max-w-xl leading-relaxed">
             Two locations serving the greater Baton Rouge area. Same team, same
