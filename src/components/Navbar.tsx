@@ -58,10 +58,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/logo-primary-cropped.png"
+            src="/images/logo-allout.png"
             alt="All Out Tint & Auto Spa"
-            width={974}
-            height={516}
+            width={600}
+            height={319}
+            sizes="(min-width: 768px) 136px, 113px"
             preload
             className="h-[60px] md:h-[72px] w-auto"
           />

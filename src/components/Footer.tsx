@@ -9,11 +9,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Image
-              src="/images/logo-primary.png"
+              src="/images/logo-allout.png"
               alt="All Out Tint & Auto Spa"
-              width={120}
-              height={60}
-              className="h-14 w-auto object-contain mb-4"
+              width={600}
+              height={319}
+              sizes="120px"
+              className="h-14 w-auto mb-4"
             />
             <p className="text-[#888888] text-sm leading-relaxed font-body">
               Professional window tinting, PPF, and vehicle wraps. Family owned
