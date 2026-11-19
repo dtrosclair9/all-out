@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BackgroundVideo from "@/components/BackgroundVideo";
+import HeroRaceBay from "@/components/HeroRaceBay";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -97,54 +97,7 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden bg-[#0a0a0a]">
-        <BackgroundVideo
-          fill
-          src="/hero.mp4"
-          className="object-cover"
-          buttonClassName="bottom-6 right-5"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-[#0a0a0a]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-
-        <div className="relative z-10 h-full flex flex-col items-center justify-start text-center px-6 pt-[28vh]">
-          <h1 className="font-display text-white text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 max-w-2xl">
-            GO
-            <br />
-            <span
-              className="text-[#E01818]"
-              style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.9), 0 0 24px rgba(0,0,0,0.7)" }}
-            >ALL OUT.</span>
-          </h1>
-          <p className="font-body text-white/70 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-            Professional window tinting, paint protection film, and vehicle
-            wraps. Two locations serving Gonzales and Baton Rouge, LA.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <Link
-              href="/contact"
-              className="font-display tracking-widest uppercase bg-[#a60303] hover:bg-[#cc0404] text-white px-8 py-4 text-sm transition-colors duration-200"
-            >
-              Get a Free Quote
-            </Link>
-            <Link
-              href="/gallery"
-              className="font-display tracking-widest uppercase border border-white/40 hover:border-white text-white px-8 py-4 text-sm transition-colors duration-200"
-            >
-              View Our Work
-            </Link>
-          </div>
-          <p className="font-display text-white/40 tracking-[0.3em] uppercase text-xs">
-            Gonzales & Baton Rouge, Louisiana
-          </p>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-          <svg className="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </section>
+      <HeroRaceBay />
 
       {/* ── SERVICES ── */}
       <section className="bg-[#0a0a0a] py-24 px-6">

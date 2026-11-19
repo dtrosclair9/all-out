@@ -58,16 +58,17 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/logo-primary.png"
+            src="/images/logo-primary-cropped.png"
             alt="All Out Tint & Auto Spa"
-            width={280}
-            height={140}
-            className="h-16 md:h-20 w-auto object-contain"
+            width={974}
+            height={516}
+            preload
+            className="h-[60px] md:h-[72px] w-auto"
           />
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <ul className="flex items-center gap-8">
             <li>
               <Link
@@ -143,7 +144,7 @@ export default function Navbar() {
 
         {/* Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="lg:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -155,7 +156,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
           menuOpen ? "max-h-[600px]" : "max-h-0"
         }`}
       >

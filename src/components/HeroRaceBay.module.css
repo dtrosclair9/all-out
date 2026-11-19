@@ -1,0 +1,52 @@
+/* Homepage hero, "Race Bay" (Codex concept A, chosen by Dayne 2026-11-18).
+   Copy sits on solid black, never over the photo, so contrast holds at every width.
+   Phone: copy, then the red Corvette photo band, then both shop addresses. iPad: copy with stacked buttons,
+   photo band below. Desktop (>=1024): copy left, video right. */
+.hero { background: #0a0a0a; color: #fff; border-top: 3px solid #e01818; margin-top: 92px; } /* clears the fixed Navbar (py-4 + 60px logo) */
+.grid { max-width: 1440px; margin: 0 auto; }
+.intro { padding: 25px 20px 23px; }
+.slogan { display: flex; align-items: center; gap: 14px; color: #ff8585; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.17em; text-transform: uppercase; margin: 0; }
+.slogan::before { content: ""; width: 27px; height: 11px; flex: 0 0 auto; transform: skewX(-25deg); background: repeating-linear-gradient(90deg, #e01818 0 5px, transparent 5px 10px); }
+.title { margin: 14px 0 0; font-family: var(--font-oswald), "Arial Narrow", Impact, sans-serif; font-weight: 700; font-size: clamp(2.15rem, 10.8vw, 4.1rem); line-height: 1.01; letter-spacing: -0.025em; text-transform: uppercase; }
+.title .line { display: block; }
+.cityLine { display: block; margin-top: 13px; color: #dedede; font-family: var(--font-inter), system-ui, sans-serif; font-weight: 700; font-size: clamp(0.95rem, 4vw, 1.25rem); line-height: 1.3; letter-spacing: -0.015em; text-transform: none; }
+.copy { max-width: 36ch; margin: 13px 0 0; color: #d5d5d5; font-size: 0.9375rem; line-height: 1.5; }
+.actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+.action { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 16px; font-family: var(--font-oswald), sans-serif; font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; color: #fff; text-decoration: none; transition: background-color 0.2s; }
+.action:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.quote { background: #a60303; border: 1px solid #ed5959; }
+.quote:hover { background: #860303; }
+.outline { border: 1px solid #8a8a8a; }
+.outline:hover { background: #282828; }
+.arrow { width: 9px; height: 9px; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); }
+.callOnPhone { display: inline-flex; }
+.photo { position: relative; overflow: hidden; background: #282828; height: clamp(235px, 63vw, 425px); }
+.strip { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 1440px; margin: 0 auto; border-top: 1px solid #6b6b6b; background: #151515; color: #fff; }
+.shop { min-width: 0; display: grid; gap: 5px; padding: 17px 12px 18px 20px; margin: 0; }
+.shop + .shop { border-left: 1px solid #6b6b6b; }
+.shop strong { font-size: 0.92rem; }
+.shop span { color: #cdcdcd; font-size: 0.8rem; line-height: 1.45; }
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .intro { display: grid; grid-template-columns: 1fr max-content; align-items: end; column-gap: 22px; padding: 33px 36px 31px; }
+  .slogan, .title, .copy { grid-column: 1; }
+  .actions { grid-column: 2; grid-row: 2 / 4; flex-direction: column; width: 190px; }
+  .photo { height: clamp(375px, 56vw, 470px); }
+  .shop { padding-inline: 36px 18px; }
+}
+@media (min-width: 768px) { .hero { margin-top: 104px; } } /* 72px logo */
+@media (min-width: 1024px) { .callOnPhone { display: none; } } /* the header shows the phone button from 1024 up */
+@media (min-width: 1024px) {
+  .grid { display: grid; grid-template-columns: 0.9fr 1.1fr; }
+  .intro { align-self: center; padding: 42px 27px 48px clamp(30px, 6vw, 86px); }
+  .title { font-size: clamp(3.3rem, 5.1vw, 5.3rem); }
+  .cityLine { margin-top: 19px; font-size: clamp(1.1rem, 1.65vw, 1.45rem); }
+  .copy { margin-top: 20px; font-size: 1rem; }
+  .actions { margin-top: 29px; gap: 12px; }
+  .action { min-height: 52px; padding: 0 18px; }
+  .photo { height: clamp(520px, 46vw, 660px); }
+  .strip { grid-template-columns: 0.9fr 1.1fr; }
+  .shop { padding: 22px 24px 23px clamp(30px, 6vw, 86px); }
+  .shop strong { font-size: 1rem; }
+  .shop span { font-size: 0.9rem; }
+}
