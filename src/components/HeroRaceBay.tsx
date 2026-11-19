@@ -32,6 +32,7 @@ export default function HeroRaceBay() {
             <BackgroundVideo
               fill
               src="/hero.mp4"
+              poster="/images/hero-poster.jpg"
               className="object-cover"
               buttonClassName="bottom-4 right-4"
               mobileStill={{

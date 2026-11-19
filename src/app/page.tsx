@@ -241,9 +241,9 @@ export default function Home() {
                 <div key={item.title} className="flex gap-4">
                   <div className="w-1 bg-[#a60303] shrink-0 rounded-full" />
                   <div>
-                    <h4 className="font-display text-white text-base tracking-wide mb-1">
+                    <h3 className="font-display text-white text-base tracking-wide mb-1">
                       {item.title}
-                    </h4>
+                    </h3>
                     <p className="font-body text-[#888888] text-sm leading-relaxed">
                       {item.desc}
                     </p>
